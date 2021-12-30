@@ -1,6 +1,7 @@
 # Koios : Top-k Table Join Search using Semantic Overlap
  
  Code for Koios  : Main-baseline.cpp
+
  Code for Koios+ : Main-clean.cpp 
 
 ## Dependencies
@@ -11,6 +12,8 @@ Cmake version 3.18 (version important):
 		apt remove --purge --auto-remove cmake
 
 Setting up:
+
+
 	- run source bashrc
 	- . /opt/intel/oneapi/setvars.sh --config=intel.config
 	- make 
