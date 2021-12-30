@@ -1,27 +1,3 @@
-VS_SOLUTION_DEPLOY
-------------------
-
-Specify that the target should be marked for deployment when not targeting
-Windows CE, Windows Phone or a Windows Store application.
-
-If the target platform doesn't support deployment, this property won't have
-any effect.
-
-:manual:`Generator expressions <cmake-generator-expressions(7)>` are supported.
-
-Examples
-^^^^^^^^
-
-Always deploy target ``foo``:
-
-.. code-block:: cmake
-
-  add_executable(foo SHARED foo.cpp)
-  set_property(TARGET foo PROPERTY VS_SOLUTION_DEPLOY ON)
-
-Deploy target ``foo`` for all configurations except ``Release``:
-
-.. code-block:: cmake
-
-  add_executable(foo SHARED foo.cpp)
-  set_property(TARGET foo PROPERTY VS_SOLUTION_DEPLOY "$<NOT:$<CONFIG:Release>>")
+version https://git-lfs.github.com/spec/v1
+oid sha256:3976cfa6547d10f44e0ac2574f2ceae56e9cfa1553ff9028c1851faf7db74128
+size 720

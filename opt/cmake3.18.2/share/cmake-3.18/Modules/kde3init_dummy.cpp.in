@@ -1,6 +1,3 @@
-
-/* used by KDE3Macros.cmake */
-
-extern "C" int kdemain(int argc, char* argv[]);
-extern "C" int kdeinitmain(int argc, char* argv[]) { return kdemain(argc,argv); }
-int main(int argc, char* argv[]) { return kdemain(argc,argv); }
+version https://git-lfs.github.com/spec/v1
+oid sha256:2f3ebd00b3cbd11673c5e1d211bc7e2a9355fd8dde478e8ea26b09c90512cba5
+size 227

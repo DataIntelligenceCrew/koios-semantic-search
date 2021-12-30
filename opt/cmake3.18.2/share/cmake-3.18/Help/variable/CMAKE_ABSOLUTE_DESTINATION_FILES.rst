@@ -1,9 +1,3 @@
-CMAKE_ABSOLUTE_DESTINATION_FILES
---------------------------------
-
-List of files which have been installed using an ``ABSOLUTE DESTINATION`` path.
-
-This variable is defined by CMake-generated ``cmake_install.cmake``
-scripts.  It can be used (read-only) by programs or scripts that
-source those install scripts.  This is used by some CPack generators
-(e.g.  RPM).
+version https://git-lfs.github.com/spec/v1
+oid sha256:0834539ab880f8c4465d8fc007f8a2cab57447fdcdd8e7397bc9910bfe8dd154
+size 363

@@ -1,8 +1,3 @@
-set(_compiler_id_pp_test "defined(__ibmxl__) && defined(__clang__)")
-
-set(_compiler_id_version_compute "
-# define @PREFIX@COMPILER_VERSION_MAJOR @MACRO_DEC@(__ibmxl_version__)
-# define @PREFIX@COMPILER_VERSION_MINOR @MACRO_DEC@(__ibmxl_release__)
-# define @PREFIX@COMPILER_VERSION_PATCH @MACRO_DEC@(__ibmxl_modification__)
-# define @PREFIX@COMPILER_VERSION_TWEAK @MACRO_DEC@(__ibmxl_ptf_fix_level__)
-")
+version https://git-lfs.github.com/spec/v1
+oid sha256:e0072f3e3c62f3bff0aebe08db2989cd5704ead33db279c90bccbb9426af1405
+size 403

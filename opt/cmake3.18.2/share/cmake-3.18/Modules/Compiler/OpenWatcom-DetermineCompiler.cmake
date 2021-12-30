@@ -1,10 +1,3 @@
-
-set(_compiler_id_pp_test "defined(__WATCOMC__)")
-
-set(_compiler_id_version_compute "
-   /* __WATCOMC__ = VVRP + 1100 */
-# define @PREFIX@COMPILER_VERSION_MAJOR @MACRO_DEC@((__WATCOMC__ - 1100) / 100)
-# define @PREFIX@COMPILER_VERSION_MINOR @MACRO_DEC@((__WATCOMC__ / 10) % 10)
-# if (__WATCOMC__ % 10) > 0
-#  define @PREFIX@COMPILER_VERSION_PATCH @MACRO_DEC@(__WATCOMC__ % 10)
-# endif")
+version https://git-lfs.github.com/spec/v1
+oid sha256:0afef594e2059e454b38969469116e41f61b474c3a372391cb9cd65fc0f2ef36
+size 387

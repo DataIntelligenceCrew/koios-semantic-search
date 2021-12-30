@@ -1,15 +1,3 @@
-#include <pthread.h>
-
-void* start_routine(void* args)
-{
-  return args;
-}
-
-int main(void)
-{
-  /* This is a compile and link test, no code to actually run things. */
-  pthread_t thread;
-  pthread_create(&thread, 0, start_routine, 0);
-  pthread_join(thread, 0);
-  return 0;
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:5c81bba16de19eb6566fc04954366f75e0b1a2774b557222dac2bb21f11886ba
+size 273

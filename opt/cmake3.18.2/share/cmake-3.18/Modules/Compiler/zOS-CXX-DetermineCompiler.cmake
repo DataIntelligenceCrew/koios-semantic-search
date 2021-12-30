@@ -1,4 +1,3 @@
-
-set(_compiler_id_pp_test "defined(__IBMCPP__) && defined(__COMPILER_VER__)")
-
-include("${CMAKE_CURRENT_LIST_DIR}/IBMCPP-CXX-DetermineVersionInternal.cmake")
+version https://git-lfs.github.com/spec/v1
+oid sha256:18588a389438b55389a52615414eb02bc853f7027e6934c0e4d31514faaff9d1
+size 158

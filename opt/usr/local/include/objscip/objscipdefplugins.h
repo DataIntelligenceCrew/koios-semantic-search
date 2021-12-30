@@ -1,30 +1,3 @@
-/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
-/*                                                                           */
-/*                  This file is part of the program and library             */
-/*         SCIP --- Solving Constraint Integer Programs                      */
-/*                                                                           */
-/*    Copyright (C) 2002-2020 Konrad-Zuse-Zentrum                            */
-/*                            fuer Informationstechnik Berlin                */
-/*                                                                           */
-/*  SCIP is distributed under the terms of the ZIB Academic License.         */
-/*                                                                           */
-/*  You should have received a copy of the ZIB Academic License.             */
-/*  along with SCIP; see the file COPYING. If not visit scipopt.org.         */
-/*                                                                           */
-/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
-
-/**@file   objscipdefplugins.h
- * @brief  C++ wrapper for default SCIP plugins
- * @author Tobias Achterberg
- */
-
-/*---+----1----+----2----+----3----+----4----+----5----+----6----+----7----+----8----+----9----+----0----+----1----+----2*/
-
-#ifndef __SCIP_OBJSCIPDEFPLUGINS_H__
-#define __SCIP_OBJSCIPDEFPLUGINS_H__
-
-
-#include "objscip/objscip.h"
-#include "scip/scipdefplugins.h"
-
-#endif
+version https://git-lfs.github.com/spec/v1
+oid sha256:7e073c2b96d96e45a263efcd6b29d2c18c01b77ad1244295312a416f7a063959
+size 1505

@@ -1,11 +1,3 @@
-%-----------------------------------------------------------------------------%
-% Constrains two arrays of int variables, f and invf, to represent inverse
-% functions. All the values in each array must be within the index set of the
-% other array.
-%-----------------------------------------------------------------------------%
-
-predicate fzn_inverse(array [int] of var int: f,
-                      array [int] of var int: invf);
-
-%-----------------------------------------------------------------------------%
-%-----------------------------------------------------------------------------%
+version https://git-lfs.github.com/spec/v1
+oid sha256:319672d07a1d21ca820c84f5b18bfb72a7fc10e742968696a6280b65bef3e730
+size 592

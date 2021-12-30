@@ -1,14 +1,3 @@
-include(Platform/HP-UX-HP)
-__hpux_compiler_hp(CXX)
-
-set(CMAKE_CXX_CREATE_PREPROCESSED_SOURCE "<CMAKE_CXX_COMPILER> <DEFINES> <INCLUDES> <FLAGS> -E <SOURCE> > <PREPROCESSED_SOURCE>")
-set(CMAKE_CXX_CREATE_ASSEMBLY_SOURCE
-  "<CMAKE_CXX_COMPILER> <DEFINES> <INCLUDES> <FLAGS> -S <SOURCE>"
-  "mv `basename \"<SOURCE>\" | sed 's/\\.[^./]*$$//'`.s <ASSEMBLY_SOURCE>"
-  "rm -f `basename \"<SOURCE>\" | sed 's/\\.[^./]*$$//'`.o"
-  )
-
-string(APPEND CMAKE_CXX_FLAGS_DEBUG_INIT " -g")
-string(APPEND CMAKE_CXX_FLAGS_MINSIZEREL_INIT " +O3 -DNDEBUG")
-string(APPEND CMAKE_CXX_FLAGS_RELEASE_INIT " +O2 -DNDEBUG")
-string(APPEND CMAKE_CXX_FLAGS_RELWITHDEBINFO_INIT " -g")
+version https://git-lfs.github.com/spec/v1
+oid sha256:78941095d8b2871b756be7d60c04debd069eed0422dc9afcd2f7192e0df63348
+size 653

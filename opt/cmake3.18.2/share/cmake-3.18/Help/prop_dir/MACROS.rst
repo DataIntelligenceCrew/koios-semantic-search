@@ -1,8 +1,3 @@
-MACROS
-------
-
-List of macro commands available in the current directory.
-
-This read-only property specifies the list of CMake macros currently
-defined.  It is intended for debugging purposes.  See the :command:`macro`
-command.
+version https://git-lfs.github.com/spec/v1
+oid sha256:d2eca61635cde74faa71df9be4204f40cc5f63bfbdfe4d6f0ae4d7d2e8f515fc
+size 228

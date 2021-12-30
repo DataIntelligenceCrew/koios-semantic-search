@@ -1,6 +1,3 @@
-include(Platform/Apple-Clang-CXX)
-if(NOT CMAKE_CXX_COMPILER_VERSION VERSION_LESS 4.2)
-  set(CMAKE_CXX_SYSTEM_FRAMEWORK_SEARCH_FLAG "-iframework ")
-else()
-  unset(CMAKE_CXX_SYSTEM_FRAMEWORK_SEARCH_FLAG)
-endif()
+version https://git-lfs.github.com/spec/v1
+oid sha256:9801cf0a7cd1278d837025336215d4cefb0443cb8be723c7265d4298bc8c1789
+size 210

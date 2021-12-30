@@ -1,19 +1,3 @@
-include(Compiler/Intel)
-__compiler_intel(Fortran)
-
-set(CMAKE_Fortran_SUBMODULE_SEP "@")
-set(CMAKE_Fortran_SUBMODULE_EXT ".smod")
-
-set(CMAKE_Fortran_MODDIR_FLAG "-module ")
-set(CMAKE_Fortran_FORMAT_FIXED_FLAG "-fixed")
-set(CMAKE_Fortran_FORMAT_FREE_FLAG "-free")
-
-set(CMAKE_Fortran_COMPILE_WITH_DEFINES 1)
-
-set(CMAKE_Fortran_CREATE_PREPROCESSED_SOURCE "<CMAKE_Fortran_COMPILER> <DEFINES> <INCLUDES> <FLAGS> -E <SOURCE> > <PREPROCESSED_SOURCE>")
-set(CMAKE_Fortran_CREATE_ASSEMBLY_SOURCE "<CMAKE_Fortran_COMPILER> <DEFINES> <INCLUDES> <FLAGS> -S <SOURCE> -o <ASSEMBLY_SOURCE>")
-
-set(CMAKE_Fortran_PREPROCESS_SOURCE
-  "<CMAKE_Fortran_COMPILER> -fpp <DEFINES> <INCLUDES> <FLAGS> -E <SOURCE> > <PREPROCESSED_SOURCE>")
-set(CMAKE_Fortran_COMPILE_OPTIONS_PREPROCESS_ON "-fpp")
-set(CMAKE_Fortran_COMPILE_OPTIONS_PREPROCESS_OFF "-nofpp")
+version https://git-lfs.github.com/spec/v1
+oid sha256:313b5e758b124a81f59a9e26ba714aa71bb111b6a72d67d3f65793e0aa0bc328
+size 827

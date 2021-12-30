@@ -1,9 +1,3 @@
-# look at each path and try to find ifconsol.lib
-set(LIB "$ENV{LIB}")
-foreach(dir ${LIB})
-  file(TO_CMAKE_PATH "${dir}" dir)
-  if(EXISTS "${dir}/ifconsol.lib")
-    file(WRITE output.cmake "list(APPEND implicit_dirs \"${dir}\")\n")
-    break()
-  endif()
-endforeach()
+version https://git-lfs.github.com/spec/v1
+oid sha256:9d2bad68cd4aae4deae65851da449cbfd42fe1b83a37250089b0d41a5a828a74
+size 266

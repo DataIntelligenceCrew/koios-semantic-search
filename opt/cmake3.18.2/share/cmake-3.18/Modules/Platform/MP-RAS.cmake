@@ -1,14 +1,3 @@
-if(CMAKE_SYSTEM MATCHES "MP-RAS-02*.")
-  set(CMAKE_C_COMPILE_OPTIONS_PIC -K PIC)
-  set(CMAKE_C_COMPILE_OPTIONS_PIE -K PIE)
-  set(CMAKE_SHARED_LIBRARY_C_FLAGS "-K PIC")
-else()
-  set(CMAKE_C_COMPILE_OPTIONS_PIC -K PIC)
-  set(CMAKE_C_COMPILE_OPTIONS_PIE -K PIE)
-  set(CMAKE_SHARED_LIBRARY_C_FLAGS "-K PIC")
-  set(CMAKE_SHARED_LIBRARY_LINK_C_FLAGS "-Wl,-Bexport")
-endif()
-
-include(Platform/UnixPaths)
-
-
+version https://git-lfs.github.com/spec/v1
+oid sha256:675d022fb94bcc2bf917975888e8bda07b9e45ea5eef4cc21654ddb42c90b9c2
+size 399

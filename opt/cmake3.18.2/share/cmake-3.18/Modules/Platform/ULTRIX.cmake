@@ -1,5 +1,3 @@
-set(CMAKE_SHARED_LIBRARY_C_FLAGS "-G 0")
-set(CMAKE_SHARED_LIBRARY_SUFFIX "..o")
-set(CMAKE_DL_LIBS "")
-set(CMAKE_SHARED_LIBRARY_LINK_C_FLAGS "-Wl,-D,08000000")
-include(Platform/UnixPaths)
+version https://git-lfs.github.com/spec/v1
+oid sha256:f0cb2b98fb3255f8f7746ba922e1e35a49965d69c890dd978e97c80f24bde1a6
+size 187

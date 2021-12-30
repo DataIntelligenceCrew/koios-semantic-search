@@ -1,7 +1,3 @@
-cmake_minimum_required(VERSION ${CMAKE_VERSION})
-project(IntelFortranImplicit Fortran)
-add_custom_command(
-  OUTPUT output.cmake
-  COMMAND ${CMAKE_COMMAND} -P ${IntelFortranImplicit_SOURCE_DIR}/detect.cmake
-  )
-add_library(FortranLib hello.f output.cmake)
+version https://git-lfs.github.com/spec/v1
+oid sha256:f2e6e95d320a02ee419526735e38bdfd3c9d753ccdfe4e688674972f48db4b0f
+size 256

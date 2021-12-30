@@ -1,23 +1,3 @@
-set SQUISHSERVER=%1
-set SQUISHRUNNER=%2
-set TESTSUITE=%3
-set TESTCASE=%4
-set AUT=%5
-set AUTDIR=%6
-
-%SQUISHSERVER% --stop
-
-echo "Adding AUT... %SQUISHSERVER% --config addAUT %AUT% %AUTDIR%"
-%SQUISHSERVER% --config addAUT "%AUT%" "%AUTDIR%"
-
-echo "Starting the squish server... %SQUISHSERVER%"
-start /B "Squish Server" %SQUISHSERVER%
-
-echo "Running the test case... %SQUISHRUNNER% --testsuite %TESTSUITE% --testcase %TESTCASE%"
-%SQUISHRUNNER% --testsuite "%TESTSUITE%" --testcase "%TESTCASE%"
-set returnValue=%ERRORLEVEL%
-
-echo "Stopping the squish server... %SQUISHSERVER% --stop"
-%SQUISHSERVER% --stop
-
-exit /B %returnValue%
+version https://git-lfs.github.com/spec/v1
+oid sha256:904c5b683d614801a1f2bd7c7955b6542ec3b52201e03ca9ad41c5ca30e0523a
+size 648

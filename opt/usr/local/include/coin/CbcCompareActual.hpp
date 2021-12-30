@@ -1,16 +1,3 @@
-/* $Id$ */
-// Copyright (C) 2002, International Business Machines
-// Corporation and others.  All Rights Reserved.
-// This code is licensed under the terms of the Eclipse Public License (EPL).
-
-#ifndef CbcCompareActual_H
-#define CbcCompareActual_H
-#include "CbcNode.hpp"
-#include "CbcCompareBase.hpp"
-#include "CbcCompare.hpp"
-#include "CbcCompareDepth.hpp"
-#include "CbcCompareDefault.hpp"
-#endif
-
-/* vi: softtabstop=2 shiftwidth=2 expandtab tabstop=2
-*/
+version https://git-lfs.github.com/spec/v1
+oid sha256:cca15b1738b95ed9d4e75f464d434efe869539e6c98f2acd364afb72f5967424
+size 456

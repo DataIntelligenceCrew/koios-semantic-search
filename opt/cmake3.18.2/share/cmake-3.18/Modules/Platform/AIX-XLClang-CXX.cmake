@@ -1,2 +1,3 @@
-include(Platform/AIX-XLClang)
-__aix_compiler_xlclang(CXX)
+version https://git-lfs.github.com/spec/v1
+oid sha256:61da9b636e5aa49f13f659bdb57cefc16d798c590712387fbda459c26b2c674e
+size 58

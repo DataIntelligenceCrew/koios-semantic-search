@@ -1,5 +1,3 @@
-PROJECT_VERSION_MINOR
----------------------
-
-Second version number component of the :variable:`PROJECT_VERSION`
-variable as set by the :command:`project` command.
+version https://git-lfs.github.com/spec/v1
+oid sha256:5466705c71e574909c2c7e079810b047b40f0609585742b299a9288cfece9b37
+size 163

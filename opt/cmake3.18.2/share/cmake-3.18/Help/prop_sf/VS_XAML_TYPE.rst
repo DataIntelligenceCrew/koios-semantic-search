@@ -1,7 +1,3 @@
-VS_XAML_TYPE
-------------
-
-Mark a Extensible Application Markup Language (XAML) source file
-as a different type than the default ``Page``.
-The most common usage would be to set the default ``App.xaml`` file as
-``ApplicationDefinition``.
+version https://git-lfs.github.com/spec/v1
+oid sha256:744aa526011e28880646db0d0f435b689e7609d4fe70971ed9ef5aa6281065a0
+size 237

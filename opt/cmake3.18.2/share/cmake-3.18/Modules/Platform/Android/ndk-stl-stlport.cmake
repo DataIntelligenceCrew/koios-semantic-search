@@ -1,8 +1,3 @@
-# <ndk>/sources/cxx-stl/stlport/Android.mk
-set(_ANDROID_STL_RTTI 1)
-set(_ANDROID_STL_EXCEPTIONS 1)
-set(_ANDROID_STL_NOSTDLIBXX 0)
-macro(__android_stl_stlport lang filename)
-  __android_stl_inc(${lang} "${CMAKE_ANDROID_NDK}/sources/cxx-stl/stlport/stlport" 1)
-  __android_stl_lib(${lang} "${CMAKE_ANDROID_NDK}/sources/cxx-stl/stlport/libs/${CMAKE_ANDROID_ARCH_ABI}/${filename}" 1)
-endmacro()
+version https://git-lfs.github.com/spec/v1
+oid sha256:8250b9a1524b1c299a45ab691459490f5b48be374b523b7f4234f4d326711ac1
+size 391

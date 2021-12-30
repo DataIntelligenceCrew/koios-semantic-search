@@ -1,5 +1,3 @@
-include(Platform/Windows-Intel)
-set(_COMPILE_CXX " /TP")
-__windows_compiler_intel(CXX)
-set(CMAKE_NINJA_DEPTYPE_CXX intel) # special value handled by CMake
-set(CMAKE_DEPFILE_FLAGS_CXX "-QMMD -QMT <OBJECT> -QMF <DEPFILE>")
+version https://git-lfs.github.com/spec/v1
+oid sha256:cebfad3fd1f3265161f5ec7f561766ee9124db30a26c331b83e19a9629ad2daa
+size 221

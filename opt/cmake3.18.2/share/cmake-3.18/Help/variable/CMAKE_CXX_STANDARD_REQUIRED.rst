@@ -1,11 +1,3 @@
-CMAKE_CXX_STANDARD_REQUIRED
----------------------------
-
-Default value for :prop_tgt:`CXX_STANDARD_REQUIRED` property of targets.
-
-This variable is used to initialize the :prop_tgt:`CXX_STANDARD_REQUIRED`
-property on all targets.  See that target property for additional
-information.
-
-See the :manual:`cmake-compile-features(7)` manual for information on
-compile features and a list of supported compilers.
+version https://git-lfs.github.com/spec/v1
+oid sha256:13f6e1cca2453243a0195613619de9e9c7c32d54876984efcbe7363044f347a9
+size 407

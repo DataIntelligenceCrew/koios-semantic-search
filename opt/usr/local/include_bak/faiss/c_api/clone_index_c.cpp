@@ -1,23 +1,3 @@
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */
-
-//  Copyright 2004-present Facebook. All Rights Reserved
-// -*- c++ -*-
-// I/O code for indexes
-
-#include "clone_index_c.h"
-#include <faiss/clone_index.h>
-#include "macros_impl.h"
-
-using faiss::Index;
-
-int faiss_clone_index (const FaissIndex *idx, FaissIndex **p_out) {
-    try {
-        auto out = faiss::clone_index(reinterpret_cast<const Index*>(idx));
-        *p_out = reinterpret_cast<FaissIndex*>(out);
-    } CATCH_AND_HANDLE
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:89ad8ce03e6b3931e8dea26400b7f49cc8f0db2f767a98a7a16e71a796517e6e
+size 624

@@ -1,5 +1,3 @@
-CTEST_BZR_UPDATE_OPTIONS
-------------------------
-
-Specify the CTest ``BZRUpdateOptions`` setting
-in a :manual:`ctest(1)` dashboard client script.
+version https://git-lfs.github.com/spec/v1
+oid sha256:2cc7bbd0e6d75f3032ad6eefd166c8dce43d6e87eb8bcd3143db36206f1d61eb
+size 147

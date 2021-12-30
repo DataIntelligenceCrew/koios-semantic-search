@@ -1,5 +1,3 @@
-PROJECT_VERSION_MAJOR
----------------------
-
-First version number component of the :variable:`PROJECT_VERSION`
-variable as set by the :command:`project` command.
+version https://git-lfs.github.com/spec/v1
+oid sha256:16559bc64723b6370245d28acb9ed20288254c6d26d048bc145334de9e6a5c79
+size 162

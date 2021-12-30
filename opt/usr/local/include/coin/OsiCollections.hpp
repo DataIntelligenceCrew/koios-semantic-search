@@ -1,34 +1,3 @@
-// Copyright (C) 2000, International Business Machines
-// Corporation and others.  All Rights Reserved.
-// This code is licensed under the terms of the Eclipse Public License (EPL).
-
-#ifndef OsiCollections_H
-#define OsiCollections_H
-
-#include <vector>
-
-//Forward declarations
-class OsiColCut;
-class OsiRowCut;
-class OsiCut;
-
-/* Collection Classes */
-
-/**@name Typedefs for Standard Template Library collections of Osi Objects. */
-//@{
-/// Vector of int
-typedef std::vector< int > OsiVectorInt;
-/// Vector of double
-typedef std::vector< double > OsiVectorDouble;
-/// Vector of OsiColCut pointers
-typedef std::vector< OsiColCut * > OsiVectorColCutPtr;
-/// Vector of OsiRowCut pointers
-typedef std::vector< OsiRowCut * > OsiVectorRowCutPtr;
-/// Vector of OsiCut pointers
-typedef std::vector< OsiCut * > OsiVectorCutPtr;
-//@}
-
-#endif
-
-/* vi: softtabstop=2 shiftwidth=2 expandtab tabstop=2
-*/
+version https://git-lfs.github.com/spec/v1
+oid sha256:29ce037be29a8e128ba176bf38144ad76500501525213a70a6a1be7c2f2f6aca
+size 888

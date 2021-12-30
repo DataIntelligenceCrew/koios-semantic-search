@@ -1,8 +1,3 @@
-CTEST_MEMORYCHECK_TYPE
-----------------------
-
-Specify the CTest ``MemoryCheckType`` setting
-in a :manual:`ctest(1)` dashboard client script.
-Valid values are ``Valgrind``, ``Purify``, ``BoundsChecker``, ``DrMemory`` and
-``ThreadSanitizer``, ``AddressSanitizer``, ``LeakSanitizer``, ``MemorySanitizer``, and
-``UndefinedBehaviorSanitizer``.
+version https://git-lfs.github.com/spec/v1
+oid sha256:a02ae6f488d0bd393cf74f1ca026ccddbfdb548b531ccd131fc8b21f9156481c
+size 340

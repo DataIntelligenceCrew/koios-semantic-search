@@ -1,9 +1,3 @@
-# Distributed under the OSI-approved BSD 3-Clause License.  See accompanying
-# file Copyright.txt or https://cmake.org/licensing for details.
-
-
-find_program(CMAKE_MAKE_PROGRAM
-  NAMES ninja-build ninja samu
-  NAMES_PER_DIR
-  DOC "Program used to build from build.ninja files.")
-mark_as_advanced(CMAKE_MAKE_PROGRAM)
+version https://git-lfs.github.com/spec/v1
+oid sha256:fdda93f7cec944ef18f7ce898b8ae79c0111a1cd72a39e3a2cb98a0dea8758e1
+size 315

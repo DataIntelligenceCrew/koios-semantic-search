@@ -1,5 +1,3 @@
-# Distributed under the OSI-approved BSD 3-Clause License.  See accompanying
-# file Copyright.txt or https://cmake.org/licensing for details.
-
-
-__BlueGeneP_set_dynamic_flags(GNU C)
+version https://git-lfs.github.com/spec/v1
+oid sha256:8574341cff863deb0de07fad5782ba3d376d5a3029639859cd26e4289d337bad
+size 181

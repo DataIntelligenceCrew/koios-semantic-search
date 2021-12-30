@@ -1,6 +1,3 @@
-
-set(_compiler_id_pp_test "defined(_CRAYC)")
-
-set(_compiler_id_version_compute "
-# define @PREFIX@COMPILER_VERSION_MAJOR @MACRO_DEC@(_RELEASE_MAJOR)
-# define @PREFIX@COMPILER_VERSION_MINOR @MACRO_DEC@(_RELEASE_MINOR)")
+version https://git-lfs.github.com/spec/v1
+oid sha256:4f5900fb5ab3d540b1353ac5ead8aabb9eef8a02eafeb728e41983c78bd42553
+size 219

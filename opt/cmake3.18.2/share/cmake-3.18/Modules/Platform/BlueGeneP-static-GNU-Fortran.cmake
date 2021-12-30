@@ -1,5 +1,3 @@
-# Distributed under the OSI-approved BSD 3-Clause License.  See accompanying
-# file Copyright.txt or https://cmake.org/licensing for details.
-
-
-__BlueGeneP_set_static_flags(GNU Fortran)
+version https://git-lfs.github.com/spec/v1
+oid sha256:4340e0888d69c5cc6140b23685908373354cc386134e74d0bfc8a6042438b085
+size 186

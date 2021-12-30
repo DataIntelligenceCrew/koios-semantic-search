@@ -1,16 +1,3 @@
-# Distributed under the OSI-approved BSD 3-Clause License.  See accompanying
-# file Copyright.txt or https://cmake.org/licensing for details.
-
-set(CMAKE_Swift_COMPILER "@CMAKE_Swift_COMPILER@")
-set(CMAKE_Swift_COMPILER_ID "@CMAKE_Swift_COMPILER_ID@")
-set(CMAKE_Swift_COMPILER_VERSION "@CMAKE_Swift_COMPILER_VERSION@")
-
-set(CMAKE_Swift_COMPILER_LOADED 1)
-set(CMAKE_Swift_COMPILER_WORKS "@CMAKE_Swift_COMPILER_WORKS@")
-
-set(CMAKE_Swift_COMPILER_ENV_VAR "SWIFTC")
-
-set(CMAKE_Swift_COMPILER_ID_RUN 1)
-set(CMAKE_Swift_SOURCE_FILE_EXTENSIONS swift)
-
-set(CMAKE_Swift_IMPLICIT_INCLUDE_DIRECTORIES "@CMAKE_Swift_IMPLICIT_INCLUDE_DIRECTORIES@")
+version https://git-lfs.github.com/spec/v1
+oid sha256:52b8b542ab3a2ff7eef8a3649d6eb271b13d3706acdd5e238e4a0978fdea3a7c
+size 635

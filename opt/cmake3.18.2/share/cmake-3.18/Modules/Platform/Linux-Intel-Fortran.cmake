@@ -1,4 +1,3 @@
-include(Platform/Linux-Intel)
-__linux_compiler_intel(Fortran)
-string(APPEND CMAKE_SHARED_LIBRARY_CREATE_Fortran_FLAGS " -nofor_main")
-set(CMAKE_SHARED_LIBRARY_LINK_Fortran_FLAGS "")
+version https://git-lfs.github.com/spec/v1
+oid sha256:193ffa2cf86f7cde2102788a32952aec6650ba18523274c5df2ff28e87d6be69
+size 182

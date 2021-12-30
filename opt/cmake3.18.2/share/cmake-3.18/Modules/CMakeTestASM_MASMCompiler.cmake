@@ -1,13 +1,3 @@
-# Distributed under the OSI-approved BSD 3-Clause License.  See accompanying
-# file Copyright.txt or https://cmake.org/licensing for details.
-
-
-# This file is used by EnableLanguage in cmGlobalGenerator to
-# determine that the selected ASM_MASM "compiler" (should be masm or masm64)
-# works. For assembler this can only check whether the compiler has been found,
-# because otherwise there would have to be a separate assembler source file
-# for each assembler on every architecture.
-
-set(ASM_DIALECT "_MASM")
-include(CMakeTestASMCompiler)
-set(ASM_DIALECT)
+version https://git-lfs.github.com/spec/v1
+oid sha256:12ffee4ba1ad60dffc8d188c81291c3299bdbf1f59b5a87baaf160ee73f8132c
+size 556

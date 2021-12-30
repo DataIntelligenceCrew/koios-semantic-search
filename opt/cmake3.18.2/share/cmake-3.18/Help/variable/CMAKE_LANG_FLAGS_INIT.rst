@@ -1,15 +1,3 @@
-CMAKE_<LANG>_FLAGS_INIT
------------------------
-
-Value used to initialize the :variable:`CMAKE_<LANG>_FLAGS` cache entry
-the first time a build tree is configured for language ``<LANG>``.
-This variable is meant to be set by a :variable:`toolchain file
-<CMAKE_TOOLCHAIN_FILE>`.  CMake may prepend or append content to
-the value based on the environment and target platform.  For example,
-the contents of a ``xxxFLAGS`` environment variable will be prepended,
-where ``xxx`` will be language-specific but not necessarily the same as
-``<LANG>`` (e.g. :envvar:`CXXFLAGS` for ``CXX``, :envvar:`FFLAGS` for
-``Fortran``, and so on).
-
-See also the configuration-specific
-:variable:`CMAKE_<LANG>_FLAGS_<CONFIG>_INIT` variable.
+version https://git-lfs.github.com/spec/v1
+oid sha256:b5b0418076542734bfae2b4175ab170888d88b9c7548a3d1ca9ba3683623767e
+size 717

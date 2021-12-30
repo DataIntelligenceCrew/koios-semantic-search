@@ -1,15 +1,3 @@
-# Distributed under the OSI-approved BSD 3-Clause License.  See accompanying
-# file Copyright.txt or https://cmake.org/licensing for details.
-
-
-# This module is shared by multiple languages; use include blocker.
-if(__AIX_COMPILER_XLCLANG)
-  return()
-endif()
-set(__AIX_COMPILER_XLCLANG 1)
-
-include(Platform/AIX-XL)
-
-macro(__aix_compiler_xlclang lang)
-  __aix_compiler_xl(${lang})
-endmacro()
+version https://git-lfs.github.com/spec/v1
+oid sha256:f8609f5db94c4132a5c4fd25cb2011ef5ce0ffd90a7905a6fad00c33b22ef595
+size 390

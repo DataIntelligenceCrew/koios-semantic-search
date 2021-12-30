@@ -1,7 +1,3 @@
-# Distributed under the OSI-approved BSD 3-Clause License.  See accompanying
-# file Copyright.txt or https://cmake.org/licensing for details.
-
-
-set (CMAKE_MAKE_PROGRAM "jom" CACHE STRING
-     "Program used to build from makefiles.")
-mark_as_advanced(CMAKE_MAKE_PROGRAM)
+version https://git-lfs.github.com/spec/v1
+oid sha256:df632cf3544798bc39d6b470faae054807787a92d263f42d1ca48e0009f69dbf
+size 270

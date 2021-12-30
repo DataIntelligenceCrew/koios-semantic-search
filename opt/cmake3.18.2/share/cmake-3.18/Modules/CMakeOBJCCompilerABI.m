@@ -1,20 +1,3 @@
-#ifdef __cplusplus
-# error "A C++ compiler has been selected for Objective-C."
-#endif
-
-/*--------------------------------------------------------------------------*/
-
-#include "CMakeCompilerABI.h"
-
-/*--------------------------------------------------------------------------*/
-
-int main(int argc, char *argv[])
-{
-  int require = 0;
-  require += info_sizeof_dptr[argc];
-#if defined(ABI_ID)
-  require += info_abi[argc];
-#endif
-  (void)argv;
-  return require;
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:93721309d10514db5e8726318bad656357e6712562ed49f58f11da30ad24b070
+size 459

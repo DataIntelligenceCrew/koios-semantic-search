@@ -1,13 +1,3 @@
-CMAKE_INSTALL_RPATH_USE_LINK_PATH
----------------------------------
-
-Add paths to linker search and installed rpath.
-
-``CMAKE_INSTALL_RPATH_USE_LINK_PATH`` is a boolean that if set to ``True``
-will append to the runtime search path (rpath) of installed binaries
-any directories outside the project that are in the linker search path or
-contain linked library files.  The directories are appended after the
-value of the :prop_tgt:`INSTALL_RPATH` target property.
-
-This variable is used to initialize the target property
-:prop_tgt:`INSTALL_RPATH_USE_LINK_PATH` for all targets.
+version https://git-lfs.github.com/spec/v1
+oid sha256:5410f2e6b7a54c0f7b3791dee5f901a257efb6bceee10e551a5a79ce9510c161
+size 576

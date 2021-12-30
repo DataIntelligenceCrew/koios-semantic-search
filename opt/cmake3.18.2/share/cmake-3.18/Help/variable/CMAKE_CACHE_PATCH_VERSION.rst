@@ -1,8 +1,3 @@
-CMAKE_CACHE_PATCH_VERSION
--------------------------
-
-Patch version of CMake used to create the ``CMakeCache.txt`` file
-
-This stores the patch version of CMake used to write a CMake cache
-file.  It is only different when a different version of CMake is run
-on a previously created cache file.
+version https://git-lfs.github.com/spec/v1
+oid sha256:e7579e1e575d677d77712afc6a275d4d1801002f7f14f5be6424e12f12939e20
+size 292

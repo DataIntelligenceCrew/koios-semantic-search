@@ -1,16 +1,3 @@
-CMAKE_AUTOUIC_OPTIONS
----------------------
-
-Additional options for ``uic`` when using :variable:`CMAKE_AUTOUIC`.
-
-This variable is used to initialize the :prop_tgt:`AUTOUIC_OPTIONS` property on
-all the targets.  See that target property for additional information.
-
-EXAMPLE
-^^^^^^^
-
-.. code-block:: cmake
-
-  # ...
-  set_property(CMAKE_AUTOUIC_OPTIONS "--no-protection")
-  # ...
+version https://git-lfs.github.com/spec/v1
+oid sha256:ce4ee75d575fc523dd241fde467e1bbdef186ba50843e4e9295719ae9a8d814a
+size 379

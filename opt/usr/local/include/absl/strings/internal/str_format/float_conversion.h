@@ -1,23 +1,3 @@
-#ifndef ABSL_STRINGS_INTERNAL_STR_FORMAT_FLOAT_CONVERSION_H_
-#define ABSL_STRINGS_INTERNAL_STR_FORMAT_FLOAT_CONVERSION_H_
-
-#include "absl/strings/internal/str_format/extension.h"
-
-namespace absl {
-ABSL_NAMESPACE_BEGIN
-namespace str_format_internal {
-
-bool ConvertFloatImpl(float v, const FormatConversionSpecImpl &conv,
-                      FormatSinkImpl *sink);
-
-bool ConvertFloatImpl(double v, const FormatConversionSpecImpl &conv,
-                      FormatSinkImpl *sink);
-
-bool ConvertFloatImpl(long double v, const FormatConversionSpecImpl &conv,
-                      FormatSinkImpl *sink);
-
-}  // namespace str_format_internal
-ABSL_NAMESPACE_END
-}  // namespace absl
-
-#endif  // ABSL_STRINGS_INTERNAL_STR_FORMAT_FLOAT_CONVERSION_H_
+version https://git-lfs.github.com/spec/v1
+oid sha256:1350f4ca972937c1504526d2fe0b098acde07572a5d8a87beb70c7307f0d05c2
+size 744

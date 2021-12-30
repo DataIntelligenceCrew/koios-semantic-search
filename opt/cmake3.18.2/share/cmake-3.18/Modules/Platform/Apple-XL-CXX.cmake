@@ -1,7 +1,3 @@
-set(CMAKE_SHARED_MODULE_CREATE_CXX_FLAGS "-bundle")
-
-# Enable shared library versioning.
-set(CMAKE_SHARED_LIBRARY_SONAME_CXX_FLAG "-Wl,-install_name")
-
-# -qhalt=e       = Halt on error messages (rather than just severe errors)
-string(APPEND CMAKE_C_FLAGS_INIT " -qhalt=e")
+version https://git-lfs.github.com/spec/v1
+oid sha256:bea277251fc13396824ae5a8d7e45739bbc00f0c2873d46d24b9934ff70fc98a
+size 273

@@ -1,13 +1,3 @@
-# This file is loaded when gcc/g++ is used for assembler files (the "ASM" cmake language)
-include(Compiler/GNU)
-
-set(CMAKE_ASM_SOURCE_FILE_EXTENSIONS s;S;asm)
-
-__compiler_gnu(ASM)
-
-if(CMAKE_ASM${ASM_DIALECT}_COMPILER_ID_VENDOR_MATCH STREQUAL "GNU assembler")
-  set(CMAKE_DEPFILE_FLAGS_ASM${ASM_DIALECT} "--MD <DEPFILE>")
-  set(CMAKE_ASM${ASM_DIALECT}_LINK_EXECUTABLE
-    "<CMAKE_LINKER> <FLAGS> <CMAKE_ASM${ASM_DIALECT}_LINK_FLAGS> <LINK_FLAGS> <OBJECTS> -o <TARGET> <LINK_LIBRARIES>")
-  set(CMAKE_ASM_DEFINE_FLAG "--defsym ")
-endif()
+version https://git-lfs.github.com/spec/v1
+oid sha256:162b6837a1b38d66bbe7eedd2ed96c21673249ce8e4a223ac418658d7bc5e683
+size 535

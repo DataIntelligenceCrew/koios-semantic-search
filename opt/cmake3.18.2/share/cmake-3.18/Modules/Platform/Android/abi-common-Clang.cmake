@@ -1,6 +1,3 @@
-string(APPEND _ANDROID_ABI_INIT_CFLAGS
-  #" -Wno-invalid-command-line-argument"
-  #" -Wno-unused-command-line-argument"
-  )
-
-include(Platform/Android/abi-common)
+version https://git-lfs.github.com/spec/v1
+oid sha256:9dc8bce375f70ad3a5c8e744bbfede4bc12ad7f92ffba2700a814528310d8788
+size 162

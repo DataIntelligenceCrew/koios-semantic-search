@@ -1,13 +1,3 @@
-# Distributed under the OSI-approved BSD 3-Clause License.  See accompanying
-# file Copyright.txt or https://cmake.org/licensing for details.
-
-
-# This file is used by EnableLanguage in cmGlobalGenerator to
-# determine that the selected RC compiler can actually compile
-# and link the most basic of programs.   If not, a fatal error
-# is set and cmake stops processing commands and will not generate
-# any makefiles or projects.
-
-# For now there is no way to do a try compile on just a .rc file
-# so just do nothing in here.
-set(CMAKE_RC_COMPILER_WORKS 1 CACHE INTERNAL "")
+version https://git-lfs.github.com/spec/v1
+oid sha256:3f6eba515425778d8fa61db98caa9a86931623cbc52475b5e730f7f0db258560
+size 573

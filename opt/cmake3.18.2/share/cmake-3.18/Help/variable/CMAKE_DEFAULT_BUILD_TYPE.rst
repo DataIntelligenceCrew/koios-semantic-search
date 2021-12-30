@@ -1,12 +1,3 @@
-CMAKE_DEFAULT_BUILD_TYPE
-------------------------
-
-Specifies the configuration to use by default in a ``build.ninja`` file in the
-:generator:`Ninja Multi-Config` generator. If this variable is specified,
-``build.ninja`` uses build rules from ``build-<Config>.ninja`` by default. All
-custom commands are executed with this configuration. If the variable is not
-specified, the first item from :variable:`CMAKE_CONFIGURATION_TYPES` is used
-instead.
-
-The value of this variable must be one of the items from
-:variable:`CMAKE_CONFIGURATION_TYPES`.
+version https://git-lfs.github.com/spec/v1
+oid sha256:037daa7a5b1a43b1973cf6340be8cc4399be8792171a880e4696a99b968cfd94
+size 543

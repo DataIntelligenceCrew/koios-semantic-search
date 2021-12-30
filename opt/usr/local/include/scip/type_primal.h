@@ -1,36 +1,3 @@
-/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
-/*                                                                           */
-/*                  This file is part of the program and library             */
-/*         SCIP --- Solving Constraint Integer Programs                      */
-/*                                                                           */
-/*    Copyright (C) 2002-2020 Konrad-Zuse-Zentrum                            */
-/*                            fuer Informationstechnik Berlin                */
-/*                                                                           */
-/*  SCIP is distributed under the terms of the ZIB Academic License.         */
-/*                                                                           */
-/*  You should have received a copy of the ZIB Academic License              */
-/*  along with SCIP; see the file COPYING. If not visit scipopt.org.         */
-/*                                                                           */
-/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
-
-/**@file   type_primal.h
- * @brief  type definitions for collecting primal CIP solutions and primal informations
- * @author Tobias Achterberg
- */
-
-/*---+----1----+----2----+----3----+----4----+----5----+----6----+----7----+----8----+----9----+----0----+----1----+----2*/
-
-#ifndef __SCIP_TYPE_PRIMAL_H__
-#define __SCIP_TYPE_PRIMAL_H__
-
-#ifdef __cplusplus
-extern "C" {
-#endif
-
-typedef struct SCIP_Primal SCIP_PRIMAL;           /**< primal data */
-
-#ifdef __cplusplus
-}
-#endif
-
-#endif
+version https://git-lfs.github.com/spec/v1
+oid sha256:10eb0fa630fd01196a45ed603ba0abe76497f5c15b276ee9144937ff68d7b3df
+size 1603

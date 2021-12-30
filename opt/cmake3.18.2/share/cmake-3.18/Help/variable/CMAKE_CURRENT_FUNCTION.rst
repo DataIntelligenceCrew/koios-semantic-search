@@ -1,10 +1,3 @@
-CMAKE_CURRENT_FUNCTION
-----------------------
-
-When executing code inside a :command:`function`, this variable
-contains the name of the current function.  It can be useful for
-diagnostic or debug messages.
-
-See also :variable:`CMAKE_CURRENT_FUNCTION_LIST_DIR`,
-:variable:`CMAKE_CURRENT_FUNCTION_LIST_FILE` and
-:variable:`CMAKE_CURRENT_FUNCTION_LIST_LINE`.
+version https://git-lfs.github.com/spec/v1
+oid sha256:6304342140f970bc652c0414230a6e65cae9bbc1209345e3f321a061fe23744c
+size 356

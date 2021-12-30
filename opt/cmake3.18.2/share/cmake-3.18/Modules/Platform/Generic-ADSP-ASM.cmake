@@ -1,7 +1,3 @@
-include(Platform/Generic-ADSP-Common)
-
-set(CMAKE_ASM_SOURCE_FILE_EXTENSIONS asm)
-set(CMAKE_ASM_OUTPUT_EXTENSION ".doj" )
-set(CMAKE_ASM_COMPILE_OBJECT
-    "<CMAKE_ASM_COMPILER> <INCLUDES> <FLAGS> -proc ${ADSP_PROCESSOR} -si-revision ${ADSP_PROCESSOR_SILICIUM_REVISION} -o <OBJECT> <SOURCE>")
-
+version https://git-lfs.github.com/spec/v1
+oid sha256:bf9dc8c0eec90f4362b476c2015baf6db8c206ceca0d2653cb6a00853b5d1c01
+size 292

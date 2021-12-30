@@ -1,30 +1,3 @@
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */
-
-// Copyright 2004-present Facebook. All Rights Reserved.
-// -*- c -*-
-
-#ifndef FAISS_GPU_INDEX_C_H
-#define FAISS_GPU_INDEX_C_H
-
-#include "faiss_c.h"
-
-#ifdef __cplusplus
-extern "C" {
-#endif
-
-FAISS_DECLARE_CLASS(GpuIndexConfig)
-
-FAISS_DECLARE_GETTER(GpuIndexConfig, int, device)
-
-FAISS_DECLARE_CLASS_INHERITED(GpuIndex, Index)
-
-#ifdef __cplusplus
-}
-#endif
-
-#endif
+version https://git-lfs.github.com/spec/v1
+oid sha256:54f4d7a6fa91f5e22351c9a651b33763860c9f29251f443d0e4cc725a4287144
+size 552

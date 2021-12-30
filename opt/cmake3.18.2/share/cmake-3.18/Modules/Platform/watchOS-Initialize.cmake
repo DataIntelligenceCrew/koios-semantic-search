@@ -1,7 +1,3 @@
-include(Platform/Darwin-Initialize)
-
-if(NOT _CMAKE_OSX_SYSROOT_PATH MATCHES "/Watch(OS|Simulator)")
-  message(FATAL_ERROR "${CMAKE_OSX_SYSROOT} is not an watchOS SDK")
-endif()
-
-set(_CMAKE_FEATURE_DETECTION_TARGET_TYPE STATIC_LIBRARY)
+version https://git-lfs.github.com/spec/v1
+oid sha256:1b98a5d875ec0a7b16b357486efc03a316f5efe22b60991410feb43558fdac37
+size 234

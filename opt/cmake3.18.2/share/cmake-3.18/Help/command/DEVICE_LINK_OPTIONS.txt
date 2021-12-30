@@ -1,11 +1,3 @@
-
-When a device link step is involved, which is controlled by
-:prop_tgt:`CUDA_SEPARABLE_COMPILATION` and
-:prop_tgt:`CUDA_RESOLVE_DEVICE_SYMBOLS` properties and policy :policy:`CMP0105`,
-the raw options will be delivered to the host and device link steps (wrapped in
-``-Xcompiler`` or equivalent for device link). Options wrapped with
-``$<DEVICE_LINK:...>``
-:manual:`generator expression <cmake-generator-expressions(7)>` will be used
-only for the device link step. Options wrapped with ``$<HOST_LINK:...>``
-:manual:`generator expression <cmake-generator-expressions(7)>` will be used
-only for the host link step.
+version https://git-lfs.github.com/spec/v1
+oid sha256:f2ad0b2e74b4ef2326be3cf7043dbbeba0c64659abf68187bf5a32fc9859f8de
+size 612

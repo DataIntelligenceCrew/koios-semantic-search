@@ -1,20 +1,3 @@
-#include <mpi.h>
-
-#ifdef __cplusplus
-#  include <cstdio>
-#else
-#  include <stdio.h>
-#endif
-
-int main(int argc, char* argv[])
-{
-  char mpilibver_str[MPI_MAX_LIBRARY_VERSION_STRING];
-  int mpilibver_len;
-  MPI_Get_library_version(mpilibver_str, &mpilibver_len);
-#ifdef __cplusplus
-  std::puts(mpilibver_str);
-#else
-  puts(mpilibver_str);
-#endif
-  return 0;
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:da59c3e3c752d9513d493359b41addbc6d645c34e2a16c2173106f4a111fa224
+size 357

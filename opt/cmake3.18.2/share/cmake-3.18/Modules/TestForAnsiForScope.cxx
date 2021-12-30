@@ -1,8 +1,3 @@
-int main(int, char* [])
-{
-  int i;
-  for (int i = 0; i < 1; ++i)
-    ;
-  (void)i;
-  return 0;
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:71cbdccda3409a752d3023b4831cf7218f72df4654c4a61c89542bafc3e45270
+size 96

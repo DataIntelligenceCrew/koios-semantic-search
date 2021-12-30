@@ -1,7 +1,3 @@
-CMAKE_<LANG>_OUTPUT_EXTENSION
------------------------------
-
-Extension for the output of a compile for a single file.
-
-This is the extension for an object file for the given ``<LANG>``.  For
-example ``.obj`` for C on Windows.
+version https://git-lfs.github.com/spec/v1
+oid sha256:2bbb585a2c4eb54011f99ee338494234cad6057a559b1419db22e5e7ce016a54
+size 226

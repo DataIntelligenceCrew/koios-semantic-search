@@ -1,7 +1,3 @@
-CMAKE_Fortran_MODOUT_FLAG
--------------------------
-
-Fortran flag to enable module output.
-
-Most Fortran compilers write ``.mod`` files out by default.  For others,
-this stores the flag needed to enable module output.
+version https://git-lfs.github.com/spec/v1
+oid sha256:fc9d28f6deda688a2d7fc1e218ad4f332aaeb0dbea50bd1b40b0b534c8385ede
+size 218

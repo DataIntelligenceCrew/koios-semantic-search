@@ -1,9 +1,3 @@
-set(_compiler_id_pp_test "defined(__ghs__)")
-
-set(_compiler_id_version_compute "
-/* __GHS_VERSION_NUMBER = VVVVRP */
-# ifdef __GHS_VERSION_NUMBER
-# define @PREFIX@COMPILER_VERSION_MAJOR @MACRO_DEC@(__GHS_VERSION_NUMBER / 100)
-# define @PREFIX@COMPILER_VERSION_MINOR @MACRO_DEC@(__GHS_VERSION_NUMBER / 10 % 10)
-# define @PREFIX@COMPILER_VERSION_PATCH @MACRO_DEC@(__GHS_VERSION_NUMBER      % 10)
-# endif")
+version https://git-lfs.github.com/spec/v1
+oid sha256:18f8b5082121fc69005ea2f324111faa6bbe7625a432969fb77c90643f067045
+size 404

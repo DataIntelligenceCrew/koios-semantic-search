@@ -1,4 +1,3 @@
-include(Platform/Apple-GNU)
-__apple_compiler_gnu(OBJCXX)
-cmake_gnu_set_sysroot_flag(OBJCXX)
-cmake_gnu_set_osx_deployment_target_flag(OBJCXX)
+version https://git-lfs.github.com/spec/v1
+oid sha256:f584daf56c47a8130a7eb8174b45fde6f8ab95914cd27a500b2236cc63fd9032
+size 141

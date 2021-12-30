@@ -1,24 +1,3 @@
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */
-
-#pragma once
-
-namespace faiss { namespace gpu {
-
-template <typename T>
-inline __device__ void swap(bool swap, T& x, T& y) {
-  T tmp = x;
-  x = swap ? y : x;
-  y = swap ? tmp : y;
-}
-
-template <typename T>
-inline __device__ void assign(bool assign, T& x, T y) {
-  x = assign ? y : x;
-}
-
-} } // namespace
+version https://git-lfs.github.com/spec/v1
+oid sha256:97ee07cf4a22175f6af45a3622c206a1129f069d2c7e14e3ef7a1f100982ba94
+size 492

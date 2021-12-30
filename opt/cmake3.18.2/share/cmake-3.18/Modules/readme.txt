@@ -1,4 +1,3 @@
-See the "Find Modules" section of the cmake-developer(7) manual page.
-
-For more information about how to contribute modules to CMake, see this page:
-https://gitlab.kitware.com/cmake/community/-/wikis/doc/cmake/dev/Module-Maintainers
+version https://git-lfs.github.com/spec/v1
+oid sha256:bfbf61fb99ee4d9dead1fa16f6829f5275a1383ca88e207368a127cf273d3a54
+size 233

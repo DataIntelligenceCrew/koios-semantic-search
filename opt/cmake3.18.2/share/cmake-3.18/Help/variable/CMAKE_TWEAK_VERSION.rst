@@ -1,11 +1,3 @@
-CMAKE_TWEAK_VERSION
--------------------
-
-Defined to ``0`` for compatibility with code written for older
-CMake versions that may have defined higher values.
-
-.. note::
-
-  In CMake versions 2.8.2 through 2.8.12, this variable holds
-  the fourth version number component of the
-  :variable:`CMAKE_VERSION` variable.
+version https://git-lfs.github.com/spec/v1
+oid sha256:6a2d77218f12b39017c1bf15cecef98816dd4533d4f90bc0f92f4a68cc67e60f
+size 313

@@ -1,7 +1,3 @@
-CMAKE_ANDROID_NDK
------------------
-
-When :ref:`Cross Compiling for Android with the NDK`, this variable holds
-the absolute path to the root directory of the NDK.  The directory must
-contain a ``platforms`` subdirectory holding the ``android-<api>``
-directories.
+version https://git-lfs.github.com/spec/v1
+oid sha256:9155c51900093ccd411820155911063395339bdecafd26a3cdaab96b97cd3a9c
+size 263

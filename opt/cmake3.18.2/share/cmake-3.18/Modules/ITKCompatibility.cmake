@@ -1,7 +1,3 @@
-# Distributed under the OSI-approved BSD 3-Clause License.  See accompanying
-# file Copyright.txt or https://cmake.org/licensing for details.
-
-
-# work around an old bug in ITK prior to version 3.0
-set(TIFF_RIGHT_VERSION 1)
-
+version https://git-lfs.github.com/spec/v1
+oid sha256:d0495644585d0ccdf5fe9057116816d937943ccb10a6f34a86323cea8374c03a
+size 224

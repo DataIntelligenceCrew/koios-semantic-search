@@ -1,11 +1,3 @@
-CMAKE_CUDA_EXTENSIONS
----------------------
-
-Default value for :prop_tgt:`CUDA_EXTENSIONS` property of targets.
-
-This variable is used to initialize the :prop_tgt:`CUDA_EXTENSIONS`
-property on all targets.  See that target property for additional
-information.
-
-See the :manual:`cmake-compile-features(7)` manual for information on
-compile features and a list of supported compilers.
+version https://git-lfs.github.com/spec/v1
+oid sha256:2caeab40a8951068cd539975d23015530cea98234d21aa28f1f7e7aeb1ea66e1
+size 383

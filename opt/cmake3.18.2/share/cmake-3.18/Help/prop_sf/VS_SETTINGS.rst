@@ -1,18 +1,3 @@
-VS_SETTINGS
------------
-
-Set any item metadata on a non-built file.
-
-Takes a list of ``Key=Value`` pairs. Tells the Visual Studio generator to set
-``Key`` to ``Value`` as item metadata on the file.
-
-For example:
-
-.. code-block:: cmake
-
-  set_property(SOURCE file.hlsl PROPERTY VS_SETTINGS "Key=Value" "Key2=Value2")
-
-will set ``Key`` to ``Value`` and ``Key2`` to ``Value2`` on the
-``file.hlsl`` item as metadata.
-
-:manual:`Generator expressions <cmake-generator-expressions(7)>` are supported.
+version https://git-lfs.github.com/spec/v1
+oid sha256:e78c52f294ba5ce8aaa3c5dc2f25a97986175f6fea72795c4d675b0b8bc6ed78
+size 494

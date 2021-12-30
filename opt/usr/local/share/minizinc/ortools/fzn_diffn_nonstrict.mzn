@@ -1,10 +1,3 @@
-%-----------------------------------------------------------------------------%
-% diffn: constrains rectangles, given by their origins and sizes, to be
-% non-overlapping
-%-----------------------------------------------------------------------------%
-
-predicate fzn_diffn_nonstrict(array[int] of var int: x,
-                              array[int] of var int: y,
-                              array[int] of var int: dx,
-                              array[int] of var int: dy);
-
+version https://git-lfs.github.com/spec/v1
+oid sha256:76efdb87eeb8765708afc670270c6cd7f9e06d267473f0923556d03a61ec5d83
+size 479

@@ -1,5 +1,3 @@
-# Distributed under the OSI-approved BSD 3-Clause License.  See accompanying
-# file Copyright.txt or https://cmake.org/licensing for details.
-
-
-__BlueGeneP_set_dynamic_flags(XL Fortran)
+version https://git-lfs.github.com/spec/v1
+oid sha256:f77b2a141edf373ed17d0d13a50bd872c255e581e2a1a1a0335f67e6e54b2132
+size 186

@@ -1,8 +1,3 @@
-# Distributed under the OSI-approved BSD 3-Clause License.  See accompanying
-# file Copyright.txt or https://cmake.org/licensing for details.
-
-
-__BlueGeneQ_setup_dynamic(XL CXX)
-
-# -qhalt=s       = Halt on severe error messages
-string(APPEND CMAKE_CXX_FLAGS_INIT " -qhalt=s")
+version https://git-lfs.github.com/spec/v1
+oid sha256:5b117329e43c554f4d9128e53a8fb3846b05b3bdede24776d7843af8fd770916
+size 276

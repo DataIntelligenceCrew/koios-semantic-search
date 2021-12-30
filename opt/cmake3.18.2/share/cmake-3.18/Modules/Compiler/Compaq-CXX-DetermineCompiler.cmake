@@ -1,8 +1,3 @@
-
-set(_compiler_id_pp_test "defined(__DECCXX)")
-
-set(_compiler_id_version_compute "
-  /* __DECCXX_VER = VVRRTPPPP */
-# define @PREFIX@COMPILER_VERSION_MAJOR @MACRO_DEC@(__DECCXX_VER/10000000)
-# define @PREFIX@COMPILER_VERSION_MINOR @MACRO_DEC@(__DECCXX_VER/100000  % 100)
-# define @PREFIX@COMPILER_VERSION_PATCH @MACRO_DEC@(__DECCXX_VER         % 10000)")
+version https://git-lfs.github.com/spec/v1
+oid sha256:d9357d0264fcdce405f633901f6d7a394433d8b75a6b053bc1ba294b0933919e
+size 355

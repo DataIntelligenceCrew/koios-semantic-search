@@ -1,8 +1,3 @@
-
-set(_compiler_id_pp_test "defined(__HP_cc)")
-
-set(_compiler_id_version_compute "
-  /* __HP_cc = VVRRPP */
-# define @PREFIX@COMPILER_VERSION_MAJOR @MACRO_DEC@(__HP_cc/10000)
-# define @PREFIX@COMPILER_VERSION_MINOR @MACRO_DEC@(__HP_cc/100 % 100)
-# define @PREFIX@COMPILER_VERSION_PATCH @MACRO_DEC@(__HP_cc     % 100)")
+version https://git-lfs.github.com/spec/v1
+oid sha256:926b28ec5b4ed6c2cc460880512fa3c637c184a843beb72134270acd5089604f
+size 318

@@ -1,31 +1,3 @@
-// Copyright 2018 The Abseil Authors.
-//
-// Licensed under the Apache License, Version 2.0 (the "License");
-// you may not use this file except in compliance with the License.
-// You may obtain a copy of the License at
-//
-//      https://www.apache.org/licenses/LICENSE-2.0
-//
-// Unless required by applicable law or agreed to in writing, software
-// distributed under the License is distributed on an "AS IS" BASIS,
-// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-// See the License for the specific language governing permissions and
-// limitations under the License.
-
-#include <chrono>
-#include <cstdint>
-
-namespace absl {
-ABSL_NAMESPACE_BEGIN
-namespace time_internal {
-
-static int64_t GetCurrentTimeNanosFromSystem() {
-  return std::chrono::duration_cast<std::chrono::nanoseconds>(
-             std::chrono::system_clock::now() -
-             std::chrono::system_clock::from_time_t(0))
-      .count();
-}
-
-}  // namespace time_internal
-ABSL_NAMESPACE_END
-}  // namespace absl
+version https://git-lfs.github.com/spec/v1
+oid sha256:41235caf1f0c0c65d97c91a65eb636d42894afc6742daa98ee14db8065066706
+size 1007

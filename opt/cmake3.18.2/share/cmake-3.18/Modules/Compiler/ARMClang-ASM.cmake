@@ -1,9 +1,3 @@
-include(Compiler/ARMClang)
-
-set(CMAKE_ASM_OUTPUT_EXTENSION ".o")
-set(CMAKE_ASM_OUTPUT_EXTENSION_REPLACE 1)
-
-set(CMAKE_ASM_COMPILE_OBJECT       "<CMAKE_ASM_COMPILER> <INCLUDES> <FLAGS> -c -o <OBJECT> <SOURCE>")
-set(CMAKE_ASM_SOURCE_FILE_EXTENSIONS S;s;asm;msa)
-
-__compiler_armclang(ASM)
+version https://git-lfs.github.com/spec/v1
+oid sha256:e817a4a9749324e91c936d115ab9f66bb93add86ad74c49ee3554f0433713778
+size 286
