@@ -1,4 +1,7 @@
-# koios-semantic-search
+# Koios : Top-k Table Join Search using Semantic Overlap
+ 
+ Code for Koios  : Main-baseline.cpp
+ Code for Koios+ : Main-clean.cpp 
 
 ## Dependencies
 
@@ -7,27 +10,11 @@ Cmake version 3.18 (version important):
 	-If having older version installed:
 		apt remove --purge --auto-remove cmake
 
-	-Then:
-		mkdir ~/temp
-		cd ~/temp
-		wget https://cmake.org/files/v3.18/cmake-3.18.2.tar.gz
-		tar -xzvf cmake-3.18.2.tar.gz
-		cd cmake-3.18.2/
-		./bootstrap
-		make -j$(nproc)
-		sudo make install
-
-Openmp:
-
-	apt-get install libomp-dev
-
-Blas and Lapack:
-
-	apt-get install libblas-dev liblapack-dev
-
-Swig:
-
-	apt-get install -y swig
+Setting up:
+	- run source bashrc
+	- . /opt/intel/oneapi/setvars.sh --config=intel.config
+	- make 
+	- Note update Makefile to change from Koios to Koios+
 
 Faiss index by Facebook:
 
