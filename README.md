@@ -11,13 +11,7 @@ Cmake version 3.18 (version important):
 	-If having older version installed:
 		apt remove --purge --auto-remove cmake
 
-Setting up:
 
-
-	- run source bashrc
-	- . /opt/intel/oneapi/setvars.sh --config=intel.config
-	- make 
-	- Note update Makefile to change from Koios to Koios+
 
 Faiss index by Facebook:
 
@@ -29,4 +23,17 @@ Sqlite3:
 
 	apt-get install sqlite3 libsqlite3-dev
 
+FastText:
+
+	- Use thee following API to generate the FastTextDB https://github.com/ekzhu/go-fasttext
+
 Warning: do not change Makefile flag orders [!!!]
+
+Setting up:
+
+
+	- run source bashrc
+	- . /opt/intel/oneapi/setvars.sh --config=intel.config
+	- set the variable **setloc** in the cpp file to the data lake location
+	- make 
+	- Note update Makefile to change from Koios to Koios+
