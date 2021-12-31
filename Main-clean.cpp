@@ -1393,20 +1393,6 @@ int main(int argc, char const *argv[]){
 		writeto = argv[2];
 	}
 	if (argc > 3) {
-		if (stoi(argv[3]) == 1){
-			isCost = true;
-		} else {
-			isCost = false;
-		}
-	}
-	if (argc > 4) {
-		if (stoi(argv[4]) == 1){
-			isStrict = true;
-		} else {
-			isStrict = false;
-		}
-	}
-	if (argc > 5) {
 		alpha = stod(argv[5]);
 	}
 
