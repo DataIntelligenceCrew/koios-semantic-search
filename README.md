@@ -25,7 +25,7 @@ Sqlite3:
 
 FastText:
 
-	- Use thee following API to generate the FastTextDB https://github.com/ekzhu/go-fasttext
+	- Use the following API to generate the FastTextDB https://github.com/ekzhu/go-fasttext
 
 Warning: do not change Makefile flag orders [!!!]
 
