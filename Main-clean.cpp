@@ -1345,6 +1345,16 @@ void algorithm(Environment *env, Database *ftdb, FaissIndexGpu *faissindex, stri
 	postlapsed = postend - poststart;
 	postprocessing_time = postlapsed.count();
 
+	while (tkUB.size() > 0) {
+		// cout.precision(17);
+		// cout << env->getSetName(tkUB.begin()->second) << " : " << tkUB.begin()->first << endl;
+		std::pair<double, int> tkUB_set = *(tkUB.begin());
+		global_gmt->lock();
+		finalresults->insert(tkUB_set);
+		global_gmt->unlock();
+		tkUB.erase(tkUB.begin());
+	}
+
 	global_gmt->lock();
 	*global_considered += considered;
 	*global_upperpruned += upperpruned;
@@ -1376,11 +1386,12 @@ int main(int argc, char const *argv[]){
 	string writeto = "./tempp/";
 	string writetok = "./resultsk/";
 	int number_of_partitions = 10;
-	int k = 10;
+	int k = 14;
 	vector<string> queries;
-	double alpha = 0.75;
+	double alpha = 0.8;
 	bool isCost = false;
 	bool isStrict = false;
+	bool pure_overlap = false;
 	std::chrono::time_point<std::chrono::high_resolution_clock> start, end; 
 	std::chrono::duration<double> elapsed;
 
@@ -1393,7 +1404,7 @@ int main(int argc, char const *argv[]){
 		writeto = argv[2];
 	}
 	if (argc > 3) {
-		alpha = stod(argv[5]);
+		alpha = stod(argv[3]);
 	}
 
 	double faissindextime= 0.0;
@@ -1509,6 +1520,84 @@ int main(int argc, char const *argv[]){
 			parallel_algo_pool.at(j).get();
 		}
 		// post results
+		cout << "Final Results" << endl;
+		double k_th_score = 0.0;
+		int query_idx = env->getSetId(path); // get setID for the query
+		std::set<int> query_tokens = sets[query_idx];
+		if (pure_overlap) {
+			auto final_rit = final_results.begin();
+			int counter = 0;
+			cout << "Semantic Overlap" << endl;
+			std::mutex p_mtx;
+			double etm = 0.0;
+			std::unordered_map<size_t, double> validedge;
+			std::set<pair<double, int>, cmp_increasing> tkLB; // Top-K LB
+			while (counter < k && final_rit != final_results.end()) {
+				int target_set = final_rit->second;
+				set<int> qset = (*(sets.find(query_idx))).second;
+				set<int> tset = (*(sets.find(target_set))).second;
+				// pair<double, vector<pair<pair<int, int>, double>>> data = thread_helper_nocache2(qset, tset, validedge, &tkLB, &p_mtx, &etm, env);
+				// double sim = data.first;
+				double sim = thread_helper_nocache(qset, tset, validedge, &tkLB, &p_mtx, &etm);
+				cout << env->getSetName(target_set) << " : " << fixed << sim << endl;
+				counter++;
+				final_rit++;
+			}
+			int counter2 = 0;
+			auto final_rit2 = final_results.begin();
+			cout << "Pure Overlap" << endl;
+			while (counter2 < k && final_rit2 != final_results.end()) {
+				int set_id = final_rit2->second;
+				double sim = final_rit2->first;
+				cout << env->getSetName(set_id) << " : " << sim << endl;
+				counter2++;
+				if (counter2 == k) {
+					k_th_score = sim;
+				}
+				final_rit2++;
+			}
+		} else {
+			auto final_rit = final_results.begin();
+			int counter = 0;
+			cout << "Pure Overlap" << endl;
+			while (counter < k && final_rit != final_results.end()) {
+				int set_id = final_rit->second;
+				std::set<int> candidate_tokens = sets[set_id];
+				std::set<int> intersection;
+				std::set_intersection(query_tokens.begin(), query_tokens.end(), candidate_tokens.begin(), candidate_tokens.end(), std::inserter(intersection, intersection.begin()));
+				double intersection_size = static_cast<double>(intersection.size());
+				double pure_ovelap_sim =   intersection_size / query_cardinality;
+				cout << env->getSetName(set_id) << " : " << pure_ovelap_sim << endl;
+				counter++;
+				final_rit++;
+			}
+			int counter2 = 0;
+			auto final_rit2 = final_results.begin();
+			cout << "Semantic Overlap" << endl;
+			while (counter2 < k && final_rit2 != final_results.end()) {
+				int set_id = final_rit2->second;
+				double sim = final_rit2->first;
+				cout << env->getSetName(set_id) << " : " << sim << endl;
+				counter2++;
+				if (counter2 == k) {
+					k_th_score = sim;
+				}
+				final_rit2++;
+			}
+
+		}
+
+		auto final_rit3 = final_results.begin();
+		cout << "TKDUP" << endl;
+		while (final_rit3 != final_results.end()) {
+			int set_id = final_rit3->second;
+			double sim = final_rit3->first;
+			if (sim == k_th_score) {
+				cout << env->getSetName(set_id) << " : " << sim << endl;
+			}
+			final_rit3++;
+		}
+		cout << "TKDUP Done" << endl;
 		vector<string> tags = {"inverted_index_time", "faissindex_time", "prepropressing_time", "postprocessing_time", "total_time",
 								"inverted_index_size", "considered_sets", "upperpruned", "overlap_score_one-sets", "postprocessing_sets",
 								"token_stream_size", "query_cardinality", "early_pruned_post_processing", 

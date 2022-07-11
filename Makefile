@@ -18,6 +18,12 @@ main-baseline: main-baseline.o hung.o timing.o
 main-baseline.o: Main-baseline.cpp
 	$(CC) -g -c Main-baseline.cpp $(CFLAGS) -o main-baseline.o
 
+main-clean: main-clean.o hung.o timing.o
+	$(CC) -g -o main-clean main-clean.o hung.o timing.o $(CFLAGS)
+
+main-clean.o: Main-clean.cpp
+	$(CC) -g -c Main-clean.cpp $(CFLAGS) -o main-clean.o
+
 hung.o: $(HUNG)/Hungarian.cpp $(HUNG)/Hungarian.h
 	$(CC) -g -c $(HUNG)/Hungarian.cpp -o hung.o
 
