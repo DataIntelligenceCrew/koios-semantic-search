@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:1356fa90a1136f99e5a179870c5ffda0b925ded2036f8236bc2427625ece3619
-size 383
+CMAKE_AUTOMOC_DEPEND_FILTERS
+----------------------------
+
+Filter definitions used by :variable:`CMAKE_AUTOMOC`
+to extract file names from source code as additional dependencies
+for the ``moc`` file.
+
+This variable is used to initialize the :prop_tgt:`AUTOMOC_DEPEND_FILTERS`
+property on all the targets. See that target property for additional
+information.
+
+By default it is empty.

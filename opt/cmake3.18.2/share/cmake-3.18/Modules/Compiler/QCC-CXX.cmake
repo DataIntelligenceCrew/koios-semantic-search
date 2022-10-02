@@ -1,3 +1,15 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a72e342ff55e3a8c2c9eb96a66fff4eff3ecc34dac70104733a72b0a48044e64
-size 574
+# To include compiler feature detection
+include(Compiler/GNU-CXX)
+
+include(Compiler/QCC)
+__compiler_qcc(CXX)
+
+# If the toolchain uses qcc for CMAKE_CXX_COMPILER instead of QCC, the
+# default for the driver is not c++.
+set(CMAKE_CXX_COMPILE_OBJECT
+  "<CMAKE_CXX_COMPILER> -lang-c++ <DEFINES> <INCLUDES> <FLAGS> -o <OBJECT> -c <SOURCE>")
+
+set(CMAKE_CXX_LINK_EXECUTABLE
+  "<CMAKE_CXX_COMPILER> -lang-c++ <FLAGS> <CMAKE_CXX_LINK_FLAGS> <LINK_FLAGS> <OBJECTS> -o <TARGET> <LINK_LIBRARIES>")
+
+set(CMAKE_CXX_COMPILE_OPTIONS_VISIBILITY_INLINES_HIDDEN "-fvisibility-inlines-hidden")

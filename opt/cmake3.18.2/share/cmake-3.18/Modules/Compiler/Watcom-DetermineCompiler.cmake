@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a6a6951831b5973393a6a318b3527d3d68330f02b434f8b5d3100e9dfe2b758c
-size 393
+
+set(_compiler_id_pp_test "defined(__WATCOMC__) && __WATCOMC__ < 1200")
+
+set(_compiler_id_version_compute "
+   /* __WATCOMC__ = VVRR */
+# define @PREFIX@COMPILER_VERSION_MAJOR @MACRO_DEC@(__WATCOMC__ / 100)
+# define @PREFIX@COMPILER_VERSION_MINOR @MACRO_DEC@((__WATCOMC__ / 10) % 10)
+# if (__WATCOMC__ % 10) > 0
+#  define @PREFIX@COMPILER_VERSION_PATCH @MACRO_DEC@(__WATCOMC__ % 10)
+# endif")

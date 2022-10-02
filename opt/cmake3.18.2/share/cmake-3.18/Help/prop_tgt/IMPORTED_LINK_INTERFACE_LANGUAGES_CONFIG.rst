@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f7daac4995703fc295863e00fdf119c30dbc144cc7e6a6fdcdfa60a16dd98131
-size 357
+IMPORTED_LINK_INTERFACE_LANGUAGES_<CONFIG>
+------------------------------------------
+
+<CONFIG>-specific version of :prop_tgt:`IMPORTED_LINK_INTERFACE_LANGUAGES`.
+
+Configuration names correspond to those provided by the project from
+which the target is imported.  If set, this property completely
+overrides the generic property for the named configuration.

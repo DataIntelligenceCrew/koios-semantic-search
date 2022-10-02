@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:6cd3004523d3535508b5ea2badc10bc48e3ef789cc2c949e215ae01cb9450d4f
-size 282
+CTEST_CUSTOM_MAXIMUM_NUMBER_OF_WARNINGS
+---------------------------------------
+
+The maximum number of warnings in a single build step which will be detected.
+After this, the :command:`ctest_test` command will truncate the output.
+Defaults to 50.
+
+.. include:: CTEST_CUSTOM_XXX.txt

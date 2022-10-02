@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f96876f6766e399245a29518ddf027a917954f81086eed42c6b64abf1c581da5
-size 672
+predicate ortools_network_flow_cost(array [int] of int: arc,
+                                    array [int] of int: balance,
+                                    array [int] of int: weight,
+                                    array [int] of var int: flow,
+                                    var int: cost);
+
+predicate fzn_network_flow_cost(array [int,int] of int: arc,
+                                array [int] of int: balance,
+                                array [int] of int: weight,
+                                array [int] of var int: flow,
+                                var int: cost) =
+    ortools_network_flow_cost(array1d(arc),balance,weight,flow,cost);

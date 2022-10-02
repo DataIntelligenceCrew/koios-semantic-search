@@ -1,3 +1,11 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:697e056df812e97bd24c831c1527f2cce61fdcb97005ef98095ab45edf2ff18c
-size 464
+RC
+--
+
+.. include:: ENV_VAR.txt
+
+Preferred executable for compiling ``resource`` files. Will only be used by CMake
+on the first configuration to determine ``resource`` compiler, after which the
+value for ``RC`` is stored in the cache as
+:variable:`CMAKE_RC_COMPILER <CMAKE_<LANG>_COMPILER>`. For any configuration run
+(including the first), the environment variable will be ignored if the
+:variable:`CMAKE_RC_COMPILER <CMAKE_<LANG>_COMPILER>` variable is defined.

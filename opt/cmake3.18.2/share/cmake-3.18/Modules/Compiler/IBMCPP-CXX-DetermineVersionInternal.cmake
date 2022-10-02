@@ -1,3 +1,6 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:0896f06b4194a25556a443f1014f12c909f978fb7dc7529c496db4252b9cb984
-size 275
+
+set(_compiler_id_version_compute "
+  /* __IBMCPP__ = VRP */
+# define @PREFIX@COMPILER_VERSION_MAJOR @MACRO_DEC@(__IBMCPP__/100)
+# define @PREFIX@COMPILER_VERSION_MINOR @MACRO_DEC@(__IBMCPP__/10 % 10)
+# define @PREFIX@COMPILER_VERSION_PATCH @MACRO_DEC@(__IBMCPP__    % 10)")

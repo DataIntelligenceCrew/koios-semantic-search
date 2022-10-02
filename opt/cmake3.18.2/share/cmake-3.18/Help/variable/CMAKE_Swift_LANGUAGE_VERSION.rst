@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ecbc4ac7ec5b49773fe73cbd036410e3459ef8a15580a1c9cbc1fda0a4bc692b
-size 325
+CMAKE_Swift_LANGUAGE_VERSION
+----------------------------
+
+Set to the Swift language version number.  If not set, the oldest legacy
+version known to be available in the host Xcode version is assumed:
+
+* Swift ``4.0`` for Xcode 10.2 and above.
+* Swift ``3.0`` for Xcode 8.3 and above.
+* Swift ``2.3`` for Xcode 8.2 and below.

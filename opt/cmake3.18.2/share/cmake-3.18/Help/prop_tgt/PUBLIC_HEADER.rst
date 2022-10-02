@@ -1,3 +1,11 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d3374e93889df73596f8e687dc7d6b5d2b8fdade7f0049e8602c49e67b6ee052
-size 516
+PUBLIC_HEADER
+-------------
+
+Specify public header files in a :prop_tgt:`FRAMEWORK` shared library target.
+
+Shared library targets marked with the :prop_tgt:`FRAMEWORK` property generate
+frameworks on macOS, iOS and normal shared libraries on other platforms.
+This property may be set to a list of header files to be placed in the
+``Headers`` directory inside the framework folder.  On non-Apple platforms
+these headers may be installed using the ``PUBLIC_HEADER`` option to the
+:command:`install(TARGETS)` command.

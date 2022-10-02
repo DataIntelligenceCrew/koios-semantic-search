@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d2907d40d7910160409470fcaca9f1a848718b3ab0cc5b14b4fceb93e877efb1
-size 335
+CMAKE_EXTRA_SHARED_LIBRARY_SUFFIXES
+-----------------------------------
+
+Additional suffixes for shared libraries.
+
+Extensions for shared libraries other than that specified by
+:variable:`CMAKE_SHARED_LIBRARY_SUFFIX`, if any.  CMake uses this to recognize
+external shared library files during analysis of libraries linked by a
+target.

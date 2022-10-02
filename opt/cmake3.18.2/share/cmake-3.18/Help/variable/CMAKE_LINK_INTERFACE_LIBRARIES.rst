@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a65c34e7d3e5b9c2b3938a2eb110dbb4dbc616847b6fe97977c74386296e5d32
-size 291
+CMAKE_LINK_INTERFACE_LIBRARIES
+------------------------------
+
+Default value for :prop_tgt:`LINK_INTERFACE_LIBRARIES` of targets.
+
+This variable is used to initialize the :prop_tgt:`LINK_INTERFACE_LIBRARIES`
+property on all the targets.  See that target property for additional
+information.

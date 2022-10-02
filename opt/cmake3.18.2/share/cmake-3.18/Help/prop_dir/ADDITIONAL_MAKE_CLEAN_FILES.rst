@@ -1,3 +1,17 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:8e1e1251a0ad9f72db0296e846173d7ad5910a1702801f60911c98beb39b6ea2
-size 509
+ADDITIONAL_MAKE_CLEAN_FILES
+---------------------------
+
+.. deprecated:: 3.15
+
+  Use :prop_dir:`ADDITIONAL_CLEAN_FILES` instead.
+
+Additional files to remove during the clean stage.
+
+A :ref:`;-list <CMake Language Lists>` of files that will be removed as a
+part of the ``make clean`` target.
+
+Arguments to :prop_dir:`ADDITIONAL_MAKE_CLEAN_FILES` may use
+:manual:`generator expressions <cmake-generator-expressions(7)>`.
+
+This property only works for the Makefile generators.
+It is ignored on other generators.

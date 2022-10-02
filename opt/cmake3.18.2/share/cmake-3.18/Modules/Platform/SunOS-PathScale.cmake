@@ -1,3 +1,21 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:1cfe1f4e1afe1f3a096277982b706522dc72317402627a42928bff17df9ffbc8
-size 770
+# Distributed under the OSI-approved BSD 3-Clause License.  See accompanying
+# file Copyright.txt or https://cmake.org/licensing for details.
+
+
+# This module is shared by multiple languages; use include blocker.
+if(__SUNOS_COMPILER_PATHSCALE)
+  return()
+endif()
+set(__SUNOS_COMPILER_PATHSCALE 1)
+
+macro(__sunos_compiler_pathscale lang)
+  # Shared library compile and link flags.
+  set(CMAKE_${lang}_COMPILE_OPTIONS_PIC "-fPIC")
+  set(CMAKE_${lang}_COMPILE_OPTIONS_PIE "-fPIE")
+  set(CMAKE_SHARED_LIBRARY_${lang}_FLAGS "-fPIC")
+  set(CMAKE_SHARED_LIBRARY_CREATE_${lang}_FLAGS "-shared")
+
+  set(CMAKE_SHARED_LIBRARY_RUNTIME_${lang}_FLAG "-Wl,-R")
+  set(CMAKE_SHARED_LIBRARY_RUNTIME_${lang}_FLAG_SEP ":")
+  set(CMAKE_SHARED_LIBRARY_SONAME_${lang}_FLAG "-Wl,-h")
+endmacro()

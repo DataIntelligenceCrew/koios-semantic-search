@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:8f70913af471464b0a18de80fcf79b30df2ad92898c51be17438222b87f4fdff
-size 326
+IMPORT_SUFFIX
+-------------
+
+What comes after the import library name.
+
+Similar to the target property :prop_tgt:`SUFFIX`, but used
+for import libraries (typically corresponding to a ``DLL``) instead of
+regular libraries.  A target property that can be set to override
+the suffix (such as ``.lib``) on an import library name.

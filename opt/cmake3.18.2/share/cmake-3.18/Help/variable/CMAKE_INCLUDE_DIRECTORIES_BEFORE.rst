@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:2ef030ef4f8cbcd2563aef29268bdc43ac9ee526d19cf9be2b67e41325fec1f1
-size 352
+CMAKE_INCLUDE_DIRECTORIES_BEFORE
+--------------------------------
+
+Whether to append or prepend directories by default in
+:command:`include_directories`.
+
+This variable affects the default behavior of the :command:`include_directories`
+command.  Setting this variable to ``ON`` is equivalent to using the ``BEFORE``
+option in all uses of that command.

@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:fa6e97a7b801a9c67e92c10b188a49b28190ad4870638f5f229201780dbfc5f1
-size 334
+CMAKE_VERBOSE_MAKEFILE
+----------------------
+
+Enable verbose output from Makefile builds.
+
+This variable is a cache entry initialized (to ``FALSE``) by
+the :command:`project` command.  Users may enable the option
+in their local build tree to get more verbose output from
+Makefile builds and show each command line as it is launched.

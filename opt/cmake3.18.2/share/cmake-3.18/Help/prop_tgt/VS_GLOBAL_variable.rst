@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:df7aa4191e7a205cce30f1d66df36e67576310727988ac77952152d0c1c7f9b3
-size 368
+VS_GLOBAL_<variable>
+--------------------
+
+Visual Studio project-specific global variable.
+
+Tell the Visual Studio generator to set the global variable
+'<variable>' to a given value in the generated Visual Studio project.
+Ignored on other generators.  Qt integration works better if
+VS_GLOBAL_QtVersion is set to the version FindQt4.cmake found.  For
+example, "4.7.3"

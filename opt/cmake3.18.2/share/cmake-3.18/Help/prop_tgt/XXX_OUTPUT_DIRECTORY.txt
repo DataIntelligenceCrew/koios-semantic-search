@@ -1,3 +1,11 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e0ab7579b5c6cb79ca9a550b3ac4105ec9a770a798e4ba818e5ca3144dbabe53
-size 511
+Output directory in which to build |XXX| target files.
+
+This property specifies the directory into which |xxx| target files
+should be built.  The property value may use
+:manual:`generator expressions <cmake-generator-expressions(7)>`.
+Multi-configuration generators (VS, Xcode) append a per-configuration
+subdirectory to the specified directory unless a generator expression
+is used.
+
+This property is initialized by the value of the variable
+|CMAKE_XXX_OUTPUT_DIRECTORY| if it is set when a target is created.

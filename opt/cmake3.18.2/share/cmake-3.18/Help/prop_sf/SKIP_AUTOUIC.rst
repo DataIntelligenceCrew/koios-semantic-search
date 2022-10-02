@@ -1,3 +1,20 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:46a47eb8773d828536def727a0cfe52317c1a3db6c27ddf88e2cacb8d17f2acd
-size 482
+SKIP_AUTOUIC
+------------
+
+Exclude the source file from :prop_tgt:`AUTOUIC` processing (for Qt projects).
+
+:prop_sf:`SKIP_AUTOUIC` can be set on C++ header and source files and on
+``.ui`` files.
+
+For broader exclusion control see :prop_sf:`SKIP_AUTOGEN`.
+
+EXAMPLE
+^^^^^^^
+
+.. code-block:: cmake
+
+  # ...
+  set_property(SOURCE file.h PROPERTY SKIP_AUTOUIC ON)
+  set_property(SOURCE file.cpp PROPERTY SKIP_AUTOUIC ON)
+  set_property(SOURCE widget.ui PROPERTY SKIP_AUTOUIC ON)
+  # ...

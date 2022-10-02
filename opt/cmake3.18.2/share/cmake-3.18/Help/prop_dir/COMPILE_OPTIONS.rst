@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:3651db2d161ab8965c6ba68d4f6fbe9ed5bbabd4b1d814ca06bfacc0d4248e7e
-size 672
+COMPILE_OPTIONS
+---------------
+
+List of options to pass to the compiler.
+
+This property holds a :ref:`semicolon-separated list <CMake Language Lists>` of options
+given so far to the :command:`add_compile_options` command.
+
+This property is used to initialize the :prop_tgt:`COMPILE_OPTIONS` target
+property when a target is created, which is used by the generators to set
+the options for the compiler.
+
+Contents of ``COMPILE_OPTIONS`` may use "generator expressions" with the
+syntax ``$<...>``.  See the :manual:`cmake-generator-expressions(7)` manual
+for available expressions.  See the :manual:`cmake-buildsystem(7)` manual
+for more on defining buildsystem properties.

@@ -1,3 +1,5 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:31bf005ed752b5c37ef11524e8ab5930997cc25700c14eeb5fcbbeff54f6d4a3
-size 204
+CMAKE_ANDROID_PROGUARD_CONFIG_PATH
+----------------------------------
+
+Default value for the :prop_tgt:`ANDROID_PROGUARD_CONFIG_PATH` target property.
+See that target property for additional information.

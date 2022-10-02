@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:49c66f8db2e7a08895efb4ca1f6a2019d4cef8747a91bf4b3ebbd5d78d124b22
-size 227
+CMAKE_<LANG>_COMPILER_LOADED
+----------------------------
+
+Defined to true if the language is enabled.
+
+When language ``<LANG>`` is enabled by :command:`project` or
+:command:`enable_language` this variable is defined to ``1``.

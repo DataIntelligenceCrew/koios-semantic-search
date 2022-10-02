@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:4b93f410462088b600c4d9171f978cf11cdba1d86072993642b725d8e99c0193
-size 332
+CMAKE_FIND_ROOT_PATH
+--------------------
+
+:ref:`Semicolon-separated list <CMake Language Lists>` of root paths to search on the filesystem.
+
+This variable is most useful when cross-compiling. CMake uses the paths in
+this list as alternative roots to find filesystem items with
+:command:`find_package`, :command:`find_library` etc.

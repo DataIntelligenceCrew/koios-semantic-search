@@ -1,3 +1,51 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:079186c8eb29e6c7b124e8a01ef7d6b113461ed5a5c218a6099797aa57bd0ef6
-size 1917
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/*                                                                           */
+/*                  This file is part of the program and library             */
+/*         SCIP --- Solving Constraint Integer Programs                      */
+/*                                                                           */
+/*    Copyright (C) 2002-2020 Konrad-Zuse-Zentrum                            */
+/*                            fuer Informationstechnik Berlin                */
+/*                                                                           */
+/*  SCIP is distributed under the terms of the ZIB Academic License.         */
+/*                                                                           */
+/*  You should have received a copy of the ZIB Academic License              */
+/*  along with SCIP; see the file COPYING. If not visit scipopt.org.         */
+/*                                                                           */
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+/**@file   presol_stuffing.h
+ * @ingroup PRESOLVERS
+ * @brief  fix singleton continuous variables
+ * @author Dieter Weninger
+ *
+ * Investigate singleton continuous variables if one can be fixed at a bound.
+ *
+ */
+
+/*---+----1----+----2----+----3----+----4----+----5----+----6----+----7----+----8----+----9----+----0----+----1----+----2*/
+
+#ifndef __SCIP_PRESOL_STUFFING_H__
+#define __SCIP_PRESOL_STUFFING_H__
+
+#include "scip/def.h"
+#include "scip/type_retcode.h"
+#include "scip/type_scip.h"
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+/** creates the stuffing presolver and includes it in SCIP
+ *
+ * @ingroup PresolverIncludes
+ */
+SCIP_EXPORT
+SCIP_RETCODE SCIPincludePresolStuffing(
+   SCIP*                 scip                /**< SCIP data structure */
+   );
+
+#ifdef __cplusplus
+}
+#endif
+
+#endif

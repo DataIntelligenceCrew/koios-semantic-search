@@ -1,3 +1,17 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e10aa9eade3571a66d10b2e778c9d0fc7fde79d2939b2a29d09a1348fdd5cb09
-size 732
+Fortran_PREPROCESS
+------------------
+
+Control whether the Fortran source file should be unconditionally preprocessed.
+
+If unset or empty, rely on the compiler to determine whether the file
+should be preprocessed. If explicitly set to ``OFF`` then the file
+does not need to be preprocessed. If explicitly set to ``ON``, then
+the file does need to be preprocessed as part of the compilation step.
+
+When using the :generator:`Ninja` generator, all source files are
+first preprocessed in order to generate module dependency
+information. Setting this property to ``OFF`` will make ``Ninja``
+skip this step.
+
+Consider using the target-wide :prop_tgt:`Fortran_PREPROCESS` property
+if all source files in a target need to be preprocessed.

@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:682eb2efc74b868232a106ecf7b5ca3d13f53dbc361023f6168504c25a2e6334
-size 505
+option
+------
+
+Provide an option that the user can optionally select.
+
+.. code-block:: cmake
+
+  option(<variable> "<help_text>" [value])
+
+Provides an option for the user to select as ``ON`` or ``OFF``.
+If no initial ``<value>`` is provided, ``OFF`` is used.
+If ``<variable>`` is already set as a normal or cache variable,
+then the command does nothing (see policy :policy:`CMP0077`).
+
+If you have options that depend on the values of other options, see
+the module help for :module:`CMakeDependentOption`.

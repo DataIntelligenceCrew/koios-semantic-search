@@ -1,3 +1,6 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:329afc8606958f5277d5b8b3e4e60c0516c916f751b11cdc0361767b73f252b3
-size 177
+CMAKE_SHARED_LINKER_FLAGS
+-------------------------
+
+Linker flags to be used to create shared libraries.
+
+These flags will be used by the linker when creating a shared library.

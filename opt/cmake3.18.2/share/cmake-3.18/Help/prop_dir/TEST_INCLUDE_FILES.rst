@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:68f50704b5de9accf66b50b75913ee40f895b4af945976080391e28c3b4a02ae
-size 221
+TEST_INCLUDE_FILES
+------------------
+
+A list of cmake files that will be included when ctest is run.
+
+If you specify ``TEST_INCLUDE_FILES``, those files will be included and
+processed when ctest is run on the directory.

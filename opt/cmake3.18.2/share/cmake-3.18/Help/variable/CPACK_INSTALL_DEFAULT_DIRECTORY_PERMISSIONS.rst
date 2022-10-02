@@ -1,3 +1,11 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:4313b5d074a95649d518a52578c29473cb244e9e393acbfe253900404e4280a7
-size 483
+CPACK_INSTALL_DEFAULT_DIRECTORY_PERMISSIONS
+-------------------------------------------
+
+Default permissions for implicitly created directories during packaging.
+
+This variable serves the same purpose during packaging as the
+:variable:`CMAKE_INSTALL_DEFAULT_DIRECTORY_PERMISSIONS` variable
+serves during installation (e.g. ``make install``).
+
+If `include(CPack)` is used then by default this variable is set to the content
+of :variable:`CMAKE_INSTALL_DEFAULT_DIRECTORY_PERMISSIONS`.

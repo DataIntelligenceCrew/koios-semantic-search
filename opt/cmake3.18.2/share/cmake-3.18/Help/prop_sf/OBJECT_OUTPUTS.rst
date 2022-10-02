@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b0acea2a0d32193c361a5d5b51b8b93e083a0e8633d12816072616f70d4c3f52
-size 454
+OBJECT_OUTPUTS
+--------------
+
+Additional outputs for a :generator:`Ninja` or :ref:`Makefile Generators` rule.
+
+Additional outputs created by compilation of this source file.  If any
+of these outputs is missing the object will be recompiled.  This is
+supported only on the :generator:`Ninja` and :ref:`Makefile Generators`
+and will be ignored on other generators.
+
+This property supports
+:manual:`generator expressions <cmake-generator-expressions(7)>`.

@@ -1,3 +1,11 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ee20a8a647699c756d2a49327bb72583433af0690aba22903f9c2fecceeaad13
-size 498
+Fortran_FORMAT
+--------------
+
+Set to ``FIXED`` or ``FREE`` to indicate the Fortran source layout.
+
+This property tells CMake whether the Fortran source files in a target
+use fixed-format or free-format.  CMake will pass the corresponding
+format flag to the compiler.  Use the source-specific ``Fortran_FORMAT``
+property to change the format of a specific source file.  If the
+variable :variable:`CMAKE_Fortran_FORMAT` is set when a target is created its
+value is used to initialize this property.

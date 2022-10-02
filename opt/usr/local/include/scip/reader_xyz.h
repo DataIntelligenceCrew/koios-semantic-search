@@ -1,3 +1,47 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:9cf103c504cad0fda78384822006836ec6e09c742fb2b0a0dc45f5be538e762b
-size 1726
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/*                                                                           */
+/*                  This file is part of the program and library             */
+/*         SCIP --- Solving Constraint Integer Programs                      */
+/*                                                                           */
+/*    Copyright (C) 2002-2020 Konrad-Zuse-Zentrum                            */
+/*                            fuer Informationstechnik Berlin                */
+/*                                                                           */
+/*  SCIP is distributed under the terms of the ZIB Academic License.         */
+/*                                                                           */
+/*  You should have received a copy of the ZIB Academic License              */
+/*  along with SCIP; see the file COPYING. If not visit scipopt.org.         */
+/*                                                                           */
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+/**@file   reader_xyz.h
+ * @ingroup FILEREADERS
+ * @brief  XYZ file reader
+ * @author Tobias Achterberg
+ */
+
+/*---+----1----+----2----+----3----+----4----+----5----+----6----+----7----+----8----+----9----+----0----+----1----+----2*/
+
+#ifndef __SCIP_READER_XYZ_H__
+#define __SCIP_READER_XYZ_H__
+
+
+#include "scip/scip.h"
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+/** includes the xyz file reader into SCIP
+ *
+ *  @ingroup FileReaderIncludes
+ */
+SCIP_EXPORT
+SCIP_RETCODE SCIPincludeReaderXyz(
+   SCIP*                 scip                /**< SCIP data structure */
+   );
+
+#ifdef __cplusplus
+}
+#endif
+
+#endif

@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:1268dd614d0ba97b69550775799f881e32e85ca0ffbe46a976250ccff2f894a7
-size 495
+CMAKE_FIND_PACKAGE_SORT_DIRECTION
+---------------------------------
+
+The sorting direction used by :variable:`CMAKE_FIND_PACKAGE_SORT_ORDER`.
+It can assume one of the following values:
+
+``DEC``
+  Default.  Ordering is done in descending mode.
+  The highest folder found will be tested first.
+
+``ASC``
+  Ordering is done in ascending mode.
+  The lowest folder found will be tested first.
+
+If :variable:`CMAKE_FIND_PACKAGE_SORT_ORDER` is not set or is set to ``NONE``
+this variable has no effect.

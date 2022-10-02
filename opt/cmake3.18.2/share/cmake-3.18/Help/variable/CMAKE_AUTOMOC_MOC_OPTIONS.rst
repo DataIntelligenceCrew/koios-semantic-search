@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:02e94cea58368e05c619111df3086e77112cdfe6fcbaff5f6ed66981828104df
-size 278
+CMAKE_AUTOMOC_MOC_OPTIONS
+-------------------------
+
+Additional options for ``moc`` when using :variable:`CMAKE_AUTOMOC`.
+
+This variable is used to initialize the :prop_tgt:`AUTOMOC_MOC_OPTIONS` property
+on all the targets.  See that target property for additional information.

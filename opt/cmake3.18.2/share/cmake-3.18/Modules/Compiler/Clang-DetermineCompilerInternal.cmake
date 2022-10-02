@@ -1,3 +1,15 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b56db5d774d273d696df8302ce3cd3421047190188de796faa3ba7bb24f31af9
-size 545
+
+set(_compiler_id_version_compute "
+# define @PREFIX@COMPILER_VERSION_MAJOR @MACRO_DEC@(__clang_major__)
+# define @PREFIX@COMPILER_VERSION_MINOR @MACRO_DEC@(__clang_minor__)
+# define @PREFIX@COMPILER_VERSION_PATCH @MACRO_DEC@(__clang_patchlevel__)
+# if defined(_MSC_VER)
+   /* _MSC_VER = VVRR */
+#  define @PREFIX@SIMULATE_VERSION_MAJOR @MACRO_DEC@(_MSC_VER / 100)
+#  define @PREFIX@SIMULATE_VERSION_MINOR @MACRO_DEC@(_MSC_VER % 100)
+# endif")
+
+set(_compiler_id_simulate "
+# if defined(_MSC_VER)
+#  define @PREFIX@SIMULATE_ID \"MSVC\"
+# endif")

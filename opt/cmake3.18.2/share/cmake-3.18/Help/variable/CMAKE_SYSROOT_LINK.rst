@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a5a0dd66b0da00dd5d9c67bdf58f7bd93e3574b8ee87c752be916d5e9f5cd52c
-size 322
+CMAKE_SYSROOT_LINK
+------------------
+
+Path to pass to the compiler in the ``--sysroot`` flag when linking.  This is
+the same as :variable:`CMAKE_SYSROOT` but is used only for linking and not
+compiling sources.
+
+This variable may only be set in a toolchain file specified by
+the :variable:`CMAKE_TOOLCHAIN_FILE` variable.

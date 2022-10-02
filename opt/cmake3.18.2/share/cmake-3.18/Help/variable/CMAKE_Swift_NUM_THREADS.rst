@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e500fd1ba14ecd92f1e8968b97d84b1d678b73f161a767e44597b7cac703ee86
-size 293
+CMAKE_Swift_NUM_THREADS
+-----------------------
+
+Number of threads for parallel compilation for Swift targets.
+
+This variable controls the number of parallel jobs that the swift driver creates
+for building targets.  If not specified, it will default to the number of
+logical CPUs on the host.

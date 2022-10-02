@@ -1,3 +1,11 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:6244f01b722e88da1b54bf5fcef3cd4406eb2f54a3d6f54f0580fa9f9fd3e007
-size 412
+VS_DEBUGGER_WORKING_DIRECTORY
+-----------------------------
+
+Sets the local debugger working directory for Visual Studio C++ targets.
+The property value may use
+:manual:`generator expressions <cmake-generator-expressions(7)>`.
+This is defined in ``<LocalDebuggerWorkingDirectory>`` in the Visual Studio
+project file.
+
+This property only works for Visual Studio 2010 and above;
+it is ignored on other generators.

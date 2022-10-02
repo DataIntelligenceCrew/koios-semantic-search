@@ -1,3 +1,18 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c2218f354be5c8893b900d10c235123c3c1445f7e410c2877804f5b8a28d16ed
-size 571
+include_regular_expression
+--------------------------
+
+Set the regular expression used for dependency checking.
+
+.. code-block:: cmake
+
+  include_regular_expression(regex_match [regex_complain])
+
+Sets the regular expressions used in dependency checking.  Only files
+matching ``regex_match`` will be traced as dependencies.  Only files
+matching ``regex_complain`` will generate warnings if they cannot be found
+(standard header paths are not searched).  The defaults are:
+
+::
+
+  regex_match    = "^.*$" (match everything)
+  regex_complain = "^$" (match empty string only)

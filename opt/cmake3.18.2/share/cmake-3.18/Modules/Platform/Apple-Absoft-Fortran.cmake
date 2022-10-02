@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:4ed33aa845177f67e45500cad367f4ed56c2e01a90879a2b6cd778d3a1560d8c
-size 351
+# Distributed under the OSI-approved BSD 3-Clause License.  See accompanying
+# file Copyright.txt or https://cmake.org/licensing for details.
+
+set(CMAKE_Fortran_VERBOSE_FLAG "-X -v") # Runs gcc under the hood.
+
+set(CMAKE_Fortran_OSX_COMPATIBILITY_VERSION_FLAG "-compatibility_version ")
+set(CMAKE_Fortran_OSX_CURRENT_VERSION_FLAG "-current_version ")

@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:5a8474386f921239d0487b9e4994e89c6272d1a9b54c293ef760d8eff19250b8
-size 226
+PACKAGES_FOUND
+--------------
+
+List of packages which were found during the CMake run.
+
+List of packages which were found during the CMake run.  Whether a
+package has been found is determined using the <NAME>_FOUND variables.

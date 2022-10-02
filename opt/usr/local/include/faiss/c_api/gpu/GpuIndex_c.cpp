@@ -1,3 +1,17 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:9f3afb0b82e12f2b741eb637ec6a836e05e767c00ab3a3699002fd1168ec06d7
-size 423
+/**
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+// Copyright 2004-present Facebook. All Rights Reserved.
+// -*- c++ -*-
+
+#include <faiss/gpu/GpuIndex.h>
+#include "GpuIndex_c.h"
+#include "macros_impl.h"
+
+using faiss::gpu::GpuIndexConfig;
+
+DEFINE_GETTER(GpuIndexConfig, int, device)

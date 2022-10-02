@@ -1,3 +1,21 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:5ae3beb19fff094ee63d61e1d0259cee67aa8b99b63a519b51dfd67633787fc6
-size 703
+CUDA_RUNTIME_LIBRARY
+--------------------
+
+Select the CUDA runtime library for use by compilers targeting the CUDA language.
+
+The allowed case insensitive values are:
+
+.. include:: CUDA_RUNTIME_LIBRARY-VALUES.txt
+
+Contents of ``CUDA_RUNTIME_LIBRARY`` may use
+:manual:`generator expressions <cmake-generator-expressions(7)>`.
+
+If that property is not set then CMake uses an appropriate default
+value based on the compiler to select the CUDA runtime library.
+
+.. note::
+
+  This property has effect only when the ``CUDA`` language is enabled. To
+  control the CUDA runtime linking when only using the CUDA SDK with the
+  ``C`` or ``C++`` language we recommend using the :module:`FindCUDAToolkit`
+  module.

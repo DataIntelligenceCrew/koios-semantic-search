@@ -1,3 +1,17 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a3137ef9d5c17c6ad19fb759c297ed5a160a9215bda0e31acd2920ea4a76aee8
-size 411
+CMAKE_MFC_FLAG
+--------------
+
+Use the MFC library for an executable or dll.
+
+Enables the use of the Microsoft Foundation Classes (MFC).
+It should be set to ``1`` for the static MFC library, and
+``2`` for the shared MFC library.  This is used in Visual Studio
+project files.
+
+Usage example:
+
+.. code-block:: cmake
+
+  add_definitions(-D_AFXDLL)
+  set(CMAKE_MFC_FLAG 2)
+  add_executable(CMakeSetup WIN32 ${SRCS})

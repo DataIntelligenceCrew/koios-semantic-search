@@ -1,3 +1,11 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ad711616a3809ea0f8b754ec69a3ca9a45622598c6af43803e8497ed8bf746a2
-size 469
+CMAKE_STATIC_LINKER_FLAGS_INIT
+------------------------------
+
+Value used to initialize the :variable:`CMAKE_STATIC_LINKER_FLAGS`
+cache entry the first time a build tree is configured.
+This variable is meant to be set by a :variable:`toolchain file
+<CMAKE_TOOLCHAIN_FILE>`.  CMake may prepend or append content to
+the value based on the environment and target platform.
+
+See also the configuration-specific variable
+:variable:`CMAKE_STATIC_LINKER_FLAGS_<CONFIG>_INIT`.

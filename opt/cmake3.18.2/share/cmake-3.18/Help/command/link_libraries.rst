@@ -1,3 +1,19 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:6390ba7fcc59a12d1dbaa6abc442aa641eefefb14b469ad18a48135cd7cdb5e9
-size 669
+link_libraries
+--------------
+
+Link libraries to all targets added later.
+
+.. code-block:: cmake
+
+  link_libraries([item1 [item2 [...]]]
+                 [[debug|optimized|general] <item>] ...)
+
+Specify libraries or flags to use when linking any targets created later in
+the current directory or below by commands such as :command:`add_executable`
+or :command:`add_library`.  See the :command:`target_link_libraries` command
+for meaning of arguments.
+
+.. note::
+  The :command:`target_link_libraries` command should be preferred whenever
+  possible.  Library dependencies are chained automatically, so directory-wide
+  specification of link libraries is rarely needed.

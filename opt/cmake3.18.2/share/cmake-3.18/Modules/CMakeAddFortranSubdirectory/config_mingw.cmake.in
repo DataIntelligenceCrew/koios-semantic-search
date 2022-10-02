@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d863a75fd92a9044c311703a051e5c2aab5a9f052d64d5dbf0aa87c55066a80d
-size 296
+set(ENV{PATH} "@MINGW_PATH@\;$ENV{PATH}")
+set(CMAKE_COMMAND_LINE "@ARGS_CMAKE_COMMAND_LINE@")
+execute_process(
+  COMMAND "@CMAKE_COMMAND@" "-GMinGW Makefiles"
+  -DCMAKE_Fortran_COMPILER:PATH=@MINGW_GFORTRAN@
+  -DBUILD_SHARED_LIBS=ON
+  -DCMAKE_GNUtoMS=ON
+  ${CMAKE_COMMAND_LINE}
+  "@source_dir@")

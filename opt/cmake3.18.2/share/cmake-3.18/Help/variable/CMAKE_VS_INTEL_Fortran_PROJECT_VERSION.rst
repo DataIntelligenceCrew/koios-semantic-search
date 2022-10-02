@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ac27df538db93a595b8bd860604fc1618c94c86bb735172969a4c28d35cade45
-size 329
+CMAKE_VS_INTEL_Fortran_PROJECT_VERSION
+--------------------------------------
+
+When generating for :generator:`Visual Studio 9 2008` or greater with the Intel
+Fortran plugin installed, this specifies the ``.vfproj`` project file format
+version.  This is intended for internal use by CMake and should not be
+used by project code.

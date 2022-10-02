@@ -1,3 +1,15 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a2d07101950a24fc11f0bd21ef4d53622d6671f96c4babfb37d6a37d69dd8d66
-size 648
+CMAKE_OSX_DEPLOYMENT_TARGET
+---------------------------
+
+Specify the minimum version of the target platform (e.g. macOS or iOS)
+on which the target binaries are to be deployed.  CMake uses this
+variable value for the ``-mmacosx-version-min`` flag or their respective
+target platform equivalents.  For older Xcode versions that shipped
+multiple macOS SDKs this variable also helps to choose the SDK in case
+:variable:`CMAKE_OSX_SYSROOT` is unset.
+
+If not set explicitly the value is initialized by the
+``MACOSX_DEPLOYMENT_TARGET`` environment variable, if set,
+and otherwise computed based on the host platform.
+
+.. include:: CMAKE_OSX_VARIABLE.txt

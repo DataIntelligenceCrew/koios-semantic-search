@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:8b306243dc5df0da941ff49e4e21e6fd96d524ab84b79d2c0b2c39deee685d82
-size 283
+CMAKE_HOST_SYSTEM_NAME
+----------------------
+
+Name of the OS CMake is running on.
+
+On systems that have the uname command, this variable is set to the
+output of ``uname -s``.  ``Linux``, ``Windows``, and ``Darwin`` for macOS
+are the values found on the big three operating systems.

@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:85b4851677d13aa824a513fdb4681a357d9dc858faa65dcd927527c91b6e88eb
-size 233
+RUN_SERIAL
+----------
+
+Do not run this test in parallel with any other test.
+
+Use this option in conjunction with the ctest_test ``PARALLEL_LEVEL``
+option to specify that this test should not be run in parallel with
+any other tests.

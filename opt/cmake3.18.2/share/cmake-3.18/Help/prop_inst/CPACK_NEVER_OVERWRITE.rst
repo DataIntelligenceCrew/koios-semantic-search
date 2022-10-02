@@ -1,3 +1,6 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:76a8b8b2444e5a5fd062fd81f41dce15b10a08acb8e7e953b4c35be2ef19cbc9
-size 195
+CPACK_NEVER_OVERWRITE
+---------------------
+
+Request that this file not be overwritten on install or reinstall.
+
+The property is currently only supported by the :cpack_gen:`CPack WIX Generator`.

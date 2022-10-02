@@ -1,3 +1,11 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:68b69f8e0a285553664dbd278db4ff85e76cbc0d6204eebb44eba9927c0af61b
-size 485
+SWIFTC
+------
+
+.. include:: ENV_VAR.txt
+
+Preferred executable for compiling ``Swift`` language files. Will only be used by
+CMake on the first configuration to determine ``Swift`` compiler, after which the
+value for ``SWIFTC`` is stored in the cache as
+:variable:`CMAKE_Swift_COMPILER <CMAKE_<LANG>_COMPILER>`. For any configuration run
+(including the first), the environment variable will be ignored if the
+:variable:`CMAKE_Swift_COMPILER <CMAKE_<LANG>_COMPILER>` variable is defined.

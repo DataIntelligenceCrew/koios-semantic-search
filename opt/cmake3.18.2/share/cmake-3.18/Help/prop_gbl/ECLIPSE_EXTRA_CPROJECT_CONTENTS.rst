@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:2b5eeb3872703b86194cefb6adafbcf9f94d05f0b55d6d5f33171d75b80f5924
-size 495
+ECLIPSE_EXTRA_CPROJECT_CONTENTS
+-------------------------------
+
+Additional contents to be inserted into the generated Eclipse cproject file.
+
+The cproject file defines the CDT specific information. Some third party IDE's
+are based on Eclipse with the addition of other information specific to that IDE.
+Through this property, it is possible to add this additional contents to
+the generated project.
+It is expected to contain valid XML.
+
+Also see the :prop_gbl:`ECLIPSE_EXTRA_NATURES` property.

@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c2cc8a107bc6d91b8e47fb832636a2cf9dbb97aa43f90b4bb33ada4528d3a070
-size 596
+set(CMAKE_Fortran_VERBOSE_FLAG "-Wl,-v") # Runs gcc under the hood.
+
+# Need one "-Wl," level to send flag through to gcc.
+# Use "-Xlinker" to get through gcc to real linker.
+set(CMAKE_SHARED_LIBRARY_CREATE_Fortran_FLAGS "-Wl,-shared")
+set(CMAKE_SHARED_LIBRARY_RUNTIME_Fortran_FLAG "-Wl,-Xlinker,-rpath,-Xlinker,")
+set(CMAKE_SHARED_LIBRARY_RUNTIME_Fortran_FLAG_SEP ":")
+set(CMAKE_SHARED_LIBRARY_RPATH_LINK_Fortran_FLAG "-Wl,-Xlinker,-rpath-link,-Xlinker,")
+set(CMAKE_SHARED_LIBRARY_SONAME_Fortran_FLAG "-Wl,-Xlinker,-soname,-Xlinker,")
+set(CMAKE_SHARED_LIBRARY_LINK_Fortran_FLAGS "-Wl,-rdynamic")

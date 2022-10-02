@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:4d6a7ef834ca8b5a7a281c9c3be0c6cb076de6bc527d4bb16f3e51008ea03214
-size 220
+CPACK_DESKTOP_SHORTCUTS
+-----------------------
+
+Species a list of shortcut names that should be created on the `Desktop`
+for this file.
+
+The property is currently only supported by the :cpack_gen:`CPack WIX Generator`.

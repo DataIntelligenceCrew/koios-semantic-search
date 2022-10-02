@@ -1,3 +1,5 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:73e2595719b4ab9f712450c3a4bed77e51cc0918db923793ec3fbfaafc4e501e
-size 203
+Swift_DEPENDENCIES_FILE
+-----------------------
+
+This property sets the path for the Swift dependency file (swiftdep) for the
+target.  If one is not specified, it will default to ``<TARGET>.swiftdeps``.

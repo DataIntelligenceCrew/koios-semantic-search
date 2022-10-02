@@ -1,3 +1,14 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b86291a9721fa7d00ad08b3a5566ef7a8331bf07abac7c053ec8efe09be7cf47
-size 287
+remove
+------
+
+.. deprecated:: 3.0
+
+  Use the :command:`list(REMOVE_ITEM)` command instead.
+
+::
+
+  remove(VAR VALUE VALUE ...)
+
+Removes ``VALUE`` from the variable ``VAR``.  This is typically used to
+remove entries from a vector (e.g.  semicolon separated list).  ``VALUE``
+is expanded.

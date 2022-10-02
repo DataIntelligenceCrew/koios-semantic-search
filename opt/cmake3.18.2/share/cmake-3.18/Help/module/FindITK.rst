@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:5210adafee504cdf684eed3d66e7bd37728b4ea412f08bf06ff8dfd7ac7f97cf
-size 316
+FindITK
+-------
+
+This module no longer exists.
+
+This module existed in versions of CMake prior to 3.1, but became
+only a thin wrapper around ``find_package(ITK NO_MODULE)`` to
+provide compatibility for projects using long-outdated conventions.
+Now ``find_package(ITK)`` will search for ``ITKConfig.cmake``
+directly.

@@ -7,8 +7,8 @@ HUNG = $(SRC)/hungarian-algorithm-cpp-master
 MOD = ./modules
 USER_INC = ./opt/usr/local/include
 CUDA_INC = /usr/local/cuda/include
-INC_DIR = $(HUNG) $(USER_INC) $(MOD)
-LINK_DIR = $(OPT_LINK) $(CUDA_LINK)
+INC_DIR = $(HUNG) $(USER_INC) $(MOD) 
+LINK_DIR = $(OPT_LINK) $(CUDA_LINK) 
 INC_PARAMS = $(foreach d, $(INC_DIR), -I$d)
 LINK_PARAMS = $(foreach l, $(LINK_DIR), -L$l)
 CFLAGS = -lstdc++fs -fPIC -std=c++17 -Wno-deprecated -fopenmp $(LINK_PARAMS) $(INC_PARAMS) -lortools -lsqlite3 -lcuda -lcudart -lcublas -lfaiss -lopenblas -llapack -ltbb

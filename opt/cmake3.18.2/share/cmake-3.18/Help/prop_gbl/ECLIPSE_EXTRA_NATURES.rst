@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:74dde488ea85f153d6faebd9d5a26035f3b62f642c1099b15903c892b170dc50
-size 342
+ECLIPSE_EXTRA_NATURES
+---------------------
+
+List of natures to add to the generated Eclipse project file.
+
+Eclipse projects specify language plugins by using natures. This property
+should be set to the unique identifier for a nature (which looks like a Java
+package name).
+
+Also see the :prop_gbl:`ECLIPSE_EXTRA_CPROJECT_CONTENTS` property.

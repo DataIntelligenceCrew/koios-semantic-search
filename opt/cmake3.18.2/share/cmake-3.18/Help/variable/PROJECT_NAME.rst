@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f8760887156bb4a014af18f21db1e5613f04131332200afdc3b5d2b76ad333cc
-size 292
+PROJECT_NAME
+------------
+
+Name of the project given to the project command.
+
+This is the name given to the most recently called :command:`project`
+command in the current directory scope or above.  To obtain the name of
+the top level project, see the :variable:`CMAKE_PROJECT_NAME` variable.

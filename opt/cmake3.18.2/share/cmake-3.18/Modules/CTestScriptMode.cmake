@@ -1,3 +1,20 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a03b6131c18f00609c1a6e4b5814f6ebe5e23009954c26ecc2005a0a3b878bd1
-size 662
+# Distributed under the OSI-approved BSD 3-Clause License.  See accompanying
+# file Copyright.txt or https://cmake.org/licensing for details.
+
+#[=======================================================================[.rst:
+CTestScriptMode
+---------------
+
+
+
+This file is read by ctest in script mode (-S)
+#]=======================================================================]
+
+# Determine the current system, so this information can be used
+# in ctest scripts
+include(CMakeDetermineSystem)
+
+# Also load the system specific file, which sets up e.g. the search paths.
+# This makes the FIND_XXX() calls work much better
+include(CMakeSystemSpecificInformation)
+

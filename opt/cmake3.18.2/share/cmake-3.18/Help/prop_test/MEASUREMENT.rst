@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:0541ad75bd5caf7f1fac763319a9581c21062bc120110f9e427397855d1c3f58
-size 286
+MEASUREMENT
+-----------
+
+Specify a ``CDASH`` measurement and value to be reported for a test.
+
+If set to a name then that name will be reported to ``CDASH`` as a named
+measurement with a value of ``1``.  You may also specify a value by
+setting ``MEASUREMENT`` to ``measurement=value``.

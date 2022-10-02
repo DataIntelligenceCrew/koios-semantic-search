@@ -1,3 +1,13 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:02b006ad3943c4289de7c2be78b2ccbef4af6b4139ae3a58a80c3238dba51752
-size 456
+CMAKE_XCODE_SCHEME_DEBUG_DOCUMENT_VERSIONING
+--------------------------------------------
+
+Whether to enable
+``Allow debugging when using document Versions Browser``
+in the Options section of the generated Xcode scheme.
+
+This variable initializes the
+:prop_tgt:`XCODE_SCHEME_DEBUG_DOCUMENT_VERSIONING`
+property on all targets.
+
+Please refer to the :prop_tgt:`XCODE_GENERATE_SCHEME` target property
+documentation to see all Xcode schema related properties.

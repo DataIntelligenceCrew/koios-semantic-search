@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:2f83dc38271b491ff0ca2a17800e6993ada2c5e0a100952d22f24bcd9626d225
-size 367
+CMAKE_FRAMEWORK_MULTI_CONFIG_POSTFIX_<CONFIG>
+---------------------------------------------
+
+Default framework filename postfix under configuration ``<CONFIG>`` when
+using a multi-config generator.
+
+When a framework target is created its :prop_tgt:`FRAMEWORK_MULTI_CONFIG_POSTFIX_<CONFIG>`
+target property is initialized with the value of this variable if it is set.

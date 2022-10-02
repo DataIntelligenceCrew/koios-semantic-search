@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:80ca4e44b42b8d93a8e31ef4e71d1ff4d107450108e786a9feeda01326a3c2a7
-size 365
+PRE_INSTALL_SCRIPT
+------------------
+
+Deprecated install support.
+
+The ``PRE_INSTALL_SCRIPT`` and :prop_tgt:`POST_INSTALL_SCRIPT` properties are
+the old way to specify CMake scripts to run before and after installing a
+target.  They are used only when the old ``INSTALL_TARGETS`` command is
+used to install the target.  Use the :command:`install` command instead.

@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:08437041bf84f126eebb79324bc51a673e909dd825a801171fd5761bc4efbd3d
-size 283
+include(Compiler/GNU)
+__compiler_gnu(OBJCXX)
+
+if(NOT CMAKE_OBJCXX_COMPILER_VERSION VERSION_LESS 4.2)
+  set(CMAKE_OBJCXX_COMPILE_OPTIONS_VISIBILITY_INLINES_HIDDEN "-fvisibility-inlines-hidden")
+endif()
+
+if(NOT CMAKE_OBJCXX_LINK_FLAGS)
+  set(CMAKE_OBCXX_LINK_FLAGS "-lstdc++")
+endif()

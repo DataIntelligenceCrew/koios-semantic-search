@@ -1,3 +1,5 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a75fc52621c9d57f8223a2fddffc835e46e2e2cc85e22aefcef8a474e5b8d27a
-size 183
+<PROJECT-NAME>_VERSION_MAJOR
+----------------------------
+
+First version number component of the :variable:`<PROJECT-NAME>_VERSION`
+variable as set by the :command:`project` command.

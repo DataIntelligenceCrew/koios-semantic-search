@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e79ddaf46eed8962659a3831fccb644c39a728b86ded15139cb769afd438da1c
-size 293
+CMAKE_NETRC
+-----------
+
+This variable is used to initialize the ``NETRC`` option for
+:command:`file(DOWNLOAD)` and :command:`file(UPLOAD)` commands and the
+module :module:`ExternalProject`. See those commands for additional
+information.
+
+The local option takes precedence over this variable.

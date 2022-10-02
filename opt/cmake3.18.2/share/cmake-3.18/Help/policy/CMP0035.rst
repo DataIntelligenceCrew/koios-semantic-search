@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:83d7305376fdda33bf6cb899f1f942ebb34f77724e0ce8997ec9d2686e2dcbe4
-size 322
+CMP0035
+-------
+
+The :command:`variable_requires` command should not be called.
+
+This command was introduced in November 2001 to perform some conditional
+logic.  It has long been replaced by the :command:`if` command.
+
+.. |disallowed_version| replace:: 3.0
+.. include:: DISALLOWED_COMMAND.txt
+
+.. include:: DEPRECATED.txt

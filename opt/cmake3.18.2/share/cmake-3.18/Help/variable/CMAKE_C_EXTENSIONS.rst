@@ -1,3 +1,11 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:8f680df7e7e4175764cecfd9492b8ad9e44ec5881a10bc2554a55649d8508874
-size 371
+CMAKE_C_EXTENSIONS
+------------------
+
+Default value for :prop_tgt:`C_EXTENSIONS` property of targets.
+
+This variable is used to initialize the :prop_tgt:`C_EXTENSIONS`
+property on all targets.  See that target property for additional
+information.
+
+See the :manual:`cmake-compile-features(7)` manual for information on
+compile features and a list of supported compilers.

@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f24843b3eb420d6edb660d83aca533f0eefd34b3997ab2003fb6b50b94840272
-size 146
+CMAKE_AR
+--------
+
+Name of archiving tool for static libraries.
+
+This specifies the name of the program that creates archive or static
+libraries.

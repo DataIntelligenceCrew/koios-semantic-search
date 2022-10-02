@@ -1,3 +1,19 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:26fb816ddcad685f93ce7bc1b8889c1aabe343d1cced6a2579ffee7ac7e18273
-size 478
+UNITY_BUILD_CODE_AFTER_INCLUDE
+------------------------------
+
+Code snippet which is included verbatim by the :prop_tgt:`UNITY_BUILD`
+feature just after every ``#include`` statement in the generated unity
+source files.  For example:
+
+.. code-block:: cmake
+
+  set(after [[
+  #if defined(NOMINMAX)
+  #undef NOMINMAX
+  #endif
+  ]])
+  set_target_properties(myTarget PROPERTIES
+    UNITY_BUILD_CODE_AFTER_INCLUDE "${after}"
+  )
+
+See also :prop_tgt:`UNITY_BUILD_CODE_BEFORE_INCLUDE`.

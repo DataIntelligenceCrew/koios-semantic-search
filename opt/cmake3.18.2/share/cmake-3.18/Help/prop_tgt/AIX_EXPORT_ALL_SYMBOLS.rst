@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:637259bf14e010c38a55ab692f2765e2941f2a00a1114cf7510d8475c0338876
-size 526
+AIX_EXPORT_ALL_SYMBOLS
+----------------------
+
+On AIX, CMake automatically exports all symbols from shared libraries, and
+from executables with the :prop_tgt:`ENABLE_EXPORTS` target property set.
+Explicitly disable this boolean property to suppress the behavior and
+export no symbols by default.  In this case it is expected that the project
+will use other means to export some symbols.
+
+This property is initialized by the value of
+the :variable:`CMAKE_AIX_EXPORT_ALL_SYMBOLS` variable if it is set
+when a target is created.

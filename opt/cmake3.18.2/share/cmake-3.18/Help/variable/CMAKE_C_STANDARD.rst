@@ -1,3 +1,11 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:05e3e3b9f799cb30ba9ce427eab44ad451024ab538d350d6e1ee28bea664630d
-size 363
+CMAKE_C_STANDARD
+----------------
+
+Default value for :prop_tgt:`C_STANDARD` property of targets.
+
+This variable is used to initialize the :prop_tgt:`C_STANDARD`
+property on all targets.  See that target property for additional
+information.
+
+See the :manual:`cmake-compile-features(7)` manual for information on
+compile features and a list of supported compilers.

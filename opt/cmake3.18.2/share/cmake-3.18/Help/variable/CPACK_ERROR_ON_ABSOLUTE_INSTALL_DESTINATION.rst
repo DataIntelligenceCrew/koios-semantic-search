@@ -1,3 +1,11 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:304e4163365bdb1cc2a0d820dcb38f71247ac038f6d0eff00fbc904a4ae4bbf4
-size 450
+CPACK_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION
+-------------------------------------------
+
+Ask CPack to error out as soon as a file with absolute ``INSTALL DESTINATION``
+is encountered.
+
+The fatal error is emitted before the installation of the offending
+file takes place.  Some CPack generators, like ``NSIS``, enforce this
+internally.  This variable triggers the definition
+of :variable:`CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION` when CPack
+runs.

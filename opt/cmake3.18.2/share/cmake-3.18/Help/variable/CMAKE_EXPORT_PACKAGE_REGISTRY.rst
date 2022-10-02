@@ -1,3 +1,15 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e82dd81a2523d8a648bd8d82e7434da2574522b47e53792728f29e35c6f91fba
-size 576
+CMAKE_EXPORT_PACKAGE_REGISTRY
+-----------------------------
+
+Enables the :command:`export(PACKAGE)` command when :policy:`CMP0090`
+is set to ``NEW``.
+
+The :command:`export(PACKAGE)` command does nothing by default.  In some cases
+it is desirable to write to the user package registry, so the
+``CMAKE_EXPORT_PACKAGE_REGISTRY`` variable may be set to enable it.
+
+If :policy:`CMP0090` is *not* set to ``NEW`` this variable does nothing, and
+the :variable:`CMAKE_EXPORT_NO_PACKAGE_REGISTRY` variable controls the behavior
+instead.
+
+See also :ref:`Disabling the Package Registry`.

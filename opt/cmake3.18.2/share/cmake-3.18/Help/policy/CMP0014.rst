@@ -1,3 +1,17 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:8a6f3dcff0d0629ab15a322d660e7b21cfa3542893869e4192119e7eaa53aa12
-size 748
+CMP0014
+-------
+
+Input directories must have ``CMakeLists.txt``.
+
+CMake versions before 2.8 silently ignored missing ``CMakeLists.txt``
+files in directories referenced by :command:`add_subdirectory` or  :command:`subdirs`,
+treating them as if present but empty.  In CMake 2.8.0 and above this
+:command:`cmake_policy` determines whether or not the case is an error.
+The ``OLD`` behavior for this policy is to silently ignore the problem.
+The ``NEW`` behavior for this policy is to report an error.
+
+This policy was introduced in CMake version 2.8.0.  CMake version
+|release| warns when the policy is not set and uses ``OLD`` behavior.  Use
+the :command:`cmake_policy` command to set it to ``OLD`` or ``NEW`` explicitly.
+
+.. include:: DEPRECATED.txt

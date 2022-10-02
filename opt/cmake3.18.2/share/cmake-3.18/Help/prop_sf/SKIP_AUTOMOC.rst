@@ -1,3 +1,15 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:50ec1b6a150db0e17cc350296049ad992c8799b3213d6f850fe987cc005923dc
-size 278
+SKIP_AUTOMOC
+------------
+
+Exclude the source file from :prop_tgt:`AUTOMOC` processing (for Qt projects).
+
+For broader exclusion control see :prop_sf:`SKIP_AUTOGEN`.
+
+EXAMPLE
+^^^^^^^
+
+.. code-block:: cmake
+
+  # ...
+  set_property(SOURCE file.h PROPERTY SKIP_AUTOMOC ON)
+  # ...

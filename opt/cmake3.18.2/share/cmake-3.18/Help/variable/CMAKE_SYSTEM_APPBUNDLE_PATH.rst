@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c59c0bf6c54822caacd1d94963c9eb71f7646391f7588621772b32015acb352b
-size 347
+CMAKE_SYSTEM_APPBUNDLE_PATH
+---------------------------
+
+Search path for macOS application bundles used by the :command:`find_program`,
+and :command:`find_package` commands.  By default it contains the standard
+directories for the current system.  It is *not* intended to be modified by
+the project, use :variable:`CMAKE_APPBUNDLE_PATH` for this.

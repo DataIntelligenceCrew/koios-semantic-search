@@ -1,3 +1,6 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b0582c2522cc5d903b723db2edb59c1b848159685154e7e24a55d57a68025c73
-size 216
+VS_SHADER_OBJECT_FILE_NAME
+--------------------------
+
+Specifies a file name for the compiled shader object file for an ``.hlsl``
+source file.  This adds the ``-Fo`` flag to the command line for the FxCompiler
+tool.

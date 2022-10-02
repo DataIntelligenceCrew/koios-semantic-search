@@ -1,3 +1,14 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:dbdee0ef6e23a9bc7876b056780109a0b4cfc3ec65c85c1c072bbcef57fce88d
-size 314
+ctest_read_custom_files
+-----------------------
+
+read CTestCustom files.
+
+::
+
+  ctest_read_custom_files( directory ... )
+
+Read all the CTestCustom.ctest or CTestCustom.cmake files from the
+given directory.
+
+By default, invoking :manual:`ctest(1)` without a script will read custom
+files from the binary directory.

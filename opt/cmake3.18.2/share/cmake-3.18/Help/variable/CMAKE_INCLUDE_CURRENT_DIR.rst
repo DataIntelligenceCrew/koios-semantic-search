@@ -1,3 +1,13 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a3f5207edadcc41ea7b2a92d7c3e8d397e8cb86527ac5a10323b1b6b63711da3
-size 580
+CMAKE_INCLUDE_CURRENT_DIR
+-------------------------
+
+Automatically add the current source and build directories to the include path.
+
+If this variable is enabled, CMake automatically adds
+:variable:`CMAKE_CURRENT_SOURCE_DIR` and :variable:`CMAKE_CURRENT_BINARY_DIR`
+to the include path for each directory.  These additional include
+directories do not propagate down to subdirectories.  This is useful
+mainly for out-of-source builds, where files generated into the build
+tree are included by files located in the source tree.
+
+By default ``CMAKE_INCLUDE_CURRENT_DIR`` is ``OFF``.

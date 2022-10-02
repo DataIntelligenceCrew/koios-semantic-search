@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:eb1d58686453ea32acc0a60dbd30abfa19a5a7b59235358c3e0bbda2173d1057
-size 329
+CTEST_CHANGE_ID
+---------------
+
+Specify the CTest ``ChangeId`` setting
+in a :manual:`ctest(1)` dashboard client script.
+
+This setting allows CTest to pass arbitrary information about this
+build up to CDash.  One use of this feature is to allow CDash to
+post comments on your pull request if anything goes wrong with your build.

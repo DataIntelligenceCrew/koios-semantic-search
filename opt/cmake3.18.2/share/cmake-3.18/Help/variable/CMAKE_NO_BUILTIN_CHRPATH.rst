@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:763b371719cf8f85d6e94d42d70f5f2793df05350d94609c87ce69376eb97b8a
-size 414
+CMAKE_NO_BUILTIN_CHRPATH
+------------------------
+
+Do not use the builtin ELF editor to fix RPATHs on installation.
+
+When an ELF binary needs to have a different RPATH after installation
+than it does in the build tree, CMake uses a builtin editor to change
+the RPATH in the installed copy.  If this variable is set to true then
+CMake will relink the binary before installation instead of using its
+builtin editor.

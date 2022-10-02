@@ -1,3 +1,50 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:8fd3d9e0e4e6deec01bd376eb11f9679e614c7284c6d5d803eed7817f72207d6
-size 1866
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/*                                                                           */
+/*                  This file is part of the program and library             */
+/*         SCIP --- Solving Constraint Integer Programs                      */
+/*                                                                           */
+/*    Copyright (C) 2002-2020 Konrad-Zuse-Zentrum                            */
+/*                            fuer Informationstechnik Berlin                */
+/*                                                                           */
+/*  SCIP is distributed under the terms of the ZIB Academic License.         */
+/*                                                                           */
+/*  You should have received a copy of the ZIB Academic License              */
+/*  along with SCIP; see the file COPYING. If not visit scipopt.org.         */
+/*                                                                           */
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+/**@file   sepa_impliedbounds.h
+ * @ingroup SEPARATORS
+ * @brief  implied bounds separator
+ * @author Kati Wolter
+ * @author Tobias Achterberg
+ */
+
+/*---+----1----+----2----+----3----+----4----+----5----+----6----+----7----+----8----+----9----+----0----+----1----+----2*/
+
+#ifndef __SCIP_SEPA_IMPLIEDBOUNDS_H__
+#define __SCIP_SEPA_IMPLIEDBOUNDS_H__
+
+
+#include "scip/def.h"
+#include "scip/type_retcode.h"
+#include "scip/type_scip.h"
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+/** creates the impliedbounds separator and includes it in SCIP
+ *
+ * @ingroup SeparatorIncludes
+ */
+SCIP_EXPORT
+SCIP_RETCODE SCIPincludeSepaImpliedbounds(
+   SCIP*                 scip                /**< SCIP data structure */
+   );
+
+#ifdef __cplusplus
+}
+#endif
+
+#endif

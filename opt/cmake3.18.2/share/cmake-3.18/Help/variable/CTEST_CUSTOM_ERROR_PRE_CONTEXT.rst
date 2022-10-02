@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:1edabce4c4ceab2e20f55381f4bff832c7f8e654fc66c03aa1aefb24d356e749
-size 228
+CTEST_CUSTOM_ERROR_PRE_CONTEXT
+------------------------------
+
+The number of lines to include as context which precede an error message by
+the :command:`ctest_test` command. The default is 10.
+
+.. include:: CTEST_CUSTOM_XXX.txt

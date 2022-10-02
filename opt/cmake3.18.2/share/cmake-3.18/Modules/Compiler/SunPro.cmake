@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e45c064187ec602622a8cc744ee022ab74c8476c5e80702389c2163ca0d39a94
-size 322
+# Distributed under the OSI-approved BSD 3-Clause License.  See accompanying
+# file Copyright.txt or https://cmake.org/licensing for details.
+
+# This module is shared by multiple languages; use include blocker.
+if(__COMPILER_SUNPRO)
+  return()
+endif()
+set(__COMPILER_SUNPRO 1)
+
+include(Compiler/CMakeCommonCompilerMacros)

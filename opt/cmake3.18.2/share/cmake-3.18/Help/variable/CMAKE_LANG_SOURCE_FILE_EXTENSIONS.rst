@@ -1,3 +1,6 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:af479802c693990baadeb97165fdd97ae6e3b3509fd375369e8944910c7ac029
-size 193
+CMAKE_<LANG>_SOURCE_FILE_EXTENSIONS
+-----------------------------------
+
+Extensions of source files for the given language.
+
+This is the list of extensions for a given language's source files.

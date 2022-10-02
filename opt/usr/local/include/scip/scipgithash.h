@@ -1,3 +1,43 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:35ba4329fd84b80317a079c3360685d4f174aabc5a283449b4bda1911d7c097f
-size 1594
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/*                                                                           */
+/*                  This file is part of the program and library             */
+/*         SCIP --- Solving Constraint Integer Programs                      */
+/*                                                                           */
+/*    Copyright (C) 2002-2020 Konrad-Zuse-Zentrum                            */
+/*                            fuer Informationstechnik Berlin                */
+/*                                                                           */
+/*  SCIP is distributed under the terms of the ZIB Academic License.         */
+/*                                                                           */
+/*  You should have received a copy of the ZIB Academic License              */
+/*  along with SCIP; see the file COPYING. If not visit scipopt.org.         */
+/*                                                                           */
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+/**@file   scipgithash.h
+ * @ingroup PUBLICCOREAPI
+ * @brief  git hash methods
+ * @author Stefan Heinz
+ */
+
+/*---+----1----+----2----+----3----+----4----+----5----+----6----+----7----+----8----+----9----+----0----+----1----+----2*/
+
+#ifndef __SCIPGITHASH_H__
+#define __SCIPGITHASH_H__
+
+#include "scip/def.h"
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+/** returns the SCIP git hash */
+SCIP_EXPORT
+const char* SCIPgetGitHash(
+   void
+   );
+
+#ifdef __cplusplus
+}
+#endif
+
+#endif

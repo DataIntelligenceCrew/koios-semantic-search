@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:21e59ac6fb4160a76646994c4759e68b5e2a122612b959e55b0cf17ac648368c
-size 439
+INTERFACE_COMPILE_DEFINITIONS
+-----------------------------
+
+.. |property_name| replace:: compile definitions
+.. |command_name| replace:: :command:`target_compile_definitions`
+.. |PROPERTY_INTERFACE_NAME| replace:: ``INTERFACE_COMPILE_DEFINITIONS``
+.. |PROPERTY_LINK| replace:: :prop_tgt:`COMPILE_DEFINITIONS`
+.. |PROPERTY_GENEX| replace:: ``$<TARGET_PROPERTY:foo,INTERFACE_COMPILE_DEFINITIONS>``
+.. include:: INTERFACE_BUILD_PROPERTY.txt

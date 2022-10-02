@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:9aa7b83666c065c342fcf4a8be56264918abeba994fa957132195c291d902c57
-size 534
+CMAKE_<LANG>_STANDARD_LIBRARIES
+-------------------------------
+
+Libraries linked into every executable and shared library linked
+for language ``<LANG>``.  This is meant for specification of system
+libraries needed by the language for the current platform.
+
+This variable should not be set by project code.  It is meant to be set by
+CMake's platform information modules for the current toolchain, or by a
+toolchain file when used with :variable:`CMAKE_TOOLCHAIN_FILE`.
+
+See also :variable:`CMAKE_<LANG>_STANDARD_INCLUDE_DIRECTORIES`.

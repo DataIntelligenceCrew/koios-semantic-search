@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f571008fd46367b38daa4b68257113ce66a3c6474982a3bd7550b12c8d9942e8
-size 284
+IMPORTED
+--------
+
+Read-only indication of whether a target is ``IMPORTED``.
+
+The boolean value of this property is ``True`` for targets created with
+the ``IMPORTED`` option to :command:`add_executable` or :command:`add_library`.
+It is ``False`` for targets built within the project.

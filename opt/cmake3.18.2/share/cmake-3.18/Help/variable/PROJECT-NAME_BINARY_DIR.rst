@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:dc246bc78840976e5b9b8f8a13796424133b7183c453b79949226fd46797b57a
-size 315
+<PROJECT-NAME>_BINARY_DIR
+-------------------------
+
+Top level binary directory for the named project.
+
+A variable is created with the name used in the :command:`project` command,
+and is the binary directory for the project.  This can be useful when
+:command:`add_subdirectory` is used to connect several projects.

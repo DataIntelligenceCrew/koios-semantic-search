@@ -1,3 +1,11 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:67284e2ba594bbdfaa998d3825f919cc0ee1a32dc312940ae09e654c7ea37568
-size 374
+CMAKE_AUTOGEN_ORIGIN_DEPENDS
+----------------------------
+
+Switch for forwarding origin target dependencies to the corresponding
+``_autogen`` targets.
+
+This variable is used to initialize the :prop_tgt:`AUTOGEN_ORIGIN_DEPENDS`
+property on all the targets.  See that target property for additional
+information.
+
+By default :variable:`CMAKE_AUTOGEN_ORIGIN_DEPENDS` is ``ON``.

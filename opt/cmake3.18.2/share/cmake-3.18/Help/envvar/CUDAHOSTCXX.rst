@@ -1,3 +1,15 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ff57da44d124657a6110a959781898bf5f2de65d83b5e42c90db28aea65ddf9b
-size 702
+CUDAHOSTCXX
+-----------
+
+.. include:: ENV_VAR.txt
+
+Preferred executable for compiling host code when compiling ``CUDA``
+language files. Will only be used by CMake on the first configuration to
+determine ``CUDA`` host compiler, after which the value for ``CUDAHOSTCXX`` is
+stored in the cache as :variable:`CMAKE_CUDA_HOST_COMPILER`. For any
+configuration run (including the first), the environment variable will be
+ignored if the :variable:`CMAKE_CUDA_HOST_COMPILER` variable is defined.
+
+This environment variable is primarily meant for use with projects that
+enable ``CUDA`` as a first-class language.  The :module:`FindCUDA`
+module will also use it to initialize its ``CUDA_HOST_COMPILER`` setting.

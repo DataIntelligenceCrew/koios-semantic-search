@@ -1,3 +1,14 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a7730026f475628ed43bc282bc7c18ebae2f5bd25687dada6fae73a8ecd7ecab
-size 380
+fltk_wrap_ui
+------------
+
+Create FLTK user interfaces Wrappers.
+
+.. code-block:: cmake
+
+  fltk_wrap_ui(resultingLibraryName source1
+               source2 ... sourceN )
+
+Produce .h and .cxx files for all the .fl and .fld files listed.  The
+resulting .h and .cxx files will be added to a variable named
+``resultingLibraryName_FLTK_UI_SRCS`` which should be added to your
+library.

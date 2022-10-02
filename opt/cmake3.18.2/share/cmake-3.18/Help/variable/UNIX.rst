@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:6517d99e3ee7d39f80ae758bcae59a2cbdb47fd41d43a1a4c66886608ef16590
-size 249
+UNIX
+----
+
+Set to ``True`` when the target system is UNIX or UNIX-like
+(e.g. :variable:`APPLE` and :variable:`CYGWIN`).  The
+:variable:`CMAKE_SYSTEM_NAME` variable should be queried if
+a more specific understanding of the target system is required.

@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ef408b6044226baf7f5438a5405c508200b0fe76d411a90494597361af132452
-size 216
+FRAMEWORK_VERSION
+-----------------
+
+Version of a framework created using the :prop_tgt:`FRAMEWORK` target
+property (e.g. ``A``).
+
+This property only affects macOS, as iOS doesn't have versioned
+directory structure.

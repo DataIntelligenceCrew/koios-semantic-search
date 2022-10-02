@@ -1,3 +1,17 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:4561137f9b3e6d358327bd2c15c285948e38de8612bd32b5c8d3bb7d7a35f3f5
-size 387
+CMAKE_ANDROID_ARCH_ABI
+----------------------
+
+When :ref:`Cross Compiling for Android`, this variable specifies the
+target architecture and ABI to be used.  Valid values are:
+
+* ``arm64-v8a``
+* ``armeabi-v7a``
+* ``armeabi-v6``
+* ``armeabi``
+* ``mips``
+* ``mips64``
+* ``x86``
+* ``x86_64``
+
+See also the :variable:`CMAKE_ANDROID_ARM_MODE` and
+:variable:`CMAKE_ANDROID_ARM_NEON` variables.

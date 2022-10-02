@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:4d77f5a358f48f1c5d14750723b35dc4f4635d9dffe9aeaaba164841a6e475af
-size 328
+
+set(_compiler_id_pp_test "defined(__PGI)")
+
+set(_compiler_id_version_compute "
+# define @PREFIX@COMPILER_VERSION_MAJOR @MACRO_DEC@(__PGIC__)
+# define @PREFIX@COMPILER_VERSION_MINOR @MACRO_DEC@(__PGIC_MINOR__)
+# if defined(__PGIC_PATCHLEVEL__)
+#  define @PREFIX@COMPILER_VERSION_PATCH @MACRO_DEC@(__PGIC_PATCHLEVEL__)
+# endif")

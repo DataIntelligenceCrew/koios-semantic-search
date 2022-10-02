@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:de4b7d58ede3d060043965c7411ecfef74dbd510d78f599b14734052fbcca87c
-size 352
+CMAKE_INCLUDE_DIRECTORIES_PROJECT_BEFORE
+----------------------------------------
+
+Whether to force prepending of project include directories.
+
+This variable affects the order of include directories generated in compiler
+command lines.  If set to ``ON``, it causes the :variable:`CMAKE_SOURCE_DIR`
+and the :variable:`CMAKE_BINARY_DIR` to appear first.

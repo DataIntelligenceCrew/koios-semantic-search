@@ -1,3 +1,17 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:1318aac33f38eaf1c58112b38cd3db6fbfa91b0046df1e760beba4cabe9723c3
-size 554
+# Distributed under the OSI-approved BSD 3-Clause License.  See accompanying
+# file Copyright.txt or https://cmake.org/licensing for details.
+
+
+# Use of this file is deprecated, and is here for backwards compatibility with CMake 1.4
+# GLU library is now found by FindOpenGL.cmake
+#
+
+message(STATUS
+  "WARNING: you are using the obsolete 'GLU' package, please use 'OpenGL' instead")
+
+include(${CMAKE_CURRENT_LIST_DIR}/FindOpenGL.cmake)
+
+if (OPENGL_GLU_FOUND)
+  set (GLU_LIBRARY ${OPENGL_LIBRARIES})
+  set (GLU_INCLUDE_PATH ${OPENGL_INCLUDE_DIR})
+endif ()

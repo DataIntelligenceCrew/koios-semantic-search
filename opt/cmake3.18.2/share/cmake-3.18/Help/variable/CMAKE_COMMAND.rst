@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ad8e4b6df52340ccdd3d26bcc0061a5fd53805dc22d992f5dc7fc0764e1e4a19
-size 289
+CMAKE_COMMAND
+-------------
+
+The full path to the :manual:`cmake(1)` executable.
+
+This is the full path to the CMake executable :manual:`cmake(1)` which is
+useful from custom commands that want to use the ``cmake -E`` option for
+portable system commands.  (e.g.  ``/usr/local/bin/cmake``)

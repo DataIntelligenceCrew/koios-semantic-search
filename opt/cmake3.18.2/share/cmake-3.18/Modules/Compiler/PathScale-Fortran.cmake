@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:cfea951304f8b312468d937702d5a04475a2ead6e809fb4f2cb1b960536d1cb5
-size 315
+include(Compiler/PathScale)
+__compiler_pathscale(Fortran)
+
+set(CMAKE_Fortran_MODDIR_FLAG "-module ")
+set(CMAKE_Fortran_FORMAT_FIXED_FLAG "-fixedform")
+set(CMAKE_Fortran_FORMAT_FREE_FLAG "-freeform")
+
+set(CMAKE_Fortran_COMPILE_OPTIONS_PREPROCESS_ON "-cpp")
+set(CMAKE_Fortran_COMPILE_OPTIONS_PREPROCESS_OFF "-nocpp")

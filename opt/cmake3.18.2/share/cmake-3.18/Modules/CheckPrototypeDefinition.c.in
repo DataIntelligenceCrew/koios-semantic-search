@@ -1,3 +1,29 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:9ebefd8410cc69c52e2f5e450a13269307567f0b5a5b5b02694b180dffb30167
-size 514
+@CHECK_PROTOTYPE_DEFINITION_HEADER@
+
+static void cmakeRequireSymbol(int dummy, ...) {
+  (void) dummy;
+}
+
+static void checkSymbol(void) {
+#ifndef @CHECK_PROTOTYPE_DEFINITION_SYMBOL@
+  cmakeRequireSymbol(0, &@CHECK_PROTOTYPE_DEFINITION_SYMBOL@);
+#endif
+}
+
+@CHECK_PROTOTYPE_DEFINITION_PROTO@ {
+  return @CHECK_PROTOTYPE_DEFINITION_RETURN@;
+}
+
+#ifdef __CLASSIC_C__
+int main() {
+  int ac;
+  char*av[];
+#else
+int main(int ac, char *av[]) {
+#endif
+  checkSymbol();
+  if (ac > 1000) {
+    return *av[0];
+  }
+  return 0;
+}

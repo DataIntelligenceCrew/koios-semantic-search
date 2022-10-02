@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f0ae1ec3b3cfeaa4682fd2f9f6a3f8a094dad66716cf899a5322cb8dbe2d5fb8
-size 155
+HAS_CXX
+-------
+
+Link the target using the C++ linker tool (obsolete).
+
+This is equivalent to setting the :prop_tgt:`LINKER_LANGUAGE`
+property to ``CXX``.

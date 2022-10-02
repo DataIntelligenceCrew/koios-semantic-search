@@ -1,3 +1,15 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:8819c347d43c4e64a3e271ef2985dd9d27a4d9797d1eb37231eb336404f1fd90
-size 458
+CMAKE_HOST_SYSTEM_PROCESSOR
+---------------------------
+
+The name of the CPU CMake is running on.
+
+On Windows, this variable is set to the value of the environment variable
+``PROCESSOR_ARCHITECTURE``. On systems that support ``uname``, this variable is
+set to the output of:
+
+- ``uname -m`` on GNU, Linux, Cygwin, Darwin, Android, or
+- ``arch`` on OpenBSD, or
+- on other systems,
+
+  * ``uname -p`` if its exit code is nonzero, or
+  * ``uname -m`` otherwise.

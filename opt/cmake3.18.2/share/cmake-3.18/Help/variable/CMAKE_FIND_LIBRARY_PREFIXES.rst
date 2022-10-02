@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:02afa5672a987e83e589b80b255df73c080921aec5fca73d0422199b6f9951bd
-size 347
+CMAKE_FIND_LIBRARY_PREFIXES
+---------------------------
+
+Prefixes to prepend when looking for libraries.
+
+This specifies what prefixes to add to library names when the
+:command:`find_library` command looks for libraries.  On UNIX systems this is
+typically ``lib``, meaning that when trying to find the ``foo`` library it
+will look for ``libfoo``.

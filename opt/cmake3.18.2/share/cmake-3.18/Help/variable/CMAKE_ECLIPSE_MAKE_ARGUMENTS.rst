@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:80129eb1775a6be0a49c19036e7bcead11435f844251fb420f1b8965b920af13
-size 330
+CMAKE_ECLIPSE_MAKE_ARGUMENTS
+----------------------------
+
+This cache variable is used by the Eclipse project generator.  See
+:manual:`cmake-generators(7)`.
+
+This variable holds arguments which are used when Eclipse invokes the make
+tool. By default it is initialized to hold flags to enable parallel builds
+(using -j typically).

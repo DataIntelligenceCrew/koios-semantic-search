@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:29d49c9c0448ae8e5538548fdfc229eb87cab5c1cbff86dff73729a74399fcdc
-size 366
+CMAKE_POSITION_INDEPENDENT_CODE
+-------------------------------
+
+Default value for :prop_tgt:`POSITION_INDEPENDENT_CODE` of targets.
+
+This variable is used to initialize the
+:prop_tgt:`POSITION_INDEPENDENT_CODE` property on all the targets.
+See that target property for additional information.  If set, it's
+value is also used by the :command:`try_compile` command.

@@ -1,3 +1,6 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:4dfefa87abca71d15ef56a391c6b3aa896789a05efad1f2de3704865274527e6
-size 273
+Visual Studio 7 .NET 2003
+-------------------------
+
+Removed.  This once generated Visual Studio .NET 2003 project files, but
+the generator has been removed since CMake 3.9.  It is still possible to
+build with VS 7.1 tools using the :generator:`NMake Makefiles` generator.

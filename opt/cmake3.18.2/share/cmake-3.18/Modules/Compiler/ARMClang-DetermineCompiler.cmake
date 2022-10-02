@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:fd8719fd8da97284c426597422e903fb2ae79ef5474dc6a01d87c7134873e438
-size 529
+# ARMClang Toolchain
+set(_compiler_id_pp_test "defined(__clang__) && defined(__ARMCOMPILER_VERSION)")
+
+set(_compiler_id_version_compute "
+  # define @PREFIX@COMPILER_VERSION_MAJOR @MACRO_DEC@(__ARMCOMPILER_VERSION/1000000)
+  # define @PREFIX@COMPILER_VERSION_MINOR @MACRO_DEC@(__ARMCOMPILER_VERSION/10000 % 100)
+  # define @PREFIX@COMPILER_VERSION_PATCH @MACRO_DEC@(__ARMCOMPILER_VERSION     % 10000)")
+
+string(APPEND _compiler_id_version_compute "
+# define @PREFIX@COMPILER_VERSION_INTERNAL @MACRO_DEC@(__ARMCOMPILER_VERSION)")

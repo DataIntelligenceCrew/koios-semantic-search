@@ -1,3 +1,5 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b45034517af068bd8034160dbd67382d5a2156448d8e5bb6dd537a9583f74cb5
-size 168
+CMAKE_ANDROID_PROGUARD
+----------------------
+
+Default value for the :prop_tgt:`ANDROID_PROGUARD` target property.
+See that target property for additional information.

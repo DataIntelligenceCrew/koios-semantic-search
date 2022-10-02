@@ -1,3 +1,13 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c2ba936dff5bb6d6d030383655c1dcaf2eda53669b2c92482b049d19f2752f09
-size 570
+CSFLAGS
+-------
+
+.. include:: ENV_VAR.txt
+
+Preferred executable for compiling ``CSharp`` language files. Will only be
+used by CMake on the first configuration to determine ``CSharp`` default
+compilation flags, after which the value for ``CSFLAGS`` is stored in the cache
+as :variable:`CMAKE_CSharp_FLAGS <CMAKE_<LANG>_FLAGS>`. For any configuration
+run (including the first), the environment variable will be ignored if the
+:variable:`CMAKE_CSharp_FLAGS <CMAKE_<LANG>_FLAGS>` variable is defined.
+
+See also :variable:`CMAKE_CSharp_FLAGS_INIT <CMAKE_<LANG>_FLAGS_INIT>`.

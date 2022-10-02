@@ -1,3 +1,11 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:5f864270b74170736361a4299afbe3eabab00dce9e8e24821b51ad31e118e920
-size 408
+<PROJECT-NAME>_VERSION
+----------------------
+
+Value given to the ``VERSION`` option of the most recent call to the
+:command:`project` command with project name ``<PROJECT-NAME>``, if any.
+
+See also the component-wise version variables
+:variable:`<PROJECT-NAME>_VERSION_MAJOR`,
+:variable:`<PROJECT-NAME>_VERSION_MINOR`,
+:variable:`<PROJECT-NAME>_VERSION_PATCH`, and
+:variable:`<PROJECT-NAME>_VERSION_TWEAK`.

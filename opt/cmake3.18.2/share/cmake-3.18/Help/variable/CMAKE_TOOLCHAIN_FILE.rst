@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:3ff558e783277a9e0cd919e4fd5aa33c17d07b6fd35f56d3c0581914398ba5b1
-size 370
+CMAKE_TOOLCHAIN_FILE
+--------------------
+
+Path to toolchain file supplied to :manual:`cmake(1)`.
+
+This variable is specified on the command line when cross-compiling with CMake.
+It is the path to a file which is read early in the CMake run and which
+specifies locations for compilers and toolchain utilities, and other target
+platform and compiler related information.

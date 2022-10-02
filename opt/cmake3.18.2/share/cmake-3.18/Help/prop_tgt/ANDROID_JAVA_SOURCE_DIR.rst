@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:2aa3e2efa26ca556561e57b0ec160ba8c154355568dae9ad3d7aaffc58f72f74
-size 346
+ANDROID_JAVA_SOURCE_DIR
+-----------------------
+
+Set the Android property that defines the Java source code root directories.
+This a string property that contains the directory paths separated by semicolon.
+This property is initialized by the value of the
+:variable:`CMAKE_ANDROID_JAVA_SOURCE_DIR` variable if it is set
+when a target is created.

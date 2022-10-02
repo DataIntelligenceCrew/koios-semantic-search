@@ -1,3 +1,19 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:1d71f1a401f737baac6d5c4a9d5be009560b3cc4b02cfd24b94e1692defb5233
-size 774
+COMPILE_DEFINITIONS_<CONFIG>
+----------------------------
+
+Ignored.  See CMake Policy :policy:`CMP0043`.
+
+Per-configuration preprocessor definitions in a directory.
+
+This is the configuration-specific version of :prop_dir:`COMPILE_DEFINITIONS`
+where ``<CONFIG>`` is an upper-case name (ex. ``COMPILE_DEFINITIONS_DEBUG``).
+
+This property will be initialized in each directory by its value in
+the directory's parent.
+
+Contents of ``COMPILE_DEFINITIONS_<CONFIG>`` may use "generator expressions"
+with the syntax ``$<...>``.  See the :manual:`cmake-generator-expressions(7)`
+manual for available expressions.  See the :manual:`cmake-buildsystem(7)`
+manual for more on defining buildsystem properties.
+
+Generator expressions should be preferred instead of setting this property.

@@ -1,3 +1,11 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:3862185ba41b9fbeb9d8f406d67ee6b7796f8b91f84d09321e4ce331a4223749
-size 391
+CMAKE_OBJCXX_EXTENSIONS
+-----------------------
+
+Default value for :prop_tgt:`OBJCXX_EXTENSIONS` property of targets.
+
+This variable is used to initialize the :prop_tgt:`OBJCXX_EXTENSIONS`
+property on all targets.  See that target property for additional
+information.
+
+See the :manual:`cmake-compile-features(7)` manual for information on
+compile features and a list of supported compilers.

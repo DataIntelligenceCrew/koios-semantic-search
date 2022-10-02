@@ -1,3 +1,18 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:dd9ae222cf049d092311daaaf8e9d605b3a8122670a3ec097caa7a234349250c
-size 906
+Disclaimer: Most native build tools have poor support for escaping
+certain values.  CMake has work-arounds for many cases but some values
+may just not be possible to pass correctly.  If a value does not seem
+to be escaped correctly, do not attempt to work-around the problem by
+adding escape sequences to the value.  Your work-around may break in a
+future version of CMake that has improved escape support.  Instead
+consider defining the macro in a (configured) header file.  Then
+report the limitation.  Known limitations include::
+
+  #          - broken almost everywhere
+  ;          - broken in VS IDE 7.0 and Borland Makefiles
+  ,          - broken in VS IDE
+  %          - broken in some cases in NMake
+  & |        - broken in some cases on MinGW
+  ^ < > \"   - broken in most Make tools on Windows
+
+CMake does not reject these values outright because they do work in
+some cases.  Use with caution.

@@ -1,3 +1,22 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:3b300ab1c271c1772b884d2dbc13617178c1d7fc73966990d5ade6ae896f7336
-size 752
+COMMON_LANGUAGE_RUNTIME
+-----------------------
+
+By setting this target property, the target is configured to build with
+``C++/CLI`` support.
+
+The Visual Studio generator defines the ``clr`` parameter depending on
+the value of ``COMMON_LANGUAGE_RUNTIME``:
+
+* property not set: native C++ (i.e. default)
+* property set but empty: mixed unmanaged/managed C++
+* property set to any non empty value: managed C++
+
+Supported values: ``""``, ``"pure"``, ``"safe"``
+
+This property is only evaluated :ref:`Visual Studio Generators` for
+VS 2010 and above.
+
+To be able to build managed C++ targets with VS 2017 and above the component
+``C++/CLI support`` must be installed, which may not be done by default.
+
+See also :prop_tgt:`IMPORTED_COMMON_LANGUAGE_RUNTIME`

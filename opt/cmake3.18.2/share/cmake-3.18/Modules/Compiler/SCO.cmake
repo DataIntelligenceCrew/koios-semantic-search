@@ -1,3 +1,21 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e70f186f1fd125674ca2757cbb7eeb17522a613fcb15a58c962770243855867e
-size 695
+# Distributed under the OSI-approved BSD 3-Clause License.  See accompanying
+# file Copyright.txt or https://cmake.org/licensing for details.
+
+
+# This module is shared by multiple languages; use include blocker.
+if(__COMPILER_SCO)
+  return()
+endif()
+set(__COMPILER_SCO 1)
+
+macro(__compiler_sco lang)
+  # Feature flags.
+  set(CMAKE_${lang}_COMPILE_OPTIONS_PIC -Kpic)
+  set(CMAKE_${lang}_COMPILE_OPTIONS_PIE -Kpie)
+  set(CMAKE_${lang}_COMPILE_OPTIONS_DLL -belf)
+  set(CMAKE_SHARED_LIBRARY_${lang}_FLAGS "-Kpic -belf")
+  set(CMAKE_SHARED_LIBRARY_CREATE_${lang}_FLAGS "-belf -Wl,-Bexport")
+
+  set(CMAKE_${lang}_LINKER_WRAPPER_FLAG "-Wl,")
+  set(CMAKE_${lang}_LINKER_WRAPPER_FLAG_SEP ",")
+endmacro()

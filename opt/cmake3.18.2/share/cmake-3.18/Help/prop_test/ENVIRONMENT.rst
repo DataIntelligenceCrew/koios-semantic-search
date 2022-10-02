@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e12db107692c608c6931835783a8e8c0ccd409f9e9678af4648810abcb4419d7
-size 323
+ENVIRONMENT
+-----------
+
+Specify environment variables that should be defined for running a test.
+
+If set to a list of environment variables and values of the form
+``MYVAR=value`` those environment variables will be defined while running
+the test.  The environment is restored to its previous state after the
+test is done.

@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:58e1690384f86b514f593c1bbd03ac9bf15a039fd08a36412a7701f655df5e8f
-size 268
+
+set(_compiler_id_pp_test "defined(__COMO__)")
+
+set(_compiler_id_version_compute "
+  /* __COMO_VERSION__ = VRR */
+# define @PREFIX@COMPILER_VERSION_MAJOR @MACRO_DEC@(__COMO_VERSION__ / 100)
+# define @PREFIX@COMPILER_VERSION_MINOR @MACRO_DEC@(__COMO_VERSION__ % 100)")

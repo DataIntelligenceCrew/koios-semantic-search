@@ -1,3 +1,13 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:2e09791c2f6d0b7542a90d9ed67221fb8ad60a96845dcf55c883ccde39b802f1
-size 395
+VS_PACKAGE_REFERENCES
+---------------------
+
+Visual Studio package references for nuget.
+
+Adds one or more semicolon-delimited package references to a generated
+Visual Studio project. The version of the package will be
+underscore delimited. For example, ``boost_1.7.0;nunit_3.12.*``.
+
+.. code-block:: cmake
+
+  set_property(TARGET ${TARGET_NAME} PROPERTY
+    VS_PACKAGE_REFERENCES "boost_1.7.0")

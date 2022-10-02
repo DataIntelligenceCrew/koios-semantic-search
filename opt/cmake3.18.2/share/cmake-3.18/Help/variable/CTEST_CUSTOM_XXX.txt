@@ -1,3 +1,2 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d724fe07125e00411542754828d0b34d7eadfd6100b59c32c1791bed1da141f0
-size 140
+It is initialized by :manual:`ctest(1)`, but may be edited in a ``CTestCustom``
+file. See :command:`ctest_read_custom_files` documentation.

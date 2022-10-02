@@ -1,3 +1,4 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:00fafc0ffbf9795d5a80881ef6f6bfd759d207dad880dbf018b1627741ca959f
-size 132
+include(Platform/Android/ndk-stl-stlport)
+macro(__android_stl lang)
+  __android_stl_stlport(${lang} libstlport_static.a)
+endmacro()

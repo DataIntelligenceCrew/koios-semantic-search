@@ -1,3 +1,11 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c6659f2edbcfec4d73fc74ff0cd769bea562798865226622620e8a023d7c9f96
-size 417
+VS_DEBUGGER_COMMAND_ARGUMENTS
+-----------------------------
+
+Sets the local debugger command line arguments for Visual Studio C++ targets.
+The property value may use
+:manual:`generator expressions <cmake-generator-expressions(7)>`.
+This is defined in ``<LocalDebuggerCommandArguments>`` in the Visual Studio
+project file.
+
+This property only works for Visual Studio 2010 and above;
+it is ignored on other generators.

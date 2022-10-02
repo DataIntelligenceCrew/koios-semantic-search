@@ -1,3 +1,6 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:4068541c1f99204674d3b91a69e91b2ece51830681128e2492a1ce7efe9f9c61
-size 186
+CMAKE_MODULE_LINKER_FLAGS_<CONFIG>
+----------------------------------
+
+Flags to be used when linking a module.
+
+Same as ``CMAKE_C_FLAGS_*`` but used by the linker when creating modules.

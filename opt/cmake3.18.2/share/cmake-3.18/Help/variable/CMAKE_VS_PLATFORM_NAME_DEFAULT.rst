@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:1f1363ef09dcecb9164e9acbc863cdde1be55de2ddd7adad3ae0d1fd4682530e
-size 427
+CMAKE_VS_PLATFORM_NAME_DEFAULT
+------------------------------
+
+Default for the Visual Studio target platform name for the current generator
+without considering the value of the :variable:`CMAKE_GENERATOR_PLATFORM`
+variable.  For :ref:`Visual Studio Generators` for VS 2017 and below this is
+always ``Win32``.  For VS 2019 and above this is based on the host platform.
+
+See also the :variable:`CMAKE_VS_PLATFORM_NAME` variable.

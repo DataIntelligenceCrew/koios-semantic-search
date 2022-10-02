@@ -1,3 +1,15 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b002c89b8e3d7f1547f38690b7e977a8b1c126a2422d15439a5e7cd6305419e2
-size 744
+LINK_WHAT_YOU_USE
+---------------------------
+
+This is a boolean option that when set to ``TRUE`` will automatically run
+``ldd -r -u`` on the target after it is linked. In addition, the linker flag
+``-Wl,--no-as-needed`` will be passed to the target with the link command so
+that all libraries specified on the command line will be linked into the
+target. This will result in the link producing a list of libraries that
+provide no symbols used by this target but are being linked to it.
+This is only applicable to executable and shared library targets and
+will only work when ld and ldd accept the flags used.
+
+This property is initialized by the value of
+the :variable:`CMAKE_LINK_WHAT_YOU_USE` variable if it is set
+when a target is created.

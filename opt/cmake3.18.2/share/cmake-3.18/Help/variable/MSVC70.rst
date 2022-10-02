@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:91f7f6ec991e0a325bcca667997592e9eaa66356d5187678fcc831f4f5ff4afa
-size 202
+MSVC70
+------
+
+Discouraged.  Use the :variable:`MSVC_VERSION` variable instead.
+
+``True`` when using Microsoft Visual C++ 7.0.
+
+Set to ``true`` when the compiler is version 7.0 of Microsoft Visual C++.

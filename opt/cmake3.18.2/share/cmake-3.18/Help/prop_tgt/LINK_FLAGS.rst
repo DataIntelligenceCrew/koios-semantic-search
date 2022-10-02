@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:03ac57930d549383b56f05906b9954696c91cb5ab61cc6a1f68a14d58de2e8ee
-size 597
+LINK_FLAGS
+----------
+
+Additional flags to use when linking this target if it is a shared library,
+module library, or an executable. Static libraries need to use
+:prop_tgt:`STATIC_LIBRARY_OPTIONS` or :prop_tgt:`STATIC_LIBRARY_FLAGS`
+properties.
+
+The ``LINK_FLAGS`` property, managed as a string, can be used to add extra
+flags to the link step of a target.  :prop_tgt:`LINK_FLAGS_<CONFIG>` will add
+to the configuration ``<CONFIG>``, for example, ``DEBUG``, ``RELEASE``,
+``MINSIZEREL``, ``RELWITHDEBINFO``, ...
+
+.. note::
+
+  This property has been superseded by :prop_tgt:`LINK_OPTIONS` property.

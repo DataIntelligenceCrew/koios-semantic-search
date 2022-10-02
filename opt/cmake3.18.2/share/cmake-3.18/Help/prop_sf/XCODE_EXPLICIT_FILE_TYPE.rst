@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:bc7b4018a5f5e110fb86ee6d0b0bcffc59a2a2ed79222d76998dc3cbfa84300d
-size 290
+XCODE_EXPLICIT_FILE_TYPE
+------------------------
+
+Set the :generator:`Xcode` ``explicitFileType`` attribute on its reference to a
+source file.  CMake computes a default based on file extension but
+can be told explicitly with this property.
+
+See also :prop_sf:`XCODE_LAST_KNOWN_FILE_TYPE`.

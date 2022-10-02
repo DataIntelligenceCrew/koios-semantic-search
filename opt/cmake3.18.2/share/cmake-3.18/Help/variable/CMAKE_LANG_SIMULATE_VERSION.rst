@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:2129153d17b73cbddec9d2cdd25583f35263da6e2d9270dae9705b2a811a5531
-size 332
+CMAKE_<LANG>_SIMULATE_VERSION
+-----------------------------
+
+Version string of "simulated" compiler.
+
+Some compilers simulate other compilers to serve as drop-in
+replacements.  When CMake detects such a compiler it sets this
+variable to what would have been the :variable:`CMAKE_<LANG>_COMPILER_VERSION`
+for the simulated compiler.

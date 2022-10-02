@@ -1,3 +1,13 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:875d9504f64a4e4aed263be0e73f311ec069c603d739b7a06ddf4fcd8508f81c
-size 544
+BUILD_RPATH
+-----------
+
+A :ref:`semicolon-separated list <CMake Language Lists>` specifying runtime path (``RPATH``)
+entries to add to binaries linked in the build tree (for platforms that
+support it).  The entries will *not* be used for binaries in the install
+tree.  See also the :prop_tgt:`INSTALL_RPATH` target property.
+
+This property is initialized by the value of the variable
+:variable:`CMAKE_BUILD_RPATH` if it is set when a target is created.
+
+This property supports
+:manual:`generator expressions <cmake-generator-expressions(7)>`.

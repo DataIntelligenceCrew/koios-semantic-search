@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:aedbe787f82f1b1862c18786b2040c867f77adb6df4425f96d5e0e340cd0d516
-size 429
+CMAKE_ECLIPSE_VERSION
+---------------------
+
+This cache variable is used by the Eclipse project generator.  See
+:manual:`cmake-generators(7)`.
+
+When using the Eclipse project generator, CMake tries to find the Eclipse
+executable and detect the version of it. Depending on the version it finds,
+some features are enabled or disabled. If CMake doesn't find
+Eclipse, it assumes the oldest supported version, Eclipse Callisto (3.2).

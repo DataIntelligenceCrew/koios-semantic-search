@@ -1,3 +1,14 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:dc433f37144e6fbea29c244e11a0379e6989e7c4a414d00749d8175fd9055c8b
-size 337
+endfunction
+-----------
+
+Ends a list of commands in a function block.
+
+.. code-block:: cmake
+
+  endfunction([<name>])
+
+See the :command:`function` command.
+
+The optional ``<name>`` argument is supported for backward compatibility
+only. If used it must be a verbatim repeat of the ``<name>`` argument
+of the opening ``function`` command.

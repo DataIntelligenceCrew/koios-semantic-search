@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:adffefaac8263f42ca680b20d3102cbec7615fbafa370acd572bb4be1af5684a
-size 267
+CMAKE_ARGC
+----------
+
+Number of command line arguments passed to CMake in script mode.
+
+When run in :ref:`-P <Script Processing Mode>` script mode, CMake sets this
+variable to the number of command line arguments.  See also
+:variable:`CMAKE_ARGV0`, ``1``, ``2`` ...

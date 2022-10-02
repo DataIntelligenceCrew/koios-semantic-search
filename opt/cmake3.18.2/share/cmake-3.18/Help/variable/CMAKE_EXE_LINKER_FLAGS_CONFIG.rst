@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d548509abc7a7102b974f9218feab5fa3151f43994bda65545f18df79e06455f
-size 189
+CMAKE_EXE_LINKER_FLAGS_<CONFIG>
+-------------------------------
+
+Flags to be used when linking an executable.
+
+Same as ``CMAKE_C_FLAGS_*`` but used by the linker when creating
+executables.

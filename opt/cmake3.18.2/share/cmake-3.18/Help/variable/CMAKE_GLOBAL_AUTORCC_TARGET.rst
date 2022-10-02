@@ -1,3 +1,18 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:4140b1abb42e58603997543b98e8258227cab04aabf345af94cf16e1a9386aeb
-size 689
+CMAKE_GLOBAL_AUTORCC_TARGET
+---------------------------
+
+Switch to enable generation of a global ``autorcc`` target.
+
+When :variable:`CMAKE_GLOBAL_AUTORCC_TARGET` is enabled, a custom target
+``autorcc`` is generated. This target depends on all :prop_tgt:`AUTORCC`
+generated ``<ORIGIN>_arcc_<QRC>`` targets in the project.
+By building the global ``autorcc`` target, all :prop_tgt:`AUTORCC`
+files in the project will be generated.
+
+The name of the global ``autorcc`` target can be changed by setting
+:variable:`CMAKE_GLOBAL_AUTORCC_TARGET_NAME`.
+
+By default :variable:`CMAKE_GLOBAL_AUTORCC_TARGET` is unset.
+
+See the :manual:`cmake-qt(7)` manual for more information on using CMake
+with Qt.

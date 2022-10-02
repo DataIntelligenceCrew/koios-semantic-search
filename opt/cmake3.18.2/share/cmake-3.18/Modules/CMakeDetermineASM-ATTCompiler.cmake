@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:2d89fc224f8510b3622d07ee41a752415b2008a48b0d5118244a8fc66f1bbbfe
-size 394
+# Distributed under the OSI-approved BSD 3-Clause License.  See accompanying
+# file Copyright.txt or https://cmake.org/licensing for details.
+
+
+# determine the compiler to use for ASM using AT&T syntax, e.g. GNU as
+
+set(ASM_DIALECT "-ATT")
+set(CMAKE_ASM${ASM_DIALECT}_COMPILER_LIST ${_CMAKE_TOOLCHAIN_PREFIX}gas ${_CMAKE_TOOLCHAIN_PREFIX}as)
+include(CMakeDetermineASMCompiler)
+set(ASM_DIALECT)

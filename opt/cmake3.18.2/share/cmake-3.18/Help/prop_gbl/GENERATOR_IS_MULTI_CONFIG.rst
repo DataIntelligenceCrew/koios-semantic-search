@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:56d28920bbef8ab566cbbc4fdb4673271e276e6f81626247d4d4cba2e1f69f9a
-size 370
+GENERATOR_IS_MULTI_CONFIG
+-------------------------
+
+Read-only property that is true on multi-configuration generators.
+
+True when using a multi-configuration generator
+(such as :ref:`Visual Studio Generators` or :generator:`Xcode`).
+Multi-config generators use :variable:`CMAKE_CONFIGURATION_TYPES`
+as the set of configurations and ignore :variable:`CMAKE_BUILD_TYPE`.

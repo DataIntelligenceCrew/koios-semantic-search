@@ -1,3 +1,11 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:eae88d6db11db4fb777fd9658bf6905eb88cb770f9a5e83eac55c4158f05c95e
-size 468
+CXX
+---
+
+.. include:: ENV_VAR.txt
+
+Preferred executable for compiling ``CXX`` language files. Will only be used by
+CMake on the first configuration to determine ``CXX`` compiler, after which the
+value for ``CXX`` is stored in the cache as
+:variable:`CMAKE_CXX_COMPILER <CMAKE_<LANG>_COMPILER>`. For any configuration
+run (including the first), the environment variable will be ignored if the
+:variable:`CMAKE_CXX_COMPILER <CMAKE_<LANG>_COMPILER>` variable is defined.

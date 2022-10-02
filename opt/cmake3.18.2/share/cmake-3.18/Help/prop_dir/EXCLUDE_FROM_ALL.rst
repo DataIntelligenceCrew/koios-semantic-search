@@ -1,3 +1,13 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:9c867fa24f31f810fc3498bcde19e57c5e41bb1c0e208e016bd4a4f1b7a259ee
-size 602
+EXCLUDE_FROM_ALL
+----------------
+
+Set this directory property to a true value on a subdirectory to exclude
+its targets from the "all" target of its ancestors.  If excluded, running
+e.g. ``make`` in the parent directory will not build targets the
+subdirectory by default.  This does not affect the "all" target of the
+subdirectory itself.  Running e.g. ``make`` inside the subdirectory will
+still build its targets.
+
+If the :prop_tgt:`EXCLUDE_FROM_ALL` target property is set on a target
+then its value determines whether the target is included in the "all"
+target of this directory and its ancestors.

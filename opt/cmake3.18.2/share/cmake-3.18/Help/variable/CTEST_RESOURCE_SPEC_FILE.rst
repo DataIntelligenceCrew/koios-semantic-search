@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:17ffa539be20dab8c5325aef19d693d85813fc768c7cc21d073548ab48a41e37
-size 415
+CTEST_RESOURCE_SPEC_FILE
+------------------------
+
+Specify the CTest ``ResourceSpecFile`` setting in a :manual:`ctest(1)`
+dashboard client script.
+
+This can also be used to specify the resource spec file from a CMake build. If
+no ``RESOURCE_SPEC_FILE`` is passed to :command:`ctest_test`, and
+``CTEST_RESOURCE_SPEC_FILE`` is not specified in the dashboard script, the
+value of this variable from the build is used.

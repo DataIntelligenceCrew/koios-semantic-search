@@ -1,3 +1,6 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b1a4ed0d76f09f04b0dd934ae4d564b696d5658820554f3621d328731ab0de03
-size 184
+VS_IOT_STARTUP_TASK
+-------------------
+
+Visual Studio Windows 10 IoT Continuous Background Task
+
+Specifies that the target should be compiled as a Continuous Background Task library.

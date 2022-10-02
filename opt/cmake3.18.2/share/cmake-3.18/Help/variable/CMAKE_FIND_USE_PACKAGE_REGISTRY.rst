@@ -1,3 +1,30 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:27b0f70961cdb86f5c44d2d42a634b7c2d714798581c040fd86adb4c610e9cfd
-size 1393
+CMAKE_FIND_USE_PACKAGE_REGISTRY
+-------------------------------
+
+Controls the default behavior of the :command:`find_package` command for
+whether or not to search paths provided by the :ref:`User Package Registry`.
+
+By default this variable is not set and the behavior will fall back
+to that determined by the deprecated
+:variable:`CMAKE_FIND_PACKAGE_NO_PACKAGE_REGISTRY` variable.  If that is
+also not set, then :command:`find_package` will use the
+:ref:`User Package Registry` unless the ``NO_CMAKE_PACKAGE_REGISTRY`` option
+is provided.
+
+This variable takes precedence over
+:variable:`CMAKE_FIND_PACKAGE_NO_PACKAGE_REGISTRY` when both are set.
+
+In some cases, for example to locate only system wide installations, it
+is not desirable to use the :ref:`User Package Registry` when searching
+for packages.  If the :variable:`CMAKE_FIND_USE_PACKAGE_REGISTRY`
+variable is ``FALSE``, all the :command:`find_package` commands will skip
+the :ref:`User Package Registry` as if they were called with the
+``NO_CMAKE_PACKAGE_REGISTRY`` argument.
+
+See also :ref:`Disabling the Package Registry` and the
+:variable:`CMAKE_FIND_USE_CMAKE_PATH`,
+:variable:`CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH`,
+:variable:`CMAKE_FIND_USE_CMAKE_SYSTEM_PATH`,
+:variable:`CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH`,
+:variable:`CMAKE_FIND_USE_SYSTEM_PACKAGE_REGISTRY`,
+and :variable:`CMAKE_FIND_USE_PACKAGE_ROOT_PATH` variables.

@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:43aa296d88bd6536de08f8ecb96fa439bcf1da7da07d6643a44e2096e1caea76
-size 362
+PREDEFINED_TARGETS_FOLDER
+-------------------------
+
+Name of FOLDER for targets that are added automatically by CMake.
+
+If not set, CMake uses "CMakePredefinedTargets" as a default value for
+this property.  Targets such as INSTALL, PACKAGE and RUN_TESTS will be
+organized into this FOLDER.  See also the documentation for the
+:prop_tgt:`FOLDER` target property.

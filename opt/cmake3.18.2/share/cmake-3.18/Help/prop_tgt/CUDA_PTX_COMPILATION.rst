@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ad47810218e5156f53f4dd5b88292a710a737dd3f7ef7fad9168030b90f1a6bc
-size 278
+CUDA_PTX_COMPILATION
+--------------------
+
+Compile CUDA sources to ``.ptx`` files instead of ``.obj`` files
+within :ref:`Object Libraries`.
+
+For example:
+
+.. code-block:: cmake
+
+  add_library(myptx OBJECT a.cu b.cu)
+  set_property(TARGET myptx PROPERTY CUDA_PTX_COMPILATION ON)

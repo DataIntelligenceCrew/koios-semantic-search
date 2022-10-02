@@ -1,3 +1,5 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:12781d1762b5578ccc53c11e873eaaf254cdeffd7f1350bc1f9b99e22fda7b5f
-size 185
+# Distributed under the OSI-approved BSD 3-Clause License.  See accompanying
+# file Copyright.txt or https://cmake.org/licensing for details.
+
+
+__BlueGeneP_set_static_flags(XL Fortran)

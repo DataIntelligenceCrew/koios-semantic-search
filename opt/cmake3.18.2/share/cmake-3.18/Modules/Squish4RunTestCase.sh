@@ -1,3 +1,27 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:bec7ec26305d4cba7aae771be6689132faf8103ab2f10702df27829f75670d46
-size 631
+#!/bin/sh
+
+SQUISHSERVER=$1
+SQUISHRUNNER=$2
+TESTSUITE=$3
+TESTCASE=$4
+AUT=$5
+AUTDIR=$6
+
+$SQUISHSERVER --stop > /dev/null 2>&1
+
+echo "Adding AUT... $SQUISHSERVER --config addAUT $AUT $AUTDIR"
+$SQUISHSERVER --config addAUT "$AUT" "$AUTDIR" || exit 255
+# sleep 1
+
+echo "Starting the squish server... $SQUISHSERVER --daemon"
+$SQUISHSERVER --daemon || exit 255
+# sleep 2
+
+echo "Running the test case... $SQUISHRUNNER --testsuite $TESTSUITE --testcase $TESTCASE"
+$SQUISHRUNNER --testsuite "$TESTSUITE" --testcase "$TESTCASE"
+returnValue=$?
+
+echo "Stopping the squish server... $SQUISHSERVER --stop"
+$SQUISHSERVER --stop
+
+exit $returnValue

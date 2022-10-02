@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:7be72ae99f0296c86cb47c14d33ce03dca1fcaed350016a306dd6a93fe6ebd4b
-size 249
+LIBRARY_OUTPUT_NAME_<CONFIG>
+----------------------------
+
+Per-configuration output name for
+:ref:`LIBRARY <Library Output Artifacts>` target files.
+
+This is the configuration-specific version of the
+:prop_tgt:`LIBRARY_OUTPUT_NAME` target property.

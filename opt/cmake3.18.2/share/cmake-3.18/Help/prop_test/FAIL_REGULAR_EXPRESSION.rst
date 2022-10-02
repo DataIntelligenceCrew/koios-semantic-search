@@ -1,3 +1,15 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ed58c148fcce31cba8386b579ecc0b5b8834bd8c0eefb5e1fab0cced974df098
-size 406
+FAIL_REGULAR_EXPRESSION
+-----------------------
+
+If the output matches this regular expression the test will fail.
+
+If set, if the output matches one of specified regular expressions,
+the test will fail.  Example:
+
+.. code-block:: cmake
+
+  set_tests_properties(mytest PROPERTIES
+    FAIL_REGULAR_EXPRESSION "[^a-z]Error;ERROR;Failed"
+  )
+
+``FAIL_REGULAR_EXPRESSION`` expects a list of regular expressions.

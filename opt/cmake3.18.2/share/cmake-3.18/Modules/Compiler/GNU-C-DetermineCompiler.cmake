@@ -1,3 +1,11 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b0103d56bd2ab3ae3fa34059d50dc3f74d639d6e894fc359f2c52a04ba7617ca
-size 369
+
+set(_compiler_id_pp_test "defined(__GNUC__)")
+
+set(_compiler_id_version_compute "
+# define @PREFIX@COMPILER_VERSION_MAJOR @MACRO_DEC@(__GNUC__)
+# if defined(__GNUC_MINOR__)
+#  define @PREFIX@COMPILER_VERSION_MINOR @MACRO_DEC@(__GNUC_MINOR__)
+# endif
+# if defined(__GNUC_PATCHLEVEL__)
+#  define @PREFIX@COMPILER_VERSION_PATCH @MACRO_DEC@(__GNUC_PATCHLEVEL__)
+# endif")

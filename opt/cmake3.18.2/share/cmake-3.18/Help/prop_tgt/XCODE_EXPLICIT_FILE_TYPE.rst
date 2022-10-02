@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:9286b10017bc018bdf5537f84e32a454cbabefc8c034e85161e07469a7feca29
-size 262
+XCODE_EXPLICIT_FILE_TYPE
+------------------------
+
+Set the Xcode ``explicitFileType`` attribute on its reference to a
+target.  CMake computes a default based on target type but
+can be told explicitly with this property.
+
+See also :prop_tgt:`XCODE_PRODUCT_TYPE`.

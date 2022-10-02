@@ -1,3 +1,13 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:594a90775d2ae6ebcc0d29a5c096b2eae06202ce33bceb7301c1fda8f006fbb3
-size 319
+Xcode
+-----
+
+Generate Xcode project files.
+
+This supports Xcode 5.0 and above.
+
+Toolset Selection
+^^^^^^^^^^^^^^^^^
+
+By default Xcode is allowed to select its own default toolchain.
+The :variable:`CMAKE_GENERATOR_TOOLSET` option may be set, perhaps
+via the :manual:`cmake(1)` ``-T`` option, to specify another toolset.

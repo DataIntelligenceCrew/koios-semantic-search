@@ -1,3 +1,51 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:019376a51f1e68f61af55a5c2ebf3d0f4d5e790a09d1142904e1ce57ac3b0dfa
-size 1201
+/* $Id$ */
+// Copyright (C) 2000, International Business Machines
+// Corporation and others.  All Rights Reserved.
+// This code is licensed under the terms of the Eclipse Public License (EPL).
+
+#ifndef CoinDistance_H
+#define CoinDistance_H
+
+#include <iterator>
+
+//-------------------------------------------------------------------
+//
+// Attempt to provide an std::distance function
+// that will work on multiple platforms
+//
+//-------------------------------------------------------------------
+
+/** CoinDistance
+
+This is the Coin implementation of the std::function that is 
+designed to work on multiple platforms.
+*/
+template < class ForwardIterator, class Distance >
+void coinDistance(ForwardIterator first, ForwardIterator last,
+  Distance &n)
+{
+#if defined(__SUNPRO_CC)
+  n = 0;
+  std::distance(first, last, n);
+#else
+  n = std::distance(first, last);
+#endif
+}
+
+template < class ForwardIterator >
+size_t coinDistance(ForwardIterator first, ForwardIterator last)
+{
+  size_t retVal;
+#if defined(__SUNPRO_CC)
+  retVal = 0;
+  std::distance(first, last, retVal);
+#else
+  retVal = std::distance(first, last);
+#endif
+  return retVal;
+}
+
+#endif
+
+/* vi: softtabstop=2 shiftwidth=2 expandtab tabstop=2
+*/

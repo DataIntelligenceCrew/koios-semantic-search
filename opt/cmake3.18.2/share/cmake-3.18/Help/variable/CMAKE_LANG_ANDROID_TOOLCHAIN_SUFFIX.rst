@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:956589591eba721044d844334d99f5bc87c05cda3696e29915f4e43a0ff7f675
-size 329
+CMAKE_<LANG>_ANDROID_TOOLCHAIN_SUFFIX
+-------------------------------------
+
+When :ref:`Cross Compiling for Android` this variable contains the
+host platform suffix of the toolchain GNU compiler and its binutils.
+
+See also :variable:`CMAKE_<LANG>_ANDROID_TOOLCHAIN_PREFIX`
+and :variable:`CMAKE_<LANG>_ANDROID_TOOLCHAIN_MACHINE`.

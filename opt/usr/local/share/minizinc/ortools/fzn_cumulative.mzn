@@ -1,3 +1,11 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f0c430d980056d6ba4849cab268d5515ecc3c26d526a72b066f2a537233d4b0a
-size 580
+%-----------------------------------------------------------------------------%
+% Requires that a set of tasks given by start times 's', durations 'd', and
+% resource requirements 'r', never require more than a global resource bound
+% 'b' at any one time.
+% Assumptions:
+% - forall i, d[i] >= 0 and r[i] >= 0
+%-----------------------------------------------------------------------------%
+predicate fzn_cumulative(array[int] of var int: s,
+                         array[int] of var int: d,
+                         array[int] of var int: r,
+                         var int: b);

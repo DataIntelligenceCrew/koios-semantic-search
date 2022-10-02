@@ -1,3 +1,13 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e6aeea3431a8f5dc57863c97742a26e7afe3ea0618a4686ffb253e78be266ec1
-size 472
+CMAKE_GLOBAL_AUTORCC_TARGET_NAME
+--------------------------------
+
+Change the name of the global ``autorcc`` target.
+
+When :variable:`CMAKE_GLOBAL_AUTORCC_TARGET` is enabled, a global custom target
+named ``autorcc`` is created.  :variable:`CMAKE_GLOBAL_AUTORCC_TARGET_NAME`
+allows to set a different name for that target.
+
+By default :variable:`CMAKE_GLOBAL_AUTOGEN_TARGET_NAME` is unset.
+
+See the :manual:`cmake-qt(7)` manual for more information on using CMake
+with Qt.

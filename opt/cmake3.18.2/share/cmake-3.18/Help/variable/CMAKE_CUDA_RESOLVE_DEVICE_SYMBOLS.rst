@@ -1,3 +1,6 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e2392c21560d023dcb62049dd0cb28dcdf0d2734447ec9ec65124f13e198f6ee
-size 226
+CMAKE_CUDA_RESOLVE_DEVICE_SYMBOLS
+---------------------------------
+
+Default value for :prop_tgt:`CUDA_RESOLVE_DEVICE_SYMBOLS` target
+property. This variable is used to initialize the property on each target as
+it is created.

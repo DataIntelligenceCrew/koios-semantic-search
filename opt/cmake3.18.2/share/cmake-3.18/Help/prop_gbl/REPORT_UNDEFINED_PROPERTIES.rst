@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b48b8894eba98724073b007e97bc24754925467960bf22ba2b096ea0bb17684a
-size 295
+REPORT_UNDEFINED_PROPERTIES
+---------------------------
+
+If set, report any undefined properties to this file.
+
+If this property is set to a filename then when CMake runs it will
+report any properties or variables that were accessed but not defined
+into the filename specified in this property.

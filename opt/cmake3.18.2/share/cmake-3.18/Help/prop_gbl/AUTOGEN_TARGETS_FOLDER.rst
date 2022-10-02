@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:744ac84593223b763c37a86cff2b1ff2b220f2709635b28ff0ff4afa36bab510
-size 423
+AUTOGEN_TARGETS_FOLDER
+----------------------
+
+Name of :prop_tgt:`FOLDER` for ``*_autogen`` targets that are added
+automatically by CMake for targets for which :prop_tgt:`AUTOMOC` is enabled.
+
+If not set, CMake uses the :prop_tgt:`FOLDER` property of the parent target as a
+default value for this property.  See also the documentation for the
+:prop_tgt:`FOLDER` target property and the :prop_tgt:`AUTOMOC` target property.

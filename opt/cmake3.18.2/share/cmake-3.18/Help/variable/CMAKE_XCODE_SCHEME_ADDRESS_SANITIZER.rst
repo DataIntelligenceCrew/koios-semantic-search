@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:cff37bf038d2aac919b23870a7148110e81e21fd3937983f0dacb0e13daadb1d
-size 401
+CMAKE_XCODE_SCHEME_ADDRESS_SANITIZER
+------------------------------------
+
+Whether to enable ``Address Sanitizer`` in the Diagnostics
+section of the generated Xcode scheme.
+
+This variable initializes the
+:prop_tgt:`XCODE_SCHEME_ADDRESS_SANITIZER`
+property on all targets.
+
+Please refer to the :prop_tgt:`XCODE_GENERATE_SCHEME` target property
+documentation to see all Xcode schema related properties.

@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e68d359e74e59481ca5fdfce7f1155bd09f3c089f06b3a1295f6208ab657c8ab
-size 218
+IMPORTED_SONAME_<CONFIG>
+------------------------
+
+<CONFIG>-specific version of :prop_tgt:`IMPORTED_SONAME` property.
+
+Configuration names correspond to those provided by the project from
+which the target is imported.

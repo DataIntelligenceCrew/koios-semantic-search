@@ -1,3 +1,56 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:796fdabfee8edcaea60cab482a1b70f87fdef66734da254eef23fb5c83a3fca3
-size 1848
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/*                                                                           */
+/*                  This file is part of the program and library             */
+/*         SCIP --- Solving Constraint Integer Programs                      */
+/*                                                                           */
+/*    Copyright (C) 2002-2020 Konrad-Zuse-Zentrum                            */
+/*                            fuer Informationstechnik Berlin                */
+/*                                                                           */
+/*  SCIP is distributed under the terms of the ZIB Academic License.         */
+/*                                                                           */
+/*  You should have received a copy of the ZIB Academic License              */
+/*  along with SCIP; see the file COPYING. If not visit scipopt.org.         */
+/*                                                                           */
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+/**@file   disp_xyz.h
+ * @ingroup DISPLAYS
+ * @brief  xyz display column
+ * @author Kati Wolter
+ */
+
+/*---+----1----+----2----+----3----+----4----+----5----+----6----+----7----+----8----+----9----+----0----+----1----+----2*/
+
+#ifndef __SCIP_DISP_XYZ_H__
+#define __SCIP_DISP_XYZ_H__
+
+
+#include "scip/scip.h"
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+/** creates the xyz display column and includes it in SCIP
+ *
+ *  @ingroup DisplayIncludes
+ */
+SCIP_EXPORT
+SCIP_RETCODE SCIPincludeDispXyz(
+   SCIP*                 scip                /**< SCIP data structure */
+   );
+
+/**@addtogroup DISPLAYS
+ *
+ * @{
+ */
+
+/** TODO add further methods to this group for documentation purposes */
+
+/** @} */
+
+#ifdef __cplusplus
+}
+#endif
+
+#endif

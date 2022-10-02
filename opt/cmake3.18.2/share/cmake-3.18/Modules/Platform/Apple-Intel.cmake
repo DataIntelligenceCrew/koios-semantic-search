@@ -1,3 +1,19 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a340d850d2e3ad24b261adc30aab10b2d026a4915455a39809a87313eb32465a
-size 785
+# Distributed under the OSI-approved BSD 3-Clause License.  See accompanying
+# file Copyright.txt or https://cmake.org/licensing for details.
+
+
+# This module is shared by multiple languages; use include blocker.
+include_guard()
+
+macro(__apple_compiler_intel lang)
+  set(CMAKE_${lang}_VERBOSE_FLAG "-v -Wl,-v") # also tell linker to print verbose output
+  set(CMAKE_SHARED_LIBRARY_CREATE_${lang}_FLAGS "-dynamiclib -Wl,-headerpad_max_install_names")
+  set(CMAKE_SHARED_MODULE_CREATE_${lang}_FLAGS "-bundle -Wl,-headerpad_max_install_names")
+
+  set(CMAKE_${lang}_LINKER_WRAPPER_FLAG "-Wl,")
+  set(CMAKE_${lang}_LINKER_WRAPPER_FLAG_SEP ",")
+
+  if(NOT CMAKE_${lang}_COMPILER_VERSION VERSION_LESS 12.0)
+    set(CMAKE_${lang}_COMPILE_OPTIONS_VISIBILITY "-fvisibility=")
+  endif()
+endmacro()

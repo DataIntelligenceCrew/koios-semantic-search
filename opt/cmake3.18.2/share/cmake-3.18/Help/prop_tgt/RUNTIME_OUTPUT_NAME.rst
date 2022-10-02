@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:078c8a863fb8093b750fd30d2214e6f44bb28d83ffc7fcce0acf13c966759774
-size 234
+RUNTIME_OUTPUT_NAME
+-------------------
+
+.. |XXX| replace:: :ref:`RUNTIME <Runtime Output Artifacts>`
+.. |xxx| replace:: runtime
+.. include:: XXX_OUTPUT_NAME.txt
+
+See also the :prop_tgt:`RUNTIME_OUTPUT_NAME_<CONFIG>` target property.

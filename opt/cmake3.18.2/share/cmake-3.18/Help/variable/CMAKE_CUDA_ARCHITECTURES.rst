@@ -1,3 +1,17 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:62caff73ea3be98c5626c228fad9e8b98ddf07a721a8576b5080e656c62724d0
-size 634
+CMAKE_CUDA_ARCHITECTURES
+------------------------
+
+Default value for :prop_tgt:`CUDA_ARCHITECTURES` property of targets.
+
+This is initialized as follows depending on :variable:`CMAKE_CUDA_COMPILER_ID <CMAKE_<LANG>_COMPILER_ID>`:
+
+- For ``Clang``: the oldest architecture that works.
+
+- For ``NVIDIA``: the default architecture chosen by the compiler.
+  See policy :policy:`CMP0104`.
+
+Users are encouraged to override this, as the default varies across compilers
+and compiler versions.
+
+This variable is used to initialize the :prop_tgt:`CUDA_ARCHITECTURES` property
+on all targets. See the target property for additional information.

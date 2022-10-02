@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:be935a693cbd503e7a91caf58220a19b6dab733fb3deb5081baa2e9078135af6
-size 328
+LINK_INTERFACE_MULTIPLICITY_<CONFIG>
+------------------------------------
+
+Per-configuration repetition count for cycles of ``STATIC`` libraries.
+
+This is the configuration-specific version of
+:prop_tgt:`LINK_INTERFACE_MULTIPLICITY`.  If set, this property completely
+overrides the generic property for the named configuration.

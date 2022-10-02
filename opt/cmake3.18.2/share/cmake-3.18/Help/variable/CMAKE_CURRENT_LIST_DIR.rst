@@ -1,3 +1,17 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:0e9dc920bf23ce566253a829f659e4f0ab7f1eab89e85a8bb67d61ef44a4e3bc
-size 813
+CMAKE_CURRENT_LIST_DIR
+----------------------
+
+Full directory of the listfile currently being processed.
+
+As CMake processes the listfiles in your project this variable will
+always be set to the directory where the listfile which is currently
+being processed (:variable:`CMAKE_CURRENT_LIST_FILE`) is located.  The value
+has dynamic scope.  When CMake starts processing commands in a source file
+it sets this variable to the directory where this file is located.
+When CMake finishes processing commands from the file it restores the
+previous value.  Therefore the value of the variable inside a macro or
+function is the directory of the file invoking the bottom-most entry
+on the call stack, not the directory of the file containing the macro
+or function definition.
+
+See also :variable:`CMAKE_CURRENT_LIST_FILE`.

@@ -1,3 +1,22 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:6b7117dc931351e25975790d7ef2aaf92f0e1c65c7d8000bc49563a8213ecde8
-size 603
+/**
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+
+#pragma once
+
+#include <faiss/gpu/utils/Tensor.cuh>
+
+namespace faiss { namespace gpu {
+
+void runL2SelectMin(Tensor<float, 2, true>& productDistances,
+                    Tensor<float, 1, true>& centroidDistances,
+                    Tensor<float, 2, true>& outDistances,
+                    Tensor<int, 2, true>& outIndices,
+                    int k,
+                    cudaStream_t stream);
+
+} } // namespace

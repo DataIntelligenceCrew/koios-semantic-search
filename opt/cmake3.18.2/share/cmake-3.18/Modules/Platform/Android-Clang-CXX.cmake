@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f5a58e160d3e1f2c7667d1e123124a96f0d899db0d9071d1947f3d14e1816dbf
-size 322
+include(Platform/Android-Clang)
+__android_compiler_clang(CXX)
+if(_ANDROID_STL_NOSTDLIBXX)
+  if(CMAKE_CXX_COMPILER_VERSION VERSION_GREATER_EQUAL 6)
+    string(APPEND CMAKE_CXX_STANDARD_LIBRARIES " -nostdlib++")
+  else()
+    string(APPEND CMAKE_CXX_STANDARD_LIBRARIES " -nodefaultlibs -lgcc -lc -lm -ldl")
+  endif()
+endif()

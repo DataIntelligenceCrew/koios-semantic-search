@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f84620335e3936a22bb7cf35761e555949e381b8714363c2e1cbd1918d672f40
-size 229
+CMAKE_AUTORCC
+-------------
+
+Whether to handle ``rcc`` automatically for Qt targets.
+
+This variable is used to initialize the :prop_tgt:`AUTORCC` property on all
+the targets.  See that target property for additional information.

@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e337ab537baa2c12d2d787d35658a4fb735536b7935e6c535a736e2c3ae115ef
-size 224
+<CONFIG>_OUTPUT_NAME
+--------------------
+
+Old per-configuration target file base name.
+Use :prop_tgt:`OUTPUT_NAME_<CONFIG>` instead.
+
+This is a configuration-specific version of the :prop_tgt:`OUTPUT_NAME`
+target property.

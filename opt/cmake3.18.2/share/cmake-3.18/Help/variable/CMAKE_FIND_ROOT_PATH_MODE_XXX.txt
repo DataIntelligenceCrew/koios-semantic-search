@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:6dd3505830591972f056d20d4fc658f086dc9d282fcfb5ca73bd2d9e637a4255
-size 464
+This variable controls whether the :variable:`CMAKE_FIND_ROOT_PATH` and
+:variable:`CMAKE_SYSROOT` are used by |FIND_XXX|.
+
+If set to ``ONLY``, then only the roots in :variable:`CMAKE_FIND_ROOT_PATH`
+will be searched. If set to ``NEVER``, then the roots in
+:variable:`CMAKE_FIND_ROOT_PATH` will be ignored and only the host system
+root will be used. If set to ``BOTH``, then the host system paths and the
+paths in :variable:`CMAKE_FIND_ROOT_PATH` will be searched.

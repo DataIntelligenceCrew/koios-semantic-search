@@ -1,3 +1,14 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:2d5348f69d5b19ae4c3d1774a5c92452c4643882a3bbcd23857b2aca04b8f1fa
-size 608
+INTERFACE_AUTOUIC_OPTIONS
+-------------------------
+
+List of interface options to pass to uic.
+
+Targets may populate this property to publish the options
+required to use when invoking ``uic``.  Consuming targets can add entries to their
+own :prop_tgt:`AUTOUIC_OPTIONS` property such as
+``$<TARGET_PROPERTY:foo,INTERFACE_AUTOUIC_OPTIONS>`` to use the uic options
+specified in the interface of ``foo``. This is done automatically by
+the :command:`target_link_libraries` command.
+
+This property supports generator expressions.  See the
+:manual:`cmake-generator-expressions(7)` manual for available expressions.

@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b21c40d5a366ae9d01298094d6fd6283bee94249461ec789df78d8c42c5ee370
-size 341
+CMAKE_RULE_MESSAGES
+-------------------
+
+Specify whether to report a message for each make rule.
+
+If set in the cache it is used to initialize the value of the :prop_gbl:`RULE_MESSAGES` property.
+Users may disable the option in their local build tree to disable granular messages
+and report only as each target completes in Makefile builds.

@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f5b9b0b6ca0bb5298a2e20d2c75c9a4c9acf6cdc3a2173c02177bfe33bebfb78
-size 262
+CMAKE_Fortran_FORMAT
+--------------------
+
+Set to ``FIXED`` or ``FREE`` to indicate the Fortran source layout.
+
+This variable is used to initialize the :prop_tgt:`Fortran_FORMAT` property on
+all the targets.  See that target property for additional information.

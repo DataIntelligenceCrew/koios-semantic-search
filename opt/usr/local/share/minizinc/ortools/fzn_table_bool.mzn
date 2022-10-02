@@ -1,3 +1,3 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:50b0ba66291c7188aff737c2218ceff180af66bad9a9531036e76c8299daa1c1
-size 200
+predicate ortools_table_bool(array[int] of var bool: x, array[int] of bool: t);
+predicate fzn_table_bool(array[int] of var bool: x, array[int, int] of bool: t) =
+    ortools_table_bool(x,array1d(t));

@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:2400275e3cbfdd4e3bbabedc35b9d1da72fd10390eb23cf6c5000d2ca0aae868
-size 309
+CMAKE_MATCH_COUNT
+-----------------
+
+The number of matches with the last regular expression.
+
+When a regular expression match is used, CMake fills in
+:variable:`CMAKE_MATCH_<n>` variables with the match contents.
+The ``CMAKE_MATCH_COUNT`` variable holds the number of match
+expressions when these are filled.

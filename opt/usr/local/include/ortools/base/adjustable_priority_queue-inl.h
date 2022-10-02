@@ -1,3 +1,19 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:0801f0ab2a7b56b4f04249b971b709a56aa96b6d8c6f3309eb01e3185e370a2a
-size 812
+// Copyright 2010-2018 Google LLC
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//     http://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+
+#ifndef OR_TOOLS_BASE_ADJUSTABLE_PRIORITY_QUEUE_INL_H_
+#define OR_TOOLS_BASE_ADJUSTABLE_PRIORITY_QUEUE_INL_H_
+
+#include "ortools/base/adjustable_priority_queue.h"
+
+#endif  // OR_TOOLS_BASE_ADJUSTABLE_PRIORITY_QUEUE_INL_H_

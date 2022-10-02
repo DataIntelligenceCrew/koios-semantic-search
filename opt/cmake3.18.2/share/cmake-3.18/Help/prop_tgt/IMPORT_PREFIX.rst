@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:5b41b223ecfa8ad1fe290f443eee8a676a780c25df36383f21ef78205415d6a3
-size 326
+IMPORT_PREFIX
+-------------
+
+What comes before the import library name.
+
+Similar to the target property :prop_tgt:`PREFIX`, but used for import libraries
+(typically corresponding to a ``DLL``) instead of regular libraries.  A
+target property that can be set to override the prefix (such as ``lib``)
+on an import library name.

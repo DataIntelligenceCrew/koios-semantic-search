@@ -1,3 +1,14 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:789656b6475c776009e549c235e553c390ab5ffb0a10134c9f2d245aa44d4398
-size 610
+CMAKE_STAGING_PREFIX
+--------------------
+
+This variable may be set to a path to install to when cross-compiling. This can
+be useful if the path in :variable:`CMAKE_SYSROOT` is read-only, or otherwise
+should remain pristine.
+
+The :variable:`CMAKE_STAGING_PREFIX` location is also used as a search prefix
+by the ``find_*`` commands. This can be controlled by setting the
+:variable:`CMAKE_FIND_NO_INSTALL_PREFIX` variable.
+
+If any ``RPATH``/``RUNPATH`` entries passed to the linker contain the
+:variable:`CMAKE_STAGING_PREFIX`, the matching path fragments are replaced
+with the :variable:`CMAKE_INSTALL_PREFIX`.

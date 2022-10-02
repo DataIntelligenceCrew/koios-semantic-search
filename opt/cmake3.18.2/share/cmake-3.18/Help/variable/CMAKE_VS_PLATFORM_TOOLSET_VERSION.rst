@@ -1,3 +1,11 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:3510a6fa5d86d0ca8869b54fc6ea0db602afb284d69a8cd1d8b6468923c654e2
-size 484
+CMAKE_VS_PLATFORM_TOOLSET_VERSION
+---------------------------------
+
+Visual Studio Platform Toolset version.
+
+The :ref:`Visual Studio Generators` for VS 2017 and above allow to
+select minor versions of the same toolset. The toolset version number
+may be specified by a field in :variable:`CMAKE_GENERATOR_TOOLSET` of
+the form ``version=14.11``. If none is specified CMake will choose a default
+toolset. The value may be empty if no minor version was selected and the
+default is used.

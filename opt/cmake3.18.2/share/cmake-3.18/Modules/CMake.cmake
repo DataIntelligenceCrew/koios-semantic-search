@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:9395d1338274037871e2b58188c8d589608d954fbb33e9285f0f05ee74b56b96
-size 307
+# Distributed under the OSI-approved BSD 3-Clause License.  See accompanying
+# file Copyright.txt or https://cmake.org/licensing for details.
+
+
+# This file is used by cmake.cxx to compute the CMAKE_ROOT location.
+# Do not remove this file from cvs without updating cmake.cxx to look
+# for a different file.

@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:9cd81e519e2a4d0fe147262dab804475bf797351376b54ae8dfb17993320d5b2
-size 450
+CMAKE_FIND_PACKAGE_RESOLVE_SYMLINKS
+-----------------------------------
+
+Set to ``TRUE`` to tell :command:`find_package` calls to resolve symbolic
+links in the value of ``<PackageName>_DIR``.
+
+This is helpful in use cases where the package search path points at a
+proxy directory in which symlinks to the real package locations appear.
+This is not enabled by default because there are also common use cases
+in which the symlinks should be preserved.

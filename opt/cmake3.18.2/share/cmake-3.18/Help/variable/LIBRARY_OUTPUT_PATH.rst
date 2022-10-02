@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:0b4550c5163a419a35c3c9487ba02be2c6f45d755842865ba4f727044642029d
-size 323
+LIBRARY_OUTPUT_PATH
+-------------------
+
+Old library location variable.
+
+The target properties :prop_tgt:`ARCHIVE_OUTPUT_DIRECTORY`,
+:prop_tgt:`LIBRARY_OUTPUT_DIRECTORY`, and :prop_tgt:`RUNTIME_OUTPUT_DIRECTORY`
+supersede this variable for a target if they are set.  Library targets are
+otherwise placed in this directory.

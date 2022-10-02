@@ -1,3 +1,45 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b8561bcf002f756ca962d05f99b05cdd1ca3b99faf25a1f36b5d0eca373a0c40
-size 1398
+Visual Studio 14 2015
+---------------------
+
+Generates Visual Studio 14 (VS 2015) project files.
+
+Project Types
+^^^^^^^^^^^^^
+
+Only Visual C++ and C# projects may be generated.  Other types of
+projects (JavaScript, Powershell, Python, etc.) are not supported.
+
+Platform Selection
+^^^^^^^^^^^^^^^^^^
+
+The default target platform name (architecture) is ``Win32``.
+
+The :variable:`CMAKE_GENERATOR_PLATFORM` variable may be set, perhaps
+via the :manual:`cmake(1)` ``-A`` option, to specify a target platform
+name (architecture).  For example:
+
+* ``cmake -G "Visual Studio 14 2015" -A Win32``
+* ``cmake -G "Visual Studio 14 2015" -A x64``
+* ``cmake -G "Visual Studio 14 2015" -A ARM``
+
+For compatibility with CMake versions prior to 3.1, one may specify
+a target platform name optionally at the end of the generator name.
+This is supported only for:
+
+``Visual Studio 14 2015 Win64``
+  Specify target platform ``x64``.
+
+``Visual Studio 14 2015 ARM``
+  Specify target platform ``ARM``.
+
+Toolset Selection
+^^^^^^^^^^^^^^^^^
+
+The ``v140`` toolset that comes with Visual Studio 14 2015 is selected by
+default.  The :variable:`CMAKE_GENERATOR_TOOLSET` option may be set, perhaps
+via the :manual:`cmake(1)` ``-T`` option, to specify another toolset.
+
+.. |VS_TOOLSET_HOST_ARCH_DEFAULT| replace::
+   By default this generator uses the 32-bit variant even on a 64-bit host.
+
+.. include:: VS_TOOLSET_HOST_ARCH.txt

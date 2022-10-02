@@ -1,3 +1,11 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:3ca19233ecb09325345e3616629bb878d2b4b4913d1eff5b95254c1b6210bf76
-size 469
+CMAKE_MODULE_LINKER_FLAGS_INIT
+------------------------------
+
+Value used to initialize the :variable:`CMAKE_MODULE_LINKER_FLAGS`
+cache entry the first time a build tree is configured.
+This variable is meant to be set by a :variable:`toolchain file
+<CMAKE_TOOLCHAIN_FILE>`.  CMake may prepend or append content to
+the value based on the environment and target platform.
+
+See also the configuration-specific variable
+:variable:`CMAKE_MODULE_LINKER_FLAGS_<CONFIG>_INIT`.

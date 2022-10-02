@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:dbbdc5da08b5eb27b0d0d5da9e0148be36f4c29cce67a23174219594d57db613
-size 315
+<PROJECT-NAME>_SOURCE_DIR
+-------------------------
+
+Top level source directory for the named project.
+
+A variable is created with the name used in the :command:`project` command,
+and is the source directory for the project.  This can be useful when
+:command:`add_subdirectory` is used to connect several projects.

@@ -1,3 +1,11 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:117e3dfdf4df7590d2f77a2686af2960cb24c2427a5cf6fb14f56389b7f7b8b2
-size 485
+DEFINE_SYMBOL
+-------------
+
+Define a symbol when compiling this target's sources.
+
+``DEFINE_SYMBOL`` sets the name of the preprocessor symbol defined when
+compiling sources in a shared library.  If not set here then it is set
+to ``target_EXPORTS`` by default (with some substitutions if the target is
+not a valid C identifier).  This is useful for headers to know whether
+they are being included from inside their library or outside to
+properly setup dllexport/dllimport decorations.

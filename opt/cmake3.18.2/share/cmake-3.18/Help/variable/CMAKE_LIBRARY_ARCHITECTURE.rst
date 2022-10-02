@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:4415eb8268da85e5558bf0a1e46e37eaad04c418da3655d99a6a672649822c7a
-size 226
+CMAKE_LIBRARY_ARCHITECTURE
+--------------------------
+
+Target architecture library directory name, if detected.
+
+This is the value of :variable:`CMAKE_<LANG>_LIBRARY_ARCHITECTURE` as detected
+for one of the enabled languages.

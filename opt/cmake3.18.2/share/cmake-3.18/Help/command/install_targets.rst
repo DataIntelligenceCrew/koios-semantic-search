@@ -1,3 +1,19 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:9e43f7b7b1d3db00bab66977a0fc5a4fccee0169b40eb9bd3e07a8effeeb99d3
-size 645
+install_targets
+---------------
+
+.. deprecated:: 3.0
+
+  Use the :command:`install(TARGETS)` command instead.
+
+This command has been superceded by the :command:`install` command.  It is
+provided for compatibility with older CMake code.
+
+::
+
+  install_targets(<dir> [RUNTIME_DIRECTORY dir] target target)
+
+Create rules to install the listed targets into the given directory.
+The directory ``<dir>`` is relative to the installation prefix, which is
+stored in the variable :variable:`CMAKE_INSTALL_PREFIX`.  If
+``RUNTIME_DIRECTORY`` is specified, then on systems with special runtime
+files (Windows DLL), the files will be copied to that directory.

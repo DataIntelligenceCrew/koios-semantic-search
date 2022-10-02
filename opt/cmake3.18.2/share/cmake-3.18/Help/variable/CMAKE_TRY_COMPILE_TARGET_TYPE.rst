@@ -1,3 +1,15 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:24515740513549d68d7cdd04f2941c12dc1faa047684db111420e65e17def711
-size 591
+CMAKE_TRY_COMPILE_TARGET_TYPE
+-----------------------------
+
+Type of target generated for :command:`try_compile` calls using the
+source file signature.  Valid values are:
+
+``EXECUTABLE``
+  Use :command:`add_executable` to name the source file in the
+  generated project.  This is the default if no value is given.
+
+``STATIC_LIBRARY``
+  Use :command:`add_library` with the ``STATIC`` option to name the
+  source file in the generated project.  This avoids running the
+  linker and is intended for use with cross-compiling toolchains
+  that cannot link without custom flags or linker scripts.

@@ -1,3 +1,13 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:38e1fd569d0f999391d629df97f3ac03ce382dc0c8e2e7bb89b740819c5186ab
-size 511
+GHS_NO_SOURCE_GROUP_FILE
+------------------------
+
+``ON`` / ``OFF`` boolean to control if the project file for a target should
+be one single file or multiple files.
+
+The default behavior or when the property is ``OFF`` is to generate a project
+file for the target and then a sub-project file for each source group.
+
+When this property is ``ON`` or if :variable:`CMAKE_GHS_NO_SOURCE_GROUP_FILE`
+is ``ON`` then only a single project file is generated for the target.
+
+Supported on :generator:`Green Hills MULTI`.

@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:09c9a10481d5e72d80c5f3f79a770fe4ff3d1b7f1c10df4311760c949092cf97
-size 226
+CMAKE_FOLDER
+------------
+
+Set the folder name. Use to organize targets in an IDE.
+
+This variable is used to initialize the :prop_tgt:`FOLDER` property on all the
+targets.  See that target property for additional information.

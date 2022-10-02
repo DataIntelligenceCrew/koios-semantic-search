@@ -1,3 +1,34 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:328fe8fd8f72799759f5fbcb45ec9193aaeec4c08bf4e8ec4f153e83da157283
-size 932
+IMPLICIT_DEPENDS_INCLUDE_TRANSFORM
+----------------------------------
+
+Specify ``#include`` line transforms for dependencies in a directory.
+
+This property specifies rules to transform macro-like ``#include`` lines
+during implicit dependency scanning of C and C++ source files.  The
+list of rules must be semicolon-separated with each entry of the form
+``A_MACRO(%)=value-with-%`` (the ``%`` must be literal).  During dependency
+scanning occurrences of ``A_MACRO(...)`` on ``#include`` lines will be
+replaced by the value given with the macro argument substituted for
+``%``.  For example, the entry
+
+::
+
+  MYDIR(%)=<mydir/%>
+
+will convert lines of the form
+
+::
+
+  #include MYDIR(myheader.h)
+
+to
+
+::
+
+  #include <mydir/myheader.h>
+
+allowing the dependency to be followed.
+
+This property applies to sources in all targets within a directory.
+The property value is initialized in each directory by its value in
+the directory's parent.

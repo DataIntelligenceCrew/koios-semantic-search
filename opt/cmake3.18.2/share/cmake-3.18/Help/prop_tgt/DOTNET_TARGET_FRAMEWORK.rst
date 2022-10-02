@@ -1,3 +1,13 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:660e5a35bf40f385d1c01eae376c12a8b673ea33ef3b376ec821f0e6c645edb9
-size 366
+DOTNET_TARGET_FRAMEWORK
+-----------------------
+
+Specify the .NET target framework.
+
+Used to specify the .NET target framework for C++/CLI and C#.  For
+example: ``netcoreapp2.1``.
+
+This property is only evaluated for :ref:`Visual Studio Generators`
+VS 2010 and above.
+
+Can be initialized for all targets using the variable
+:variable:`CMAKE_DOTNET_TARGET_FRAMEWORK`.

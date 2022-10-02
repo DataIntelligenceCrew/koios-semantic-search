@@ -1,3 +1,28 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:288464bc8367e4a6b28d6f905e7c99b374ffeeabfbbe9ba9bf52f6b72b93060d
-size 1082
+
+# This module is shared by multiple languages; use include blocker.
+include_guard()
+
+set(CMAKE_BUILD_TYPE_INIT Debug)
+
+if(DEFINED CMAKE_SYSTEM_PROCESSOR AND CMAKE_SYSTEM_PROCESSOR STREQUAL "I86")
+  string(APPEND CMAKE_EXE_LINKER_FLAGS_INIT " system dos")
+  string(APPEND CMAKE_SHARED_LINKER_FLAGS_INIT " system dos")
+  string(APPEND CMAKE_MODULE_LINKER_FLAGS_INIT " system dos")
+else()
+  string(APPEND CMAKE_EXE_LINKER_FLAGS_INIT " system dos4g")
+  string(APPEND CMAKE_SHARED_LINKER_FLAGS_INIT " system dos4g")
+  string(APPEND CMAKE_MODULE_LINKER_FLAGS_INIT " system dos4g")
+endif()
+
+set(CMAKE_C_COMPILE_OPTIONS_DLL "-bd") # Note: This variable is a ';' separated list
+set(CMAKE_SHARED_LIBRARY_C_FLAGS "-bd") # ... while this is a space separated string.
+
+string(APPEND CMAKE_C_FLAGS_INIT " -bt=dos")
+string(APPEND CMAKE_CXX_FLAGS_INIT " -bt=dos -xs")
+
+if(NOT CMAKE_C_STANDARD_INCLUDE_DIRECTORIES)
+  set(CMAKE_C_STANDARD_INCLUDE_DIRECTORIES $ENV{WATCOM}/h)
+endif()
+if(NOT CMAKE_CXX_STANDARD_INCLUDE_DIRECTORIES)
+  set(CMAKE_CXX_STANDARD_INCLUDE_DIRECTORIES $ENV{WATCOM}/h)
+endif()

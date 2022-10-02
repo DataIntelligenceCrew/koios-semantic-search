@@ -1,3 +1,17 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:7affa034c5434f68dc774907b3f9bfe5c015329f53bf08520e1e5fe60e84f6e1
-size 351
+if(NOT TARGET libscip)
+  include("${CMAKE_CURRENT_LIST_DIR}/scip-targets.cmake")
+endif()
+
+if()
+   set(ZIMPL_DIR "")
+   find_package(ZIMPL QUIET CONFIG)
+endif()
+
+if()
+   set(SOPLEX_DIR "")
+   find_package(SOPLEX QUIET CONFIG)
+endif()
+
+set(SCIP_LIBRARIES libscip)
+set(SCIP_INCLUDE_DIRS "${CMAKE_CURRENT_LIST_DIR}/../../../include")
+set(SCIP_FOUND TRUE)

@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:fa4c383841b83c5d80eea8b8e6f12f62b643bd6843a95ccc623e4b2844146379
-size 562
+CMAKE_INCLUDE_CURRENT_DIR_IN_INTERFACE
+--------------------------------------
+
+Automatically add the current source and build directories to the
+:prop_tgt:`INTERFACE_INCLUDE_DIRECTORIES` target property.
+
+If this variable is enabled, CMake automatically adds for each shared
+library target, static library target, module target and executable
+target, :variable:`CMAKE_CURRENT_SOURCE_DIR` and
+:variable:`CMAKE_CURRENT_BINARY_DIR` to
+the :prop_tgt:`INTERFACE_INCLUDE_DIRECTORIES` target property.  By default
+``CMAKE_INCLUDE_CURRENT_DIR_IN_INTERFACE`` is ``OFF``.

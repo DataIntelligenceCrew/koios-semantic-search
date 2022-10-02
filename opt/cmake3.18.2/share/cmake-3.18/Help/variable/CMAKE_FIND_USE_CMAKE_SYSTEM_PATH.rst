@@ -1,3 +1,24 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:2f5ac06ee1f02b5bb3d6d7cac60cf74b86fed610fb154f51d21869e85fed6b8f
-size 866
+CMAKE_FIND_USE_CMAKE_SYSTEM_PATH
+--------------------------------
+
+Controls the default behavior of the following commands for whether or not to
+search paths provided by platform-specific cmake variables:
+
+* :command:`find_program`
+* :command:`find_library`
+* :command:`find_file`
+* :command:`find_path`
+* :command:`find_package`
+
+This is useful in cross-compiling environments.
+
+By default this variable is not set, which is equivalent to it having
+a value of ``TRUE``.  Explicit options given to the above commands
+take precedence over this variable.
+
+See also the :variable:`CMAKE_FIND_USE_CMAKE_PATH`,
+:variable:`CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH`,
+:variable:`CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH`,
+:variable:`CMAKE_FIND_USE_SYSTEM_PACKAGE_REGISTRY`,
+:variable:`CMAKE_FIND_USE_PACKAGE_REGISTRY`,
+and :variable:`CMAKE_FIND_USE_PACKAGE_ROOT_PATH` variables.

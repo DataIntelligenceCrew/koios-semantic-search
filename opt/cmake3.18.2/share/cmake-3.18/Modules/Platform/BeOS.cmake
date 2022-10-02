@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b9962431d44d8686dc39cc6191a14273c38f8bfa05d7b68d351e52340ca28b2b
-size 404
+set(BEOS 1)
+
+set(CMAKE_DL_LIBS root be)
+set(CMAKE_C_COMPILE_OPTIONS_PIC "-fPIC")
+set(CMAKE_C_COMPILE_OPTIONS_PIE "-fPIE")
+set(CMAKE_SHARED_LIBRARY_C_FLAGS "-fPIC")
+set(CMAKE_SHARED_LIBRARY_CREATE_C_FLAGS "-nostart")
+set(CMAKE_SHARED_LIBRARY_RUNTIME_C_FLAG "-Wl,-rpath,")
+set(CMAKE_SHARED_LIBRARY_RUNTIME_C_FLAG_SEP ":")
+set(CMAKE_SHARED_LIBRARY_SONAME_C_FLAG "-Wl,-soname,")
+
+include(Platform/UnixPaths)

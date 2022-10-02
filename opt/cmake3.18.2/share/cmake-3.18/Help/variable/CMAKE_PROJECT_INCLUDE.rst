@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:7bb010db80e27ce9a97ff95b7cc91e0171893470f60398177e0b7b3c145bf362
-size 422
+CMAKE_PROJECT_INCLUDE
+---------------------
+
+A CMake language file or module to be included as the last step of all
+:command:`project` command calls.  This is intended for injecting custom code
+into project builds without modifying their source.
+
+See also the :variable:`CMAKE_PROJECT_<PROJECT-NAME>_INCLUDE`,
+:variable:`CMAKE_PROJECT_<PROJECT-NAME>_INCLUDE_BEFORE` and
+:variable:`CMAKE_PROJECT_INCLUDE_BEFORE` variables.

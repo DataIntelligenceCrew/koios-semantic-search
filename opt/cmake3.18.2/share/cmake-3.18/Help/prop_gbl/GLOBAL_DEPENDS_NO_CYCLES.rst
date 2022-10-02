@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e706e19c288f45f6915122b55c441cf0b7bc0f505d1762bfca48972d0d5d47d6
-size 428
+GLOBAL_DEPENDS_NO_CYCLES
+------------------------
+
+Disallow global target dependency graph cycles.
+
+CMake automatically analyzes the global inter-target dependency graph
+at the beginning of native build system generation.  It reports an
+error if the dependency graph contains a cycle that does not consist
+of all STATIC library targets.  This property tells CMake to disallow
+all cycles completely, even among static libraries.

@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:72e01daa6719844b8a5e2247052edc67c78cd096f7079c906231d6623a7a5471
-size 138
+LOCATION
+--------
+
+The full path to a source file.
+
+A read only property on a SOURCE FILE that contains the full path to
+the source file.

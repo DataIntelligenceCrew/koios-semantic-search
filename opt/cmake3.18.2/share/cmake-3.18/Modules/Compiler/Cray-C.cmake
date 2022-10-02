@@ -1,3 +1,24 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:392d29bd4c4be5b22f58eec49a66ca35c5e9d2bf2b2a330cd6284be6fc587659
-size 975
+# Distributed under the OSI-approved BSD 3-Clause License.  See accompanying
+# file Copyright.txt or https://cmake.org/licensing for details.
+
+include(Compiler/Cray)
+__compiler_cray(C)
+
+string(APPEND CMAKE_C_FLAGS_MINSIZEREL_INIT " -DNDEBUG")
+string(APPEND CMAKE_C_FLAGS_RELEASE_INIT " -DNDEBUG")
+
+if (CMAKE_C_COMPILER_VERSION VERSION_GREATER_EQUAL 8.1)
+  set(CMAKE_C90_STANDARD_COMPILE_OPTION  -h noc99,conform)
+  set(CMAKE_C90_EXTENSION_COMPILE_OPTION -h noc99,gnu)
+  set(CMAKE_C90_STANDARD__HAS_FULL_SUPPORT ON)
+  set(CMAKE_C99_STANDARD_COMPILE_OPTION  -h c99,conform)
+  set(CMAKE_C99_EXTENSION_COMPILE_OPTION -h c99,gnu)
+  set(CMAKE_C99_STANDARD__HAS_FULL_SUPPORT ON)
+  if (CMAKE_C_COMPILER_VERSION VERSION_GREATER_EQUAL 8.5)
+    set(CMAKE_C11_STANDARD_COMPILE_OPTION  -h std=c11,conform)
+    set(CMAKE_C11_EXTENSION_COMPILE_OPTION -h std=c11,gnu)
+    set(CMAKE_C11_STANDARD__HAS_FULL_SUPPORT ON)
+  endif ()
+endif ()
+
+__compiler_check_default_language_standard(C 8.1 99)

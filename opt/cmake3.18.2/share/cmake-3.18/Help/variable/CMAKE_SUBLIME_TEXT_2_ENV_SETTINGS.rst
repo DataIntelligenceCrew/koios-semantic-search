@@ -1,3 +1,25 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:7404c425205f1be04fdc59f8c85c2ba245ec4caa5279abd8b3c612a5f86ffa47
-size 528
+CMAKE_SUBLIME_TEXT_2_ENV_SETTINGS
+---------------------------------
+
+This variable contains a list of env vars as a list of tokens with the
+syntax ``var=value``.
+
+Example:
+
+.. code-block:: cmake
+
+  set(CMAKE_SUBLIME_TEXT_2_ENV_SETTINGS
+     "FOO=FOO1\;FOO2\;FOON"
+     "BAR=BAR1\;BAR2\;BARN"
+     "BAZ=BAZ1\;BAZ2\;BAZN"
+     "FOOBAR=FOOBAR1\;FOOBAR2\;FOOBARN"
+     "VALID="
+     )
+
+In case of malformed variables CMake will fail:
+
+.. code-block:: cmake
+
+  set(CMAKE_SUBLIME_TEXT_2_ENV_SETTINGS
+      "THIS_IS_NOT_VALID"
+      )

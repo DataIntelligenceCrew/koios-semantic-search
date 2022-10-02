@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:76e4176957f9de2d769970e9bcf5e16d029581dc746231f0c94f2aa2143bb6ad
-size 389
+CMAKE_XCODE_SCHEME_ZOMBIE_OBJECTS
+---------------------------------
+
+Whether to enable ``Zombie Objects``
+in the Diagnostics section of the generated Xcode scheme.
+
+This variable initializes the
+:prop_tgt:`XCODE_SCHEME_ZOMBIE_OBJECTS`
+property on all targets.
+
+Please refer to the :prop_tgt:`XCODE_GENERATE_SCHEME` target property
+documentation to see all Xcode schema related properties.

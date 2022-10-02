@@ -1,3 +1,14 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a70ea8acc7a54991be3defaf7a50f937eeb16b69e21a8c9256d107e70854272b
-size 642
+IMPORTED_LINK_INTERFACE_LANGUAGES
+---------------------------------
+
+Languages compiled into an ``IMPORTED`` static library.
+
+Set this to the list of languages of source files compiled to produce
+a ``STATIC IMPORTED`` library (such as ``C`` or ``CXX``).  CMake accounts for
+these languages when computing how to link a target to the imported
+library.  For example, when a C executable links to an imported C++
+static library CMake chooses the C++ linker to satisfy language
+runtime dependencies of the static library.
+
+This property is ignored for targets that are not ``STATIC`` libraries.
+This property is ignored for non-imported targets.

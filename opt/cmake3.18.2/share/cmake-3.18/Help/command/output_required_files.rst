@@ -1,3 +1,19 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:678b453507b64b3546591464d711ff55db4956e93736fb92b698019b3f5d1f85
-size 661
+output_required_files
+---------------------
+
+Disallowed since version 3.0.  See CMake Policy :policy:`CMP0032`.
+
+Approximate C preprocessor dependency scanning.
+
+This command exists only because ancient CMake versions provided it.
+CMake handles preprocessor dependency scanning automatically using a
+more advanced scanner.
+
+::
+
+  output_required_files(srcfile outputfile)
+
+Outputs a list of all the source files that are required by the
+specified ``srcfile``.  This list is written into ``outputfile``.  This is
+similar to writing out the dependencies for ``srcfile`` except that it
+jumps from ``.h`` files into ``.cxx``, ``.c`` and ``.cpp`` files if possible.

@@ -1,3 +1,11 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b054d5e6051d1ef9088a6670e8a00f52c6b7f5b82a3a144c7dc371855238aa23
-size 321
+CMAKE_BUILD_PARALLEL_LEVEL
+--------------------------
+
+.. include:: ENV_VAR.txt
+
+Specifies the maximum number of concurrent processes to use when building
+using the ``cmake --build`` command line
+:ref:`Build Tool Mode <Build Tool Mode>`.
+
+If this variable is defined empty the native build tool's default number is
+used.

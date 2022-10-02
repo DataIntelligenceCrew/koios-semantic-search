@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:02e7af9d42a04aa31e9e2010a8b3c711a01661ad151f2aeddc82a326c57d672b
-size 375
+CMAKE_ANDROID_NDK_DEPRECATED_HEADERS
+------------------------------------
+
+When :ref:`Cross Compiling for Android with the NDK`, this variable
+may be set to specify whether to use the deprecated per-api-level
+headers instead of the unified headers.
+
+If not specified, the default will be *false* if using a NDK version
+that provides the unified headers and *true* otherwise.

@@ -1,3 +1,5 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:8960d877f40465f725bdc31f55d615c148bb69136d3ece857c67451e42593a05
-size 173
+CTEST_UPDATE_VERSION_ONLY
+-------------------------
+
+Specify the CTest :ref:`UpdateVersionOnly <UpdateVersionOnly>` setting
+in a :manual:`ctest(1)` dashboard client script.

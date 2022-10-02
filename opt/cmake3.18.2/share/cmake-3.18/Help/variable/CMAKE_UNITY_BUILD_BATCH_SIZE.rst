@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:3200031d1fb9bf1453d6ca773ca8322ead0e0d980e3f3a27a6e1414278d9bc3c
-size 339
+CMAKE_UNITY_BUILD_BATCH_SIZE
+----------------------------
+
+This variable is used to initialize the :prop_tgt:`UNITY_BUILD_BATCH_SIZE`
+property of targets when they are created.  It specifies the default upper
+limit on the number of source files that may be combined in any one unity
+source file when unity builds are enabled for a target.

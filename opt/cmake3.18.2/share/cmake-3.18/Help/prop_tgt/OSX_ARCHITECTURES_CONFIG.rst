@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:4341dbc40298034b9851f3d2444a55c8020f63c651037d5a990ecc85206cd46d
-size 209
+OSX_ARCHITECTURES_<CONFIG>
+--------------------------
+
+Per-configuration macOS and iOS binary architectures for a target.
+
+This property is the configuration-specific version of
+:prop_tgt:`OSX_ARCHITECTURES`.

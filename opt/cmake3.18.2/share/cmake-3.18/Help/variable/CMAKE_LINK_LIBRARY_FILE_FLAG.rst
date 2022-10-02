@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b419d2d6a1675c2d4947fd1aa7e3cfb82282ea954a7e30153c19fcc8a58e5d0d
-size 244
+CMAKE_LINK_LIBRARY_FILE_FLAG
+----------------------------
+
+Flag to be used to link a library specified by a path to its file.
+
+The flag will be used before a library file path is given to the
+linker.  This is needed only on very few platforms.

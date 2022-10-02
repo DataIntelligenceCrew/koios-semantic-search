@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:3ba62cbd62c28710f604fdd70c5324c50172fb73ee98c820662e07652462518f
-size 733
+CTEST_PROGRESS_OUTPUT
+---------------------
+
+.. include:: ENV_VAR.txt
+
+Boolean environment variable that affects how :manual:`ctest <ctest(1)>`
+command output reports overall progress.  When set to ``1``, ``TRUE``, ``ON`` or anything
+else that evaluates to boolean true, progress is reported by repeatedly
+updating the same line.  This greatly reduces the overall verbosity, but is
+only supported when output is sent directly to a terminal.  If the environment
+variable is not set or has a value that evaluates to false, output is reported
+normally with each test having its own start and end lines logged to the
+output.
+
+The ``--progress`` option to :manual:`ctest <ctest(1)>` overrides this
+environment variable if both are given.

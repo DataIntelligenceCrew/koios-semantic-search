@@ -1,3 +1,13 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ba2411841a4fee51631fb282b553a6f79334198c10c09ecdf327167b5347e9a5
-size 552
+CMAKE_CODEBLOCKS_COMPILER_ID
+----------------------------
+
+Change the compiler id in the generated CodeBlocks project files.
+
+CodeBlocks uses its own compiler id string which differs from
+:variable:`CMAKE_<LANG>_COMPILER_ID`.  If this variable is left empty,
+CMake tries to recognize the CodeBlocks compiler id automatically.
+Otherwise the specified string is used in the CodeBlocks project file.
+See the CodeBlocks documentation for valid compiler id strings.
+
+Other IDEs like QtCreator that also use the CodeBlocks generator may ignore
+this setting.

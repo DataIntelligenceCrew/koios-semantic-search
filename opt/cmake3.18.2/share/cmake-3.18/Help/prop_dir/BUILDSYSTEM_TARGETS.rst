@@ -1,3 +1,11 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:6337325e6de4042f1b5d78ba1766e1f229631d282f39ae8914126ea6d7b62d9f
-size 554
+BUILDSYSTEM_TARGETS
+-------------------
+
+This read-only directory property contains a
+:ref:`semicolon-separated list <CMake Language Lists>` of buildsystem targets added in the
+directory by calls to the :command:`add_library`, :command:`add_executable`,
+and :command:`add_custom_target` commands.  The list does not include any
+:ref:`Imported Targets` or :ref:`Alias Targets`, but does include
+:ref:`Interface Libraries`.  Each entry in the list is the logical name
+of a target, suitable to pass to the :command:`get_property` command
+``TARGET`` option.

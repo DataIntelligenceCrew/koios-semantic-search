@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:23bb8b93c5c8a0d4bc5a68ddc7fc805f99569f5b909c2b311640cccfd8171264
-size 653
+CMAKE_XCODE_ATTRIBUTE_<an-attribute>
+------------------------------------
+
+Set Xcode target attributes directly.
+
+Tell the :generator:`Xcode` generator to set '<an-attribute>' to a given value
+in the generated Xcode project.  Ignored on other generators.
+
+See the :prop_tgt:`XCODE_ATTRIBUTE_<an-attribute>` target property
+to set attributes on a specific target.
+
+Contents of ``CMAKE_XCODE_ATTRIBUTE_<an-attribute>`` may use
+"generator expressions" with the syntax ``$<...>``.  See the
+:manual:`cmake-generator-expressions(7)` manual for available
+expressions.  See the :manual:`cmake-buildsystem(7)` manual
+for more on defining buildsystem properties.

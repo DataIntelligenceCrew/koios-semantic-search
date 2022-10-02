@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e19ecac064724d5c47dc8008ee69fd0a46c6ab87429996e8275ce377e43777ea
-size 265
+TEST_INCLUDE_FILE
+-----------------
+
+Deprecated.  Use :prop_dir:`TEST_INCLUDE_FILES` instead.
+
+A cmake file that will be included when ctest is run.
+
+If you specify ``TEST_INCLUDE_FILE``, that file will be included and
+processed when ctest is run on the directory.

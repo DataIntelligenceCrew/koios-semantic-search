@@ -1,3 +1,32 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:4a38b4a1d51c7ecde41ef71b6e7aa29b81f7925c75706bb08b62d4c3dc0f4bf5
-size 693
+CMAKE_MESSAGE_INDENT
+--------------------
+
+The :command:`message` command joins the strings from this list and for
+log levels of ``NOTICE`` and below, it prepends the resultant string to
+each line of the message.
+
+Example:
+
+.. code-block:: cmake
+
+  list(APPEND listVar one two three)
+
+  message(VERBOSE [[Collected items in the "listVar":]])
+  list(APPEND CMAKE_MESSAGE_INDENT "  ")
+
+  foreach(item IN LISTS listVar)
+    message(VERBOSE ${item})
+  endforeach()
+
+  list(POP_BACK CMAKE_MESSAGE_INDENT)
+  message(VERBOSE "No more indent")
+
+Which results in the following output:
+
+.. code-block:: none
+
+  -- Collected items in the "listVar":
+  --   one
+  --   two
+  --   three
+  -- No more indent

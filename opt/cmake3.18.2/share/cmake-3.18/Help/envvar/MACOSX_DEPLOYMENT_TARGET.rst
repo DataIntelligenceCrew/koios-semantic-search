@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:1d1f2f8391e7ae6e59e738cb82174078ca956a10425dd5ee994fdd8aaf9ff090
-size 299
+MACOSX_DEPLOYMENT_TARGET
+------------------------
+
+.. include:: ENV_VAR.txt
+
+Specify the minimum version of macOS on which the target binaries are
+to be deployed.
+
+The ``MACOSX_DEPLOYMENT_TARGET`` environment variable sets the default value for
+the :variable:`CMAKE_OSX_DEPLOYMENT_TARGET` variable.

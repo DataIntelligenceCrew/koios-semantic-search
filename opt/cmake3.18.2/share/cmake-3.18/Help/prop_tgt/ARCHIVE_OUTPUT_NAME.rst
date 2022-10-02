@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:094752e83ac0d885c1947f3ff410d495d3f7772ba1f78a245f7f6c499f084616
-size 234
+ARCHIVE_OUTPUT_NAME
+-------------------
+
+.. |XXX| replace:: :ref:`ARCHIVE <Archive Output Artifacts>`
+.. |xxx| replace:: archive
+.. include:: XXX_OUTPUT_NAME.txt
+
+See also the :prop_tgt:`ARCHIVE_OUTPUT_NAME_<CONFIG>` target property.

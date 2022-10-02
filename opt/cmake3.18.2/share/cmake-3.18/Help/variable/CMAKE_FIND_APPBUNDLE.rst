@@ -1,3 +1,22 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:341b240985e0b41c68fdd324b58ef6726aa639a653dd2bb45c2c3cfbceef98eb
-size 583
+CMAKE_FIND_APPBUNDLE
+--------------------
+
+This variable affects how ``find_*`` commands choose between
+macOS Application Bundles and unix-style package components.
+
+On Darwin or systems supporting macOS Application Bundles, the
+``CMAKE_FIND_APPBUNDLE`` variable can be set to empty or
+one of the following:
+
+``FIRST``
+  Try to find application bundles before standard programs.
+  This is the default on Darwin.
+
+``LAST``
+  Try to find application bundles after standard programs.
+
+``ONLY``
+  Only try to find application bundles.
+
+``NEVER``
+  Never try to find application bundles.

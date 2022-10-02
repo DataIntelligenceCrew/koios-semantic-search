@@ -1,3 +1,5 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:cedc710b74addc53e26d94a7b6c1e2d7ecef83b63b3ede7126a192a36b783830
-size 168
+CMAKE_USE_RELATIVE_PATHS
+------------------------
+
+This variable has no effect.  The partially implemented effect it
+had in previous releases was removed in CMake 3.4.

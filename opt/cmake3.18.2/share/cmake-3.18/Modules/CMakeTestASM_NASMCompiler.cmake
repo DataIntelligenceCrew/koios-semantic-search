@@ -1,3 +1,13 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:2dc5a760c09909c9dea837ae0532f868b94816040e1521ae7f4745accee03ade
-size 529
+# Distributed under the OSI-approved BSD 3-Clause License.  See accompanying
+# file Copyright.txt or https://cmake.org/licensing for details.
+
+
+# This file is used by EnableLanguage in cmGlobalGenerator to
+# determine that the selected ASM_NASM "compiler" works.
+# For assembler this can only check whether the compiler has been found,
+# because otherwise there would have to be a separate assembler source file
+# for each assembler on every architecture.
+
+set(ASM_DIALECT "_NASM")
+include(CMakeTestASMCompiler)
+set(ASM_DIALECT)

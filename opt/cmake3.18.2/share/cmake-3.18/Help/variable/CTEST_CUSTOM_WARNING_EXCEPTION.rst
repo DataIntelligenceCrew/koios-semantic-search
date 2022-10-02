@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c72878fdb087d03b4efa36dc8397a10d6a2b0d9281911baaacb044e78973fa99
-size 246
+CTEST_CUSTOM_WARNING_EXCEPTION
+------------------------------
+
+A list of regular expressions which will be used to exclude when detecting
+warning messages in build outputs by the :command:`ctest_build` command.
+
+.. include:: CTEST_CUSTOM_XXX.txt

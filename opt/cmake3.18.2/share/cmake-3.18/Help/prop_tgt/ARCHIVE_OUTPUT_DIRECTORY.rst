@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:27d5463572ef3c90c984c0e9adeffead24c77f8767e03d9fdef26befe2c780bc
-size 327
+ARCHIVE_OUTPUT_DIRECTORY
+------------------------
+
+.. |XXX| replace:: :ref:`ARCHIVE <Archive Output Artifacts>`
+.. |xxx| replace:: archive
+.. |CMAKE_XXX_OUTPUT_DIRECTORY| replace:: CMAKE_ARCHIVE_OUTPUT_DIRECTORY
+.. include:: XXX_OUTPUT_DIRECTORY.txt
+
+See also the :prop_tgt:`ARCHIVE_OUTPUT_DIRECTORY_<CONFIG>` target property.

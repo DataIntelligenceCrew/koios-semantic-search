@@ -1,3 +1,11 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:92925d6840dc1008f916ac94d2bea9abf73d2ed9478ee033527cf81f143263b5
-size 447
+ENABLED_FEATURES
+----------------
+
+List of features which are enabled during the CMake run.
+
+List of features which are enabled during the CMake run.  By default
+it contains the names of all packages which were found.  This is
+determined using the ``<NAME>_FOUND`` variables.  Packages which are
+searched ``QUIET`` are not listed.  A project can add its own features to
+this list.  This property is used by the macros in
+``FeatureSummary.cmake``.

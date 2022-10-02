@@ -1,3 +1,23 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:35b7539447c639acd5b8f90fb5255bfcec4f1513efd11d4718e4123f85c3a93d
-size 648
+load_command
+------------
+
+Disallowed since version 3.0.  See CMake Policy :policy:`CMP0031`.
+
+Load a command into a running CMake.
+
+::
+
+  load_command(COMMAND_NAME <loc1> [loc2 ...])
+
+The given locations are searched for a library whose name is
+cmCOMMAND_NAME.  If found, it is loaded as a module and the command is
+added to the set of available CMake commands.  Usually,
+:command:`try_compile` is used before this command to compile the
+module.  If the command is successfully loaded a variable named
+
+::
+
+  CMAKE_LOADED_COMMAND_<COMMAND_NAME>
+
+will be set to the full path of the module that was loaded.  Otherwise
+the variable will not be set.

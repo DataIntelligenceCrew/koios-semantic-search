@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:069f95b3c955a6dd796e91b28697e106d67d80b3480d9f8d958e96c99d83dae2
-size 320
+CMAKE_<LANG>_COMPILER_PREDEFINES_COMMAND
+----------------------------------------
+
+Command that outputs the compiler pre definitions.
+
+See :prop_tgt:`AUTOMOC` which uses
+:variable:`CMAKE_CXX_COMPILER_PREDEFINES_COMMAND <CMAKE_<LANG>_COMPILER_PREDEFINES_COMMAND>`
+to generate the :prop_tgt:`AUTOMOC_COMPILER_PREDEFINES`.

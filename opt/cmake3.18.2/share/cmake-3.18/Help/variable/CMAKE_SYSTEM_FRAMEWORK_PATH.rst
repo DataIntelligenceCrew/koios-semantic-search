@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:65e43419b20da206737618d492f5fad628bb614ab078761a3661254872e8788e
-size 382
+CMAKE_SYSTEM_FRAMEWORK_PATH
+---------------------------
+
+Search path for macOS frameworks used by the :command:`find_library`,
+:command:`find_package`, :command:`find_path`, and :command:`find_file`
+commands.  By default it contains the standard directories for the
+current system.  It is *not* intended to be modified by the project,
+use :variable:`CMAKE_FRAMEWORK_PATH` for this.

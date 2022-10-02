@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:7838395a96083f9066c03a72a494ea05f79a5027389c8ce9414c55090975b701
-size 438
+%-----------------------------------------------------------------------------%
+% diffn: constrains rectangles, given by their origins and sizes, to be
+% non-overlapping
+%-----------------------------------------------------------------------------%
+
+predicate fzn_diffn(array[int] of var int: x,
+                    array[int] of var int: y,
+                    array[int] of var int: dx,
+                    array[int] of var int: dy);

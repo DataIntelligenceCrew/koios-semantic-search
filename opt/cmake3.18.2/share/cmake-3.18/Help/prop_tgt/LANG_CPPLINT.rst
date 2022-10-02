@@ -1,3 +1,13 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:9c57cf47bddca42d499cf36d69b2d6fec234fd5048685a5a63050f3caf9770d5
-size 497
+<LANG>_CPPLINT
+--------------
+
+This property is supported only when ``<LANG>`` is ``C`` or ``CXX``.
+
+Specify a :ref:`semicolon-separated list <CMake Language Lists>` containing a command line
+for the ``cpplint`` style checker.  The :ref:`Makefile Generators` and the
+:generator:`Ninja` generator will run ``cpplint`` along with the compiler
+and report any problems.
+
+This property is initialized by the value of the
+:variable:`CMAKE_<LANG>_CPPLINT` variable if it is set when a target is
+created.

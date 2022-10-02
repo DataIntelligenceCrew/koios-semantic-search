@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:8b6ad9cfcfa9bf4f688163f0baa2bb9018a7eef4f98d5127206c9dcaa252fa4d
-size 465
+XCODE_SCHEME_DYNAMIC_LINKER_API_USAGE
+-------------------------------------
+
+Whether to enable ``Dynamic Linker API usage``
+in the Diagnostics section of the generated Xcode scheme.
+
+This property is initialized by the value of the variable
+:variable:`CMAKE_XCODE_SCHEME_DYNAMIC_LINKER_API_USAGE` if it is set
+when a target is created.
+
+Please refer to the :prop_tgt:`XCODE_GENERATE_SCHEME` target property
+documentation to see all Xcode schema related properties.

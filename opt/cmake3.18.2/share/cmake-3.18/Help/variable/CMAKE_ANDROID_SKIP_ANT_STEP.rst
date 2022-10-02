@@ -1,3 +1,5 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:624666331ddca493ff4ab26aaf5d370a024696e1fe9c1c958af888137db3514c
-size 183
+CMAKE_ANDROID_SKIP_ANT_STEP
+---------------------------
+
+Default value for the :prop_tgt:`ANDROID_SKIP_ANT_STEP` target property.
+See that target property for additional information.

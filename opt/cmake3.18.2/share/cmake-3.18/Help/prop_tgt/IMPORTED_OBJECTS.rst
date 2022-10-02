@@ -1,3 +1,11 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:3acfda20a28aaeb30b0419d5476f3756b0de8e65d08104f8a2c3948bd2975691
-size 390
+IMPORTED_OBJECTS
+----------------
+
+A :ref:`semicolon-separated list <CMake Language Lists>` of absolute paths to the object
+files on disk for an :ref:`imported <Imported targets>`
+:ref:`object library <object libraries>`.
+
+Ignored for non-imported targets.
+
+Projects may skip ``IMPORTED_OBJECTS`` if the configuration-specific
+property :prop_tgt:`IMPORTED_OBJECTS_<CONFIG>` is set instead.

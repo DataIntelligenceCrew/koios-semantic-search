@@ -1,3 +1,11 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:bdbb4a7c07b66f5222b564f975be10f4f6b8cdd509453f5274eec7750c3bde8d
-size 492
+# Distributed under the OSI-approved BSD 3-Clause License.  See accompanying
+# file Copyright.txt or https://cmake.org/licensing for details.
+
+# This module is shared by multiple languages; use include blocker.
+include_guard()
+
+macro(__apple_compiler_pgi lang)
+  set(CMAKE_${lang}_OSX_COMPATIBILITY_VERSION_FLAG "-Wl,-compatibility_version,")
+  set(CMAKE_${lang}_OSX_CURRENT_VERSION_FLAG "-Wl,-current_version,")
+  set(CMAKE_SHARED_LIBRARY_SONAME_${lang}_FLAG "-Wl,-install_name")
+endmacro()

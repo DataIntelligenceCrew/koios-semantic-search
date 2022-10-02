@@ -1,3 +1,24 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e1657e27e522ed9998980ab8b00d81acded1d4922b7196cbad53ede7f422aabe
-size 382
+#ifdef CHECK_VARIABLE_EXISTS
+
+extern int CHECK_VARIABLE_EXISTS;
+
+#  ifdef __CLASSIC_C__
+int main()
+{
+  int ac;
+  char* av[];
+#  else
+int main(int ac, char* av[])
+{
+#  endif
+  if (ac > 1000) {
+    return *av[0];
+  }
+  return CHECK_VARIABLE_EXISTS;
+}
+
+#else /* CHECK_VARIABLE_EXISTS */
+
+#  error "CHECK_VARIABLE_EXISTS has to specify the variable"
+
+#endif /* CHECK_VARIABLE_EXISTS */

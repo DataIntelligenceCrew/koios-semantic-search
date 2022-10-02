@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:17885b67336dda395a9a126e231f465bba5d6dcc43c5e5ef78afab24033e9d92
-size 255
+CMAKE_SHARED_MODULE_PREFIX
+--------------------------
+
+The prefix for loadable modules that you link to.
+
+The prefix to use for the name of a loadable module on this platform.
+
+``CMAKE_SHARED_MODULE_PREFIX_<LANG>`` overrides this for language ``<LANG>``.

@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:3bccdd11704530b3732e86dd5d7f85c0aa48dc7aa10f71cee3febf601536dc0a
-size 179
+EchoString
+----------
+
+A message to be displayed when the target is built.
+
+A message to display on some generators (such as :ref:`Makefile Generators`)
+when the target is built.

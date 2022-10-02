@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:0029224a50f3ca63d2d87d7de7d3eeb4a8420d11869c53848fe90e0226e95708
-size 247
+CMAKE_ERROR_DEPRECATED
+----------------------
+
+Whether to issue errors for deprecated functionality.
+
+If ``TRUE``, use of deprecated functionality will issue fatal errors.
+If this variable is not set, CMake behaves as if it were set to ``FALSE``.

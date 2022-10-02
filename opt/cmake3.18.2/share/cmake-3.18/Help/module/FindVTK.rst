@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c8c0713eb5d0150a3196bb0c947fd999ed5d43ec86b7eb3a0ba6fc459ec14b62
-size 316
+FindVTK
+-------
+
+This module no longer exists.
+
+This module existed in versions of CMake prior to 3.1, but became
+only a thin wrapper around ``find_package(VTK NO_MODULE)`` to
+provide compatibility for projects using long-outdated conventions.
+Now ``find_package(VTK)`` will search for ``VTKConfig.cmake``
+directly.

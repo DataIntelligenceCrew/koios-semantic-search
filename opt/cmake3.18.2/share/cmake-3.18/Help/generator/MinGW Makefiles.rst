@@ -1,3 +1,13 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:5e428b7f10c9246b34b0133fd565da5c40f50371cf1e25d5377d22bbb7c63307
-size 476
+MinGW Makefiles
+---------------
+
+Generates makefiles for use with ``mingw32-make`` under a Windows command
+prompt.
+
+Use this generator under a Windows command prompt with
+MinGW (Minimalist GNU for Windows) in the ``PATH``
+and using ``mingw32-make`` as the build tool.  The generated makefiles use
+``cmd.exe`` as the shell to launch build rules.  They are not compatible with
+MSYS or a unix shell.
+
+To build under the MSYS shell, use the :generator:`MSYS Makefiles` generator.

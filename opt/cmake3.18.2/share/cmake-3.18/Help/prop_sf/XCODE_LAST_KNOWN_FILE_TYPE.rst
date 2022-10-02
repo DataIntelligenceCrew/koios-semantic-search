@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d8860cb467234034fa00ea5e3ab7b198a9909a869e894060b3fd9d55001b8af8
-size 339
+XCODE_LAST_KNOWN_FILE_TYPE
+--------------------------
+
+Set the :generator:`Xcode` ``lastKnownFileType`` attribute on its reference to
+a source file.  CMake computes a default based on file extension but
+can be told explicitly with this property.
+
+See also :prop_sf:`XCODE_EXPLICIT_FILE_TYPE`, which is preferred
+over this property if set.

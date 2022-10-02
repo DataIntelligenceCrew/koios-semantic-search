@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:60afd40f76ac8af38babc9641208e72c4f4edb7a126ad3434e78599bbf67e24f
-size 309
+ABSTRACT
+--------
+
+Is this source file an abstract class.
+
+A property on a source file that indicates if the source file
+represents a class that is abstract.  This only makes sense for
+languages that have a notion of an abstract class and it is only used
+by some tools that wrap classes into other languages.

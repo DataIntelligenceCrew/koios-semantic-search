@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:367f086b7b75a8cad8d5c2eafcbdecb595a7566dc9e288bbc80a0cdecc5c96bb
-size 205
+MSVC11
+------
+
+Discouraged.  Use the :variable:`MSVC_VERSION` variable instead.
+
+``True`` when using the Microsoft Visual Studio ``v110`` toolset
+(``cl`` version 17) or another compiler that simulates it.

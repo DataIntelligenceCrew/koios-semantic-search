@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:7aaefffb840e1c6ae42e33735d3cd09c18d3c365e0a87d23d6473308a0e58713
-size 486
+FC
+--
+
+.. include:: ENV_VAR.txt
+
+Preferred executable for compiling ``Fortran`` language files. Will only be used
+by CMake on the first configuration to determine ``Fortran`` compiler, after
+which the value for ``Fortran`` is stored in the cache as
+:variable:`CMAKE_Fortran_COMPILER <CMAKE_<LANG>_COMPILER>`. For any
+configuration run (including the first), the environment variable will be
+ignored if the :variable:`CMAKE_Fortran_COMPILER <CMAKE_<LANG>_COMPILER>`
+variable is defined.

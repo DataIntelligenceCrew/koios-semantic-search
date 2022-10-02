@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:2517f10a0a4af9e7077c2b7d7ccac3e660297b3e70a5120f969a20bc1f8835f1
-size 224
+CMAKE_CACHEFILE_DIR
+-------------------
+
+The directory with the ``CMakeCache.txt`` file.
+
+This is the full path to the directory that has the ``CMakeCache.txt``
+file in it.  This is the same as :variable:`CMAKE_BINARY_DIR`.

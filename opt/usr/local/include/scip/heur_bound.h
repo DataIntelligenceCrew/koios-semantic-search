@@ -1,3 +1,48 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d518d724f378aed9fd6b721b89e65c485a56100d0b6cf60a1c234950251b39b2
-size 1891
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/*                                                                           */
+/*                  This file is part of the program and library             */
+/*         SCIP --- Solving Constraint Integer Programs                      */
+/*                                                                           */
+/*    Copyright (C) 2002-2020 Konrad-Zuse-Zentrum                            */
+/*                            fuer Informationstechnik Berlin                */
+/*                                                                           */
+/*  SCIP is distributed under the terms of the ZIB Academic License.         */
+/*                                                                           */
+/*  You should have received a copy of the ZIB Academic License              */
+/*  along with SCIP; see the file COPYING. If not visit scipopt.org.         */
+/*                                                                           */
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+/**@file   heur_bound.h
+ * @ingroup PRIMALHEURISTICS
+ * @brief  heuristic which fixes all integer variables to a bound (lower/upper) and solves the remaining LP
+ * @author Gerald Gamrath
+ */
+
+/*---+----1----+----2----+----3----+----4----+----5----+----6----+----7----+----8----+----9----+----0----+----1----+----2*/
+
+#ifndef __SCIP_HEUR_BOUND_H__
+#define __SCIP_HEUR_BOUND_H__
+
+#include "scip/def.h"
+#include "scip/type_retcode.h"
+#include "scip/type_scip.h"
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+/** creates the bound primal heuristic and includes it in SCIP
+ *
+ *  @ingroup PrimalHeuristicIncludes
+ */
+SCIP_EXPORT
+SCIP_RETCODE SCIPincludeHeurBound(
+   SCIP*                 scip                /**< SCIP data structure */
+   );
+
+#ifdef __cplusplus
+}
+#endif
+
+#endif

@@ -1,3 +1,22 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:220364997e2c08b98a86072e98b0ab51721a1f8b7075fa57196da0ffe94ebe8e
-size 905
+CMP0094
+-------
+
+Modules :module:`FindPython3`, :module:`FindPython2` and :module:`FindPython`
+use ``LOCATION`` for lookup strategy.
+
+Starting with CMake 3.15, Modules :module:`FindPython3`, :module:`FindPython2`
+and :module:`FindPython` set value ``LOCATION`` for, respectively, variables
+``Python3_FIND_STRATEGY``, ``Python2_FIND_STRATEGY`` and
+``Python_FIND_STRATEGY``. This policy provides compatibility with projects that
+expect the legacy behavior.
+
+The ``OLD`` behavior for this policy set value ``VERSION`` for variables
+``Python3_FIND_STRATEGY``, ``Python2_FIND_STRATEGY`` and
+``Python_FIND_STRATEGY``.
+
+This policy was introduced in CMake version 3.15.  Use the
+:command:`cmake_policy` command to set it to ``OLD`` or ``NEW`` explicitly.
+Unlike many policies, CMake version |release| does *not* warn
+when this policy is not set and simply uses the ``OLD`` behavior.
+
+.. include:: DEPRECATED.txt

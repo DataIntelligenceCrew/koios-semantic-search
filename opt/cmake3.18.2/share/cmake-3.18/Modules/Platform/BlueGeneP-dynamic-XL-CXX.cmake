@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:775a81fe7b5f665a6cbcc7062caa487f9ec607faf2bd8e32c5dbcb25cc7bd364
-size 280
+# Distributed under the OSI-approved BSD 3-Clause License.  See accompanying
+# file Copyright.txt or https://cmake.org/licensing for details.
+
+
+__BlueGeneP_set_dynamic_flags(XL CXX)
+
+# -qhalt=s       = Halt on severe error messages
+string(APPEND CMAKE_CXX_FLAGS_INIT " -qhalt=s")

@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ba0f2fe83cc7a063a48b699836e3e3ed998d8a61c0de72e7a2535f6e854fdd06
-size 418
+CMAKE_XCODE_GENERATE_TOP_LEVEL_PROJECT_ONLY
+-------------------------------------------
+
+If enabled, the :generator:`Xcode` generator will generate only a
+single Xcode project file for the topmost :command:`project()` command
+instead of generating one for every ``project()`` command.
+
+This could be useful to speed up the CMake generation step for
+large projects and to work-around a bug in the ``ZERO_CHECK`` logic.

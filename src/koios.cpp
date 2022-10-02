@@ -43,7 +43,7 @@
 #include <sys/wait.h>
 #include <oneapi/tbb.h>
 #include "thread_pool.hpp"
-
+// #include "topk/src/topk.h"
 
 #define VERBOSE false
 
@@ -68,15 +68,15 @@ struct cmp_decreasing {
 */
 class Environment {
 	private:
-		unordered_map<int, set<int>> sets; // sets located by id
-		unordered_set<int> wordset; // full dictionary of tokens
+		std::unordered_map<int, set<int>> sets; // sets located by id
+		std::unordered_set<int> wordset; // full dictionary of tokens
 		vector<set<int>> rindex; // inverted index
 		// Two kind of integer ids
 		// token id / set id
-		unordered_map<int, string> int2word; // convert integer id to token
-		unordered_map<string, int> word2int; // convert token back to integer id
-		unordered_map<int, string> int2set; // convert integer id to set name
-		unordered_map<string, int> set2int; // convert set name back to integer id
+		std::unordered_map<int, string> int2word; // convert integer id to token
+		std::unordered_map<string, int> word2int; // convert token back to integer id
+		std::unordered_map<int, string> int2set; // convert integer id to set name
+		std::unordered_map<string, int> set2int; // convert set name back to integer id
 		int average_cardinality = 0;
 
 	public:
@@ -134,10 +134,10 @@ class Environment {
 			}
 			average_cardinality = tokens / sets.size();
 		}
-		unordered_map<int, set<int>> getSets() {
+		std::unordered_map<int, set<int>> getSets() {
 			return sets;
 		}
-		unordered_set<int> getWordset() {
+		std::unordered_set<int> getWordset() {
 			return wordset;
 		}
 		vector<set<int>> getRindex() {
@@ -176,7 +176,7 @@ class Database {
 		sqlite3 *db; // fastText database instance
 		sqlite3 *dest; // database location
 		vector<int> dictionary; // array of unique tokens, index is its integer id
-		unordered_map<size_t, double> cache;
+		std::unordered_map<size_t, double> cache;
 		Environment *env;
 
 		// convert mysql entry from bytes to word vector
@@ -384,7 +384,7 @@ class Database {
 		}
 
 		// get vectors of words in valid set
-		vector<vector<float>> get_valid_vectors(unordered_set<int> validset){
+		vector<vector<float>> get_valid_vectors(std::unordered_set<int> validset){
 			vector<vector<float>> result;
 			int rc;
 			stringstream ss;
@@ -438,7 +438,7 @@ class ValidMatrix {
         // for edges popped from the monotonically decreasing priority queue by edge weights 
         // (cosine similarity) by leveraging valid edges, we save computing resources by do not 
         // have to re-calculate cosine similarity for edges retrieved from the Faiss index (which is expensive)
-		ValidMatrix(set<int> query_set, set<int> target_set, unordered_map<size_t, double> validedge) {
+		ValidMatrix(set<int> query_set, set<int> target_set, std::unordered_map<size_t, double> validedge) {
 			int i = 0;
 			set<int> query_set_pruned;
 			set<int> target_set_pruned;
@@ -528,11 +528,11 @@ class FaissIndexGpu {
 
 	private:
 		faiss::gpu::GpuIndexFlatIP *index;
-		unordered_map<int, vector<float>> normalized;
+		std::unordered_map<int, vector<float>> normalized;
 		vector<int> dictionary;
 
 	public:
-		FaissIndexGpu(string path, Database *db, unordered_set<int> validset){
+		FaissIndexGpu(string path, Database *db, std::unordered_set<int> validset){
 			string indexpath = path + "faiss.index";
 			int d = 300;
 
@@ -564,7 +564,7 @@ class FaissIndexGpu {
 			index->add(nb, xb);
 		}
 
-		tuple<vector<idx_t>, vector<float>> search(int nq, vector<float> vxq, int k){
+		std::tuple<vector<idx_t>, vector<float>> search(int nq, vector<float> vxq, int k){
 
 			int d = 300;
 
@@ -611,9 +611,9 @@ class BucketUpperBound {
             }
         };
 
-        unordered_map<int, std::set<pair<double, int>, cmp>> buckets;
-        unordered_map<int, double> siVal;
-        unordered_map<int, int> ciAt;
+        std::unordered_map<int, std::set<pair<double, int>, cmp>> buckets;
+        std::unordered_map<int, double> siVal;
+        std::unordered_map<int, int> ciAt;
 
     public:
         BucketUpperBound(int cardinality){
@@ -703,9 +703,9 @@ class BucketUpperBound {
 class RefinedLowerBound {
 	private:
 		int q;
-		unordered_map<int, set<int>> mapped_query_tokens; // key: candidate_set --> value : mapped query tokens
-		unordered_map<int, set<int>> mapped_cand_tokens; // key: candidate_set --> value : mapped candidate tokens
-		unordered_map<int, double> candidate_set_si;
+		std::unordered_map<int, set<int>> mapped_query_tokens; // key: candidate_set --> value : mapped query tokens
+		std::unordered_map<int, set<int>> mapped_cand_tokens; // key: candidate_set --> value : mapped candidate tokens
+		std::unordered_map<int, double> candidate_set_si;
 
 	public:
 		RefinedLowerBound(int cardinality){
@@ -749,7 +749,7 @@ class RefinedLowerBound {
 pair<double, vector<pair<pair<int, int>, double>>> calculate_graph_matching( 
 	set<int> query_tokens, 
 	set<int> target_tokens, 
-	unordered_map<size_t, double> validedge,
+	std::unordered_map<size_t, double> validedge,
  	std::set<pair<double, int>, cmp_increasing> *tkLB,
 	std::mutex *mtx,
 	double *etm) {
@@ -775,7 +775,7 @@ class ParallelBoundsUpdate {
 		std::set<int> *candidate_sets;
 		std::set<int> *pruned;
 		set<int> *query_tokens;
-		unordered_map<int, set<int>> *sets;
+		std::unordered_map<int, set<int>> *sets;
 		Database *ftdb;
 		int tbest;
 		int tqbest;
@@ -862,7 +862,7 @@ class ParallelBoundsUpdate {
 			std::set<int> *cs,
 			std::set<int> *p,
 			set<int> *qt,
-			unordered_map<int, set<int>> *s,
+			std::unordered_map<int, set<int>> *s,
 			Database *db,
 			int tb,
 			int tq,
@@ -926,7 +926,7 @@ class BackgroundCalculator {
 		double alpha;
 		double *early_pruned;
 		int k;
-		unordered_map<size_t, double> validedge;
+		std::unordered_map<size_t, double> validedge;
 		int query_i;
 		double *etm;
 	public:
@@ -1088,7 +1088,7 @@ class BackgroundCalculator {
 			double a,
 			double *ep,
 			int K,
-			unordered_map<size_t, double> vedge,
+			std::unordered_map<size_t, double> vedge,
 			int qi,
 			double *early_term,
 			std::set<pair<double, int>, cmp_increasing> *tUB_dup,
@@ -1128,8 +1128,8 @@ void koios(Environment *env, Database *ftdb, FaissIndexGpu *faissindex, string q
 						double *global_query_card, double *global_thetaK, double *global_early_pp, 
 						double *global_early_termination, double *global_results_found, double *response_time_pre, double *response_time_post) {
 	
-	unordered_map<int, set<int>> sets = env->getSets(); // all sets stored as key: set integer id, value: set data (int token integer ids)
-	unordered_set<int> wordset = env->getWordset(); // all unique tokens in copora
+	std::unordered_map<int, set<int>> sets = env->getSets(); // all sets stored as key: set integer id, value: set data (int token integer ids)
+	std::unordered_set<int> wordset = env->getWordset(); // all unique tokens in copora
 	vector<set<int>> inverted_index = env->getRindex(); // inverted index that returns all sets containing given token
 	vector<int> dictionary = ftdb->get_dictionary(); // fastText database instance
 	std::mutex gmtx_internal; //  mutex lock
@@ -1145,6 +1145,9 @@ void koios(Environment *env, Database *ftdb, FaissIndexGpu *faissindex, string q
 	double token_stream_size = 0;
 	double early_termination_match = 0;
 
+	// Jaccard Index 
+	// GramGenFixedLen gramGen(2);
+
 	int query_i = env->getSetId(query); // get setID for the query
 	std::set<int> query_tokens = sets[query_i];
 	std::set<int> candidate_sets; // candidate sets that can't be pruned by bounds
@@ -1156,10 +1159,10 @@ void koios(Environment *env, Database *ftdb, FaissIndexGpu *faissindex, string q
 	std::unordered_map<int, vector<pair<pair<int, int>, double>>> non_exact_match_data;
 	std::set<int> top_one_sets; // keep track of sets that have LB = 1
 	priority_queue<ptuple> token_stream; // queue contains edges from posting lists in decreasing order
-	unordered_map<size_t, double> validedge; // valid edge that we do not need to calculate cosine similarity again
+	std::unordered_map<size_t, double> validedge; // valid edge that we do not need to calculate cosine similarity again
 	double thetaK = 0.0; // thetaK tracker
 	// double max_LB_seen = 0.0; // to help binary search optimal thetaK
-	unordered_map<int, vector<float>> token_to_norm_vector;
+	std::unordered_map<int, vector<float>> token_to_norm_vector;
 	// posting list trackers
 	int tbest = 0; // current best candidate token
 	int tqbest = 0; // curent best token's corresponding query token
@@ -1208,7 +1211,7 @@ void koios(Environment *env, Database *ftdb, FaissIndexGpu *faissindex, string q
 	// ************************** first scan of posting list ******************************
 	int scanK = 100; // each time populate posting list with depth 100
 	global_gmt->lock();
-	tuple<vector<idx_t>, vector<float>> rt = faissindex->search(nq, vxq, scanK);
+	std::tuple<vector<idx_t>, vector<float>> rt = faissindex->search(nq, vxq, scanK);
 	global_gmt->unlock();
 	vector<idx_t> I = std::get<0>(rt);
 	vector<float> D = std::get<1>(rt);
@@ -1301,7 +1304,7 @@ void koios(Environment *env, Database *ftdb, FaissIndexGpu *faissindex, string q
 		if (token_stream_tracker[tqbest] % scanK == 0) {
 			vxq = token_to_norm_vector.at(tqbest);
 			global_gmt->lock();
-			tuple<vector<idx_t>, vector<float>> rt = faissindex->search(1, vxq, token_stream_tracker[tqbest] + scanK);
+			std::tuple<vector<idx_t>, vector<float>> rt = faissindex->search(1, vxq, token_stream_tracker[tqbest] + scanK);
 			global_gmt->unlock();
 			vector<idx_t> I = std::get<0>(rt);
 			vector<float> D = std::get<1>(rt);
@@ -1451,8 +1454,8 @@ void koios(Environment *env, Database *ftdb, FaissIndexGpu *faissindex, string q
 void algorithm_pureoverlap(Environment *env, Database *ftdb, string query, int k, int size, double alpha, std::set<int> operatable_sets,
 							std::set<pair<double, int>, cmp_decreasing> *finalresults, int partition_number, std::mutex *global_gmt, vector<bool> *status_tracker, double *response_time) {
 
-	unordered_map<int, set<int>> sets = env->getSets(); // all sets stored as key: set integer id, value: set data (int token integer ids)
-	unordered_set<int> wordset = env->getWordset(); // all unique tokens in copora
+	std::unordered_map<int, set<int>> sets = env->getSets(); // all sets stored as key: set integer id, value: set data (int token integer ids)
+	std::unordered_set<int> wordset = env->getWordset(); // all unique tokens in copora
 	vector<set<int>> inverted_index = env->getRindex(); // inverted index that returns all sets containing given token
 	vector<int> dictionary = ftdb->get_dictionary(); // fastText database instance
 	std::mutex gmtx_internal; //  mutex lock
@@ -1588,7 +1591,7 @@ int main(int argc, char const *argv[]) {
 	faissindextime = faisselapsed.count();
 	cout << "-------------------------utility check over--------------------------------" << endl;
 	// random parition datalake
-	unordered_map<int, set<int>> sets = env->getSets();
+	std::unordered_map<int, set<int>> sets = env->getSets();
 	std::unordered_map<int, std::set<int>> partitions;
 
 	for (auto it = sets.begin(); it != sets.end(); it++) {

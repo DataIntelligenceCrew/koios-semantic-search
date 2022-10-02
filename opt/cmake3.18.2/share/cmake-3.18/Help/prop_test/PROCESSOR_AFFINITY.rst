@@ -1,3 +1,11 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:8ff953330500db7d0c4334affbefbde2097fc83cb25479a2f2c4a518843a7c45
-size 643
+PROCESSOR_AFFINITY
+------------------
+
+Set to a true value to ask CTest to launch the test process with CPU affinity
+for a fixed set of processors.  If enabled and supported for the current
+platform, CTest will choose a set of processors to place in the CPU affinity
+mask when launching the test process.  The number of processors in the set is
+determined by the :prop_test:`PROCESSORS` test property or the number of
+processors available to CTest, whichever is smaller.  The set of processors
+chosen will be disjoint from the processors assigned to other concurrently
+running tests that also have the ``PROCESSOR_AFFINITY`` property enabled.

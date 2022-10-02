@@ -1,3 +1,6 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:5e338b9e15542be97f6e13514a354238d00d661064ed3637c124a29c97de8d15
-size 221
+CMAKE_ANDROID_ARM_NEON
+----------------------
+
+When :ref:`Cross Compiling for Android` and :variable:`CMAKE_ANDROID_ARCH_ABI`
+is set to ``armeabi-v7a`` set ``CMAKE_ANDROID_ARM_NEON`` to ``ON`` to target
+ARM NEON devices.

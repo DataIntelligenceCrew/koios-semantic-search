@@ -1,3 +1,11 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:9b70c89d723e878be215c78388b07f14f250a17789fff2312072f8312644d12b
-size 457
+CC
+--
+
+.. include:: ENV_VAR.txt
+
+Preferred executable for compiling ``C`` language files. Will only be used by
+CMake on the first configuration to determine ``C`` compiler, after which the
+value for ``CC`` is stored in the cache as
+:variable:`CMAKE_C_COMPILER <CMAKE_<LANG>_COMPILER>`. For any configuration run
+(including the first), the environment variable will be ignored if the
+:variable:`CMAKE_C_COMPILER <CMAKE_<LANG>_COMPILER>` variable is defined.

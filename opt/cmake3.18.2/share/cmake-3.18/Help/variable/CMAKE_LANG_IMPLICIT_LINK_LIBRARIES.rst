@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:67f8fae7b33e341f25d4c6b46205835a94d92fcb92247216e905c5132c9173d7
-size 426
+CMAKE_<LANG>_IMPLICIT_LINK_LIBRARIES
+------------------------------------
+
+Implicit link libraries and flags detected for language ``<LANG>``.
+
+Compilers typically pass language runtime library names and other
+flags when they invoke a linker.  These flags are implicit link
+options for the compiler's language.  CMake automatically detects
+these libraries and flags for each language and reports the results in
+this variable.

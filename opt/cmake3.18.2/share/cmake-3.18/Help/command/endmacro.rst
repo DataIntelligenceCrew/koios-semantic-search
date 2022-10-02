@@ -1,3 +1,14 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:bc4a9a414a4a81a7cf30eab4087aedc24ea33c01c3df85a1089804c3b4e77ee3
-size 319
+endmacro
+--------
+
+Ends a list of commands in a macro block.
+
+.. code-block:: cmake
+
+  endmacro([<name>])
+
+See the :command:`macro` command.
+
+The optional ``<name>`` argument is supported for backward compatibility
+only. If used it must be a verbatim repeat of the ``<name>`` argument
+of the opening ``macro`` command.

@@ -1,3 +1,26 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:1d1d5a7cd6a1b05bb151158b9410542ef1e7ee2bad5b1afc682e72d8f002c4a6
-size 1136
+CMP0082
+-------
+
+Install rules from :command:`add_subdirectory` calls are interleaved with
+those in caller.
+
+CMake 3.13 and lower ran the install rules from :command:`add_subdirectory`
+after all other install rules, even if :command:`add_subdirectory` was called
+before the other install rules.  CMake 3.14 and above prefer to interleave
+these :command:`add_subdirectory` install rules with the others so that
+they are run in the order they are declared.  This policy provides
+compatibility for projects that have not been updated to expect the
+new behavior.
+
+The ``OLD`` behavior for this policy is to run the install rules from
+:command:`add_subdirectory` after the other install rules.  The ``NEW``
+behavior for this policy is to run all install rules in the order they are
+declared.
+
+This policy was introduced in CMake version 3.14.  Unlike most policies,
+CMake version |release| does *not* warn by default when this policy
+is not set and simply uses ``OLD`` behavior.  See documentation of the
+:variable:`CMAKE_POLICY_WARNING_CMP0082 <CMAKE_POLICY_WARNING_CMP<NNNN>>`
+variable to control the warning.
+
+.. include:: DEPRECATED.txt

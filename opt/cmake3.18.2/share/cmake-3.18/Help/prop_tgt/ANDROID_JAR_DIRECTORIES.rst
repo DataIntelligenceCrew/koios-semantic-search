@@ -1,3 +1,14 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:37d4cee2916b583287ff984ff9b11c89e8a603b71383631b37b0c7c8788cd9e8
-size 541
+ANDROID_JAR_DIRECTORIES
+-----------------------
+
+Set the Android property that specifies directories to search for
+the JAR libraries.
+
+This a string property that contains the directory paths separated by
+semicolons. This property is initialized by the value of the
+:variable:`CMAKE_ANDROID_JAR_DIRECTORIES` variable if it is set when
+a target is created.
+
+Contents of ``ANDROID_JAR_DIRECTORIES`` may use "generator expressions"
+with the syntax ``$<...>``.  See the :manual:`cmake-generator-expressions(7)`
+manual for available expressions.

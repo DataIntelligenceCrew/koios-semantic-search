@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:1c13fad95caaa75c80210a86cf9b711a3ca08c5e9bc09b2ad619bb2bef051e5b
-size 498
+LDFLAGS
+-------
+
+.. include:: ENV_VAR.txt
+
+Will only be used by CMake on the first configuration to determine the default
+linker flags, after which the value for ``LDFLAGS`` is stored in the cache
+as :variable:`CMAKE_EXE_LINKER_FLAGS_INIT`,
+:variable:`CMAKE_SHARED_LINKER_FLAGS_INIT`, and
+:variable:`CMAKE_MODULE_LINKER_FLAGS_INIT`. For any configuration run
+(including the first), the environment variable will be ignored if the
+equivalent  ``CMAKE_<TYPE>_LINKER_FLAGS_INIT`` variable is defined.

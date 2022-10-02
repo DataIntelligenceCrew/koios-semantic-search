@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:dcc681f8abd404c007105ef0aa6db8fab06149cecc6e68e45ae4b81b108912a4
-size 226
+VS_DOTNET_REFERENCES
+--------------------
+
+Visual Studio managed project .NET references
+
+Adds one or more semicolon-delimited .NET references to a generated
+Visual Studio project.  For example, "System;System.Windows.Forms".

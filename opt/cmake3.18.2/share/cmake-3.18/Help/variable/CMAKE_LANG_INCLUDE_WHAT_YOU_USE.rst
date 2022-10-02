@@ -1,3 +1,6 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:19e8c224fc7c5a4932f9ccbac7d6a5fdc0203da4f3c224a2ad75f997285490da
-size 282
+CMAKE_<LANG>_INCLUDE_WHAT_YOU_USE
+---------------------------------
+
+Default value for :prop_tgt:`<LANG>_INCLUDE_WHAT_YOU_USE` target property.
+This variable is used to initialize the property on each target as it is
+created.  This is done only when ``<LANG>`` is ``C`` or ``CXX``.

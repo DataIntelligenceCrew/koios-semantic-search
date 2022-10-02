@@ -1,3 +1,6 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e067a73f2060d6fc4ce1b002d863d8481d7779300dc27a4e40c003daef2f3070
-size 245
+CMAKE_GHS_NO_SOURCE_GROUP_FILE
+------------------------------
+
+``ON`` / ``OFF`` boolean to control if the project file for a target should
+be one single file or multiple files.  Refer to
+:prop_tgt:`GHS_NO_SOURCE_GROUP_FILE` for further details.

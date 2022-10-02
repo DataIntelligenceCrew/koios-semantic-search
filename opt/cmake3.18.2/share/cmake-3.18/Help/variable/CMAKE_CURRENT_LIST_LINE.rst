@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ae3208f677698967bd33df702ae558e4a4ccb4cd4739a980c6d1f7f797fc2f1e
-size 175
+CMAKE_CURRENT_LIST_LINE
+-----------------------
+
+The line number of the current file being processed.
+
+This is the line number of the file currently being processed by
+cmake.

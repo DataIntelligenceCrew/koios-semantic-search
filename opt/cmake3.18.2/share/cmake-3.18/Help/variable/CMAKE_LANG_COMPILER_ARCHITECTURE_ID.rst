@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:4450f35f7da3857137461561dd118c848612f8b47637305e00480ec2e1bad2ba
-size 270
+CMAKE_<LANG>_COMPILER_ARCHITECTURE_ID
+-------------------------------------
+
+An internal variable subject to change.
+
+This is used to identify the variant of a compiler based on its target
+architecture.  For some compilers this is needed to determine the correct
+usage.

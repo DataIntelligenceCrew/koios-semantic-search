@@ -1,3 +1,11 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:be81d387e48277ef6955bb78395e2cb221168d2819133b348dfe05db49d7eaf5
-size 479
+CMAKE_BUILD_WITH_INSTALL_RPATH
+------------------------------
+
+Use the install path for the ``RPATH``.
+
+Normally CMake uses the build tree for the ``RPATH`` when building
+executables etc on systems that use ``RPATH``.  When the software is
+installed the executables etc are relinked by CMake to have the
+install ``RPATH``.  If this variable is set to true then the software is
+always built with the install path for the ``RPATH`` and does not need to
+be relinked when installed.

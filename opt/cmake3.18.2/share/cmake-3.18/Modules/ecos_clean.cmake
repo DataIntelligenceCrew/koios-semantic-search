@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:7ba0a1989bfc333949a38fd961bdbd6613401074c8e1545c42e20010380ccdb9
-size 492
+# Distributed under the OSI-approved BSD 3-Clause License.  See accompanying
+# file Copyright.txt or https://cmake.org/licensing for details.
+
+
+file(GLOB _files ${ECOS_DIR}/*)
+
+# remove all directories, which consist of lower-case letters only
+# this skips e.g. CVS/ and .subversion/
+foreach(_entry ${_files})
+  if(IS_DIRECTORY ${_entry})
+    get_filename_component(dir ${_entry} NAME)
+    if(${dir} MATCHES "^[a-z]+$")
+      file(REMOVE_RECURSE ${_entry})
+    endif()
+  endif()
+endforeach()

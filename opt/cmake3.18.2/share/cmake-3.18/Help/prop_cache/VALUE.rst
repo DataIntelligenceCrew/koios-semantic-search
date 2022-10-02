@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:afc2af275dd6c079e0fd438b78f1fc3b9224bee44cd6bd8508bca060cdf07669
-size 176
+VALUE
+-----
+
+Value of a cache entry.
+
+This property maps to the actual value of a cache entry.  Setting this
+property always sets the value without checking, so use with care.

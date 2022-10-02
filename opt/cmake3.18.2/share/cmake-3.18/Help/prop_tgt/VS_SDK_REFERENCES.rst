@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:9c9b9ab7827c56db3e8a54af0f56cf7645fd153e095db1a13484ec7e16983241
-size 261
+VS_SDK_REFERENCES
+-----------------
+
+Visual Studio project SDK references.
+Specify a :ref:`semicolon-separated list <CMake Language Lists>` of SDK references
+to be added to a generated Visual Studio project, e.g.
+``Microsoft.AdMediatorWindows81, Version=1.0``.

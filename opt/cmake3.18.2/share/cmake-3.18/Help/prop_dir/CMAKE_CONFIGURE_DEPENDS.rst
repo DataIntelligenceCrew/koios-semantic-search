@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f69f70c1095008a7aa2ad1a45d137b2b516cb158cfc547530a5cf20435f45934
-size 378
+CMAKE_CONFIGURE_DEPENDS
+-----------------------
+
+Tell CMake about additional input files to the configuration process.
+If any named file is modified the build system will re-run CMake to
+re-configure the file and generate the build system again.
+
+Specify files as a semicolon-separated list of paths.  Relative paths
+are interpreted as relative to the current source directory.

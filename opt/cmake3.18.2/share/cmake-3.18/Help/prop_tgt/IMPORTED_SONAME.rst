@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:0e20e5961f9391a23007cf9969401ffc513b36ae0a78c9a44116bf4e51249ccf
-size 263
+IMPORTED_SONAME
+---------------
+
+The ``soname`` of an ``IMPORTED`` target of shared library type.
+
+Set this to the ``soname`` embedded in an imported shared library.  This
+is meaningful only on platforms supporting the feature.  Ignored for
+non-imported targets.

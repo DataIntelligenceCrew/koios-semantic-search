@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:dc6e3c4ac0bd187c775505e4f5d169de7c1252c4fb9866b22aaa1e7d1e711d6b
-size 378
+CMAKE_VS_PLATFORM_NAME
+----------------------
+
+Visual Studio target platform name used by the current generator.
+
+VS 8 and above allow project files to specify a target platform.
+CMake provides the name of the chosen platform in this variable.
+See the :variable:`CMAKE_GENERATOR_PLATFORM` variable for details.
+
+See also the :variable:`CMAKE_VS_PLATFORM_NAME_DEFAULT` variable.

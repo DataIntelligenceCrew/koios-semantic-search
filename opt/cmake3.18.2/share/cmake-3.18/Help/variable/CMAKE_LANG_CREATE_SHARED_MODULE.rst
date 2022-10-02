@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:816453bcbfad5af4eb42ce8737f6f5e2d1039216b280e83cf0f21f8ec5da9d2d
-size 278
+CMAKE_<LANG>_CREATE_SHARED_MODULE
+---------------------------------
+
+Rule variable to create a shared module.
+
+This is a rule variable that tells CMake how to create a shared
+library for the language ``<LANG>``.  This rule variable is a ``;`` delimited
+list of commands to run.

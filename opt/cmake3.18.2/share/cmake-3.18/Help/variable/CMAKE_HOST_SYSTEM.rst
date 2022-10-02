@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ff41b087d220687c34da73aaa275c63fb4c0955414a49a74d0429aff38e79cdd
-size 383
+CMAKE_HOST_SYSTEM
+-----------------
+
+Composite Name of OS CMake is being run on.
+
+This variable is the composite of :variable:`CMAKE_HOST_SYSTEM_NAME` and
+:variable:`CMAKE_HOST_SYSTEM_VERSION`, e.g.
+``${CMAKE_HOST_SYSTEM_NAME}-${CMAKE_HOST_SYSTEM_VERSION}``.  If
+:variable:`CMAKE_HOST_SYSTEM_VERSION` is not set, then this variable is
+the same as :variable:`CMAKE_HOST_SYSTEM_NAME`.

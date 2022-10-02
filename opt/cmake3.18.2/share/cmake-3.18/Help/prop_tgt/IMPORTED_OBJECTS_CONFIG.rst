@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:658d167f4e05d12ac2264972d61021cb14d2f08245577dc342f5d00e23781b6f
-size 221
+IMPORTED_OBJECTS_<CONFIG>
+-------------------------
+
+<CONFIG>-specific version of :prop_tgt:`IMPORTED_OBJECTS` property.
+
+Configuration names correspond to those provided by the project from
+which the target is imported.

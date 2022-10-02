@@ -1,3 +1,37 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f90ea23daa683d7e29e3b757e4dc1f1ca8b3f652521af6b2041e57efc0a320ab
-size 904
+# Distributed under the OSI-approved BSD 3-Clause License.  See accompanying
+# file Copyright.txt or https://cmake.org/licensing for details.
+
+cmake_minimum_required(VERSION 3.5)
+
+if("@LOCAL@" STREQUAL "")
+  message(FATAL_ERROR "LOCAL can't be empty")
+endif()
+
+if(NOT EXISTS "@LOCAL@")
+  message(FATAL_ERROR "File not found: @LOCAL@")
+endif()
+
+if("@ALGO@" STREQUAL "")
+  message(WARNING "File will not be verified since no URL_HASH specified")
+  return()
+endif()
+
+if("@EXPECT_VALUE@" STREQUAL "")
+  message(FATAL_ERROR "EXPECT_VALUE can't be empty")
+endif()
+
+message(STATUS "verifying file...
+     file='@LOCAL@'")
+
+file("@ALGO@" "@LOCAL@" actual_value)
+
+if(NOT "${actual_value}" STREQUAL "@EXPECT_VALUE@")
+  message(FATAL_ERROR "error: @ALGO@ hash of
+  @LOCAL@
+does not match expected value
+  expected: '@EXPECT_VALUE@'
+    actual: '${actual_value}'
+")
+endif()
+
+message(STATUS "verifying file... done")

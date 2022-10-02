@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:4a7ebc6dae32ea0b559a4411cdd2765ff8bad7c4a64ed8f5f466d115a4c903a3
-size 275
+CMAKE_<LANG>_COMPILER_VERSION_INTERNAL
+--------------------------------------
+
+An internal variable subject to change.
+
+This is used to identify the variant of a compiler based on an internal
+version number.  For some compilers this is needed to determine the
+correct usage.

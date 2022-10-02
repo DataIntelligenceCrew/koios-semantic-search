@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:1aed3410a357e4d109d8df834520694df5051ad2bd5a0cf33dfa6c648f192ab0
-size 322
+CPACK_WARN_ON_ABSOLUTE_INSTALL_DESTINATION
+------------------------------------------
+
+Ask CPack to warn each time a file with absolute ``INSTALL DESTINATION`` is
+encountered.
+
+This variable triggers the definition of
+:variable:`CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION` when CPack runs
+``cmake_install.cmake`` scripts.

@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:938c845192289e5a0248a0d8529eb10ba6dde6bafc28fb616479851151b54595
-size 286
+CMAKE_<LANG>_LINK_LIBRARY_FLAG
+------------------------------
+
+Flag to be used to link a library into a shared library or executable.
+
+This flag will be used to specify a library to link to a shared library or an
+executable for the specific language.  On most compilers this is ``-l``.

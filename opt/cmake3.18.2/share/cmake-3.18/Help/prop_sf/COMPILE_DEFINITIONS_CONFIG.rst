@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:cb8f648c7216ce5a25ee3c2b38c8859f759f8b54343b5adb9e06f31a5287f8c7
-size 399
+COMPILE_DEFINITIONS_<CONFIG>
+----------------------------
+
+Ignored.  See CMake Policy :policy:`CMP0043`.
+
+Per-configuration preprocessor definitions on a source file.
+
+This is the configuration-specific version of :prop_tgt:`COMPILE_DEFINITIONS`.
+Note that :generator:`Xcode` does not support per-configuration source
+file flags so this property will be ignored by the :generator:`Xcode` generator.

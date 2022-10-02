@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:9036659f6971f8f9bd494492dc9a8a13101eccb1550f30ba37e3d6c4bfa0fe57
-size 431
+XCODE_SCHEME_MALLOC_SCRIBBLE
+------------------------------
+
+Whether to enable ``Malloc Scribble``
+in the Diagnostics section of the generated Xcode scheme.
+
+This property is initialized by the value of the variable
+:variable:`CMAKE_XCODE_SCHEME_MALLOC_SCRIBBLE` if it is set
+when a target is created.
+
+Please refer to the :prop_tgt:`XCODE_GENERATE_SCHEME` target property
+documentation to see all Xcode schema related properties.

@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a56fe7eada8c646a3bb0fa9a3f07228262d874836f5add18f6589ecdbd3e5d40
-size 321
+CMAKE_VS_INCLUDE_INSTALL_TO_DEFAULT_BUILD
+-----------------------------------------
+
+Include ``INSTALL`` target to default build.
+
+In Visual Studio solution, by default the ``INSTALL`` target will not be part
+of the default build. Setting this variable will enable the ``INSTALL`` target
+to be part of the default build.

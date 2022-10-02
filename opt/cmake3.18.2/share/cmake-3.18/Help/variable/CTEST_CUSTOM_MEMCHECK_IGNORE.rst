@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:4f7a489ad520d6246baa1d9f19894e6e9edcfc6c2eb47a07dd865890e416ec88
-size 194
+CTEST_CUSTOM_MEMCHECK_IGNORE
+----------------------------
+
+A list of regular expressions to use to exclude tests during the
+:command:`ctest_memcheck` command.
+
+.. include:: CTEST_CUSTOM_XXX.txt

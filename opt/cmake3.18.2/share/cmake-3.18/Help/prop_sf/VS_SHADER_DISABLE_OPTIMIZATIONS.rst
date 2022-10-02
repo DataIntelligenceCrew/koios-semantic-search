@@ -1,3 +1,6 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:252fe021cf84b0dbcad8e66599f9b8814c364a62fa0e0f8c293b5f4abfb79a81
-size 280
+VS_SHADER_DISABLE_OPTIMIZATIONS
+-------------------------------
+
+Disable compiler optimizations for an ``.hlsl`` source file.  This adds the
+``-Od`` flag to the command line for the FxCompiler tool.  Specify the value
+``true`` for this property to disable compiler optimizations.

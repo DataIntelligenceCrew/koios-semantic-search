@@ -1,3 +1,17 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:af3c59a9e0706c2c0908d37fbff59cc48b3fe66bd131b63e3ae02d016f40a306
-size 610
+CMP0064
+-------
+
+Recognize ``TEST`` as a operator for the :command:`if` command.
+
+The ``TEST`` operator was added to the :command:`if` command to determine if a
+given test name was created by the :command:`add_test` command.
+
+The ``OLD`` behavior for this policy is to ignore the ``TEST`` operator.
+The ``NEW`` behavior is to interpret the ``TEST`` operator.
+
+This policy was introduced in CMake version 3.4.  CMake version
+|release| warns when the policy is not set and uses ``OLD`` behavior.  Use
+the :command:`cmake_policy()` command to set it to ``OLD`` or ``NEW``
+explicitly.
+
+.. include:: DEPRECATED.txt

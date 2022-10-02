@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:3f015066130b57716ee0fe8d16c2c15070e0328d6a9184a2c2642ce553817436
-size 450
+VS_IOT_EXTENSIONS_VERSION
+-------------------------
+
+Visual Studio Windows 10 IoT Extensions Version
+
+Specifies the version of the IoT Extensions that should be included in the
+target. For example ``10.0.10240.0``. If the value is not specified, the IoT
+Extensions will not be included. To use the same version of the extensions as
+the Windows 10 SDK that is being used, you can use the
+:variable:`CMAKE_VS_WINDOWS_TARGET_PLATFORM_VERSION` variable.

@@ -1,3 +1,6 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:1f844928c281810a3d2beda1a2f8325d4a37466fad78ed88e744e05950c1bbc5
-size 208
+# <ndk>/build/core/toolchains/aarch64-linux-android-4.9/setup.mk
+
+# Suppress -Wl,-z,nocopyreloc flag on arm64-v8a
+set(_ANDROID_ABI_INIT_EXE_LDFLAGS_NO_nocopyreloc 1)
+
+include(Platform/Android/abi-common-GNU)

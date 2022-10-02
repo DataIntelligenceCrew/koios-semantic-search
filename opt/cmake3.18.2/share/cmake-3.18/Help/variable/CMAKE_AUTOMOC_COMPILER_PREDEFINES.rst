@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f66af61e837d51ffdd837be0c66725ab6aa181c2f39ac25663f11ff36f0638fc
-size 253
+CMAKE_AUTOMOC_COMPILER_PREDEFINES
+---------------------------------
+
+This variable is used to initialize the :prop_tgt:`AUTOMOC_COMPILER_PREDEFINES`
+property on all the targets. See that target property for additional
+information.
+
+By default it is ON.

@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:45e8ce3d6d11c99d473a7eea7ae4b76d3e4f06bb8734849575c9688de6e46eeb
-size 313
+CTEST_NIGHTLY_START_TIME
+------------------------
+
+Specify the CTest ``NightlyStartTime`` setting in a :manual:`ctest(1)`
+dashboard client script.
+
+Note that this variable must always be set for a nightly build in a
+dashboard script. It is needed so that nightly builds can be properly grouped
+together in CDash.

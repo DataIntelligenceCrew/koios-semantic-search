@@ -1,3 +1,13 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:34f0065a894645cc6e0d0618bcd598262fa33ca69284ae97623a53b5b5c0a838
-size 365
+CMAKE_<LANG>_CLANG_TIDY
+-----------------------
+
+Default value for :prop_tgt:`<LANG>_CLANG_TIDY` target property
+when ``<LANG>`` is ``C`` or ``CXX``.
+
+This variable is used to initialize the property on each target as it is
+created.  For example:
+
+.. code-block:: cmake
+
+  set(CMAKE_CXX_CLANG_TIDY clang-tidy -checks=-*,readability-*)
+  add_executable(foo foo.cxx)

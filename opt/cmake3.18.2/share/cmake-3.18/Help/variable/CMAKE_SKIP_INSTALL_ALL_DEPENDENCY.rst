@@ -1,3 +1,11 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:10fcdb3d3cb03fee039e445d189a7cbafa79715f98c9443a4a84b53c4269c66d
-size 574
+CMAKE_SKIP_INSTALL_ALL_DEPENDENCY
+---------------------------------
+
+Don't make the ``install`` target depend on the ``all`` target.
+
+By default, the ``install`` target depends on the ``all`` target.  This
+has the effect, that when ``make install`` is invoked or ``INSTALL`` is
+built, first the ``all`` target is built, then the installation starts.
+If :variable:`CMAKE_SKIP_INSTALL_ALL_DEPENDENCY` is set to ``TRUE``, this
+dependency is not created, so the installation process will start immediately,
+independent from whether the project has been completely built or not.

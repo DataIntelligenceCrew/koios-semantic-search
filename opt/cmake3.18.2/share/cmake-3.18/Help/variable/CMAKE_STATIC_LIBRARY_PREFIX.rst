@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d25842bdb0a1ac6bfc169372468d0d0b257f628c67fd9b3e854dd775b81d20bd
-size 257
+CMAKE_STATIC_LIBRARY_PREFIX
+---------------------------
+
+The prefix for static libraries that you link to.
+
+The prefix to use for the name of a static library, ``lib`` on UNIX.
+
+``CMAKE_STATIC_LIBRARY_PREFIX_<LANG>`` overrides this for language ``<LANG>``.

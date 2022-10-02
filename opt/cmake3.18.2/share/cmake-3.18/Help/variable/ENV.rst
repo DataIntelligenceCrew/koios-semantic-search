@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:6491231e83d88c821028d5fe63ff7385e1424d553349cec12b1e6a59347bc7f2
-size 353
+ENV
+---
+
+Operator to read environment variables.
+
+Use the syntax ``$ENV{VAR}`` to read environment variable ``VAR``.
+
+To test whether an environment variable is defined, use the signature
+``if(DEFINED ENV{<name>})`` of the :command:`if` command.
+
+See the :command:`set` and :command:`unset` commands to see how to
+write or remove environment variables.
